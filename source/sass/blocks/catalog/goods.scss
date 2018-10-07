@@ -1,0 +1,15 @@
+.goods__variants {
+  @include product-name;
+}
+
+.goods__tastes {
+  @include catalog-goods;
+}
+
+.goods__to-show {
+  padding: 10px 95px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #444444;
+  background-color: #f2f2f2;
+}

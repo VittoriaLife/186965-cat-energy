@@ -1,0 +1,40 @@
+.users-data__personal label{
+  @include form-label;
+}
+
+.users-data__goals label {
+  @include form-label;
+}
+
+.users-data__contacts {
+  @include form-label;
+}
+
+.users-data__contacts label {
+  @include form-label;
+}
+
+.users-data__contacts legend {
+  @include form-legend;
+}
+
+.users-data__comments legend {
+  @include form-legend;
+}
+
+.users-data__more label {
+  @include form-label;
+}
+
+.users-data__more legend {
+  @include form-legend;
+}
+
+.users-data__button-to-sbm {
+  padding: 5px 75px;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: $button-bcolor;
+}
+
+

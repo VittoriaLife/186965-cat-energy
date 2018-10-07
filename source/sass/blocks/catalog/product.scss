@@ -1,0 +1,11 @@
+.product__name {
+  @include product-name;
+}
+
+.product__table td {
+ @include catalog-goods;
+}
+
+.product__order-button {
+  @include order-button;
+}

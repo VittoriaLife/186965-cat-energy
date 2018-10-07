@@ -1,0 +1,11 @@
+.card-product__name {
+  @include card-product-name;
+}
+
+.card-product__table td {
+  @include card-product-table;
+}
+
+.card-product__button-to-order {
+  @include order-button;
+}

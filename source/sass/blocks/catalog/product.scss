@@ -3,7 +3,7 @@
 }
 
 .product__table td {
- @include catalog-goods;
+  @include catalog-goods;
 }
 
 .product__order-button {

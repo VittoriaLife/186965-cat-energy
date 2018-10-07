@@ -19,7 +19,7 @@
   color: #111111;
 }
 @mixin catalog-goods {
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: "Arial","Helvetica", sans-serif;
   font-size: 12px;
   line-height: 16px;
   color: #444444;
@@ -41,7 +41,7 @@
 }
 
 @mixin card-product-table {
-  font-family: "Arial", "Helvetica", sans-serif;
+  font-family: "Arial","Helvetica", sans-serif;
   font-size: 14px;
   line-height: 14px;
   color: #444444;

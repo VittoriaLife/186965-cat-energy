@@ -1,5 +1,43 @@
 .working-process__header {
+  display: flex;
+  margin: 0;
   font-size: 36px;
   line-height: 60px;
   color: #111111;
 }
+
+.advantages {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages__item {
+  display: flex;
+}
+
+
+@media (min-width: 768px) {
+  .advantages {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    list-style: none;
+  }
+  
+  .advantages__wrapper{
+    display: flex;
+  }
+}
+
+@media (min-width: 1300px) {
+  .advantages {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+
+

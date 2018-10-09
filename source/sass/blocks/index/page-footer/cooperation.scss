@@ -1,3 +1,8 @@
+.cooperation {
+  display: flex;
+  background-color: #ffffff;
+}
+
 .cooperation__welcome-words {
   font-size: 16px;
   line-height: 20px;
@@ -10,3 +15,36 @@
   line-height: 20px;
   color: #111111;
 }
+
+.pafe-footer__social {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-list {
+  margin: 0;
+  display: flex;
+  list-style: none;
+
+}
+
+.social-list__item {
+  text-decoration: none;
+}
+
+.social-list__link {
+  text-decoration: none;
+}
+
+@media (min-width: 768px) {
+  .page-footer__social {
+    display: flex;
+  }
+}
+
+@media (min-width: 1300px) {
+  .page-footer__social {
+    display: flex;
+  }
+}
+

@@ -1,30 +1,65 @@
 .show-card {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
   background-image: url("/img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
 }
 
+// .show-card__wrapper {
+//   background-image: url("/img/index-background-mobile@1x.jpg");
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
+
 .show-card__name {
-  text-transform: uppercase;
+  margin: 0;
   font-size: 36px;
-  line-height: 26px;
+  line-height: 36px;
   color: #ffffff;
 }
 
 .show-card__slogan {
-  text-transform: uppercase;
+  margin: 0;
   font-size: 14px;
   line-height: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
   color: #ffffff;
 }
 
 .show-card__wrapper {
+  background-color: $color-light-green;
   padding: 10px 70px;
-  color: #68b738;
 }
 
-.show-card_button-program {
+.show-card__button-program {
+  text-decoration: none;
   text-transform: uppercase;
-  font-size: 14px;
-  line-height: 14px;
   color: #ffffff;
 }
+
+@media (min-width: 768px) {
+  .show-card {
+    background-color: #ffffff;
+  }
+
+  .show-card__name {
+    font-size: 60px;
+    line-height: 60px;
+    color: #111111;
+  }
+
+  .show-card__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    color: #111111;
+  }
+}
+
+@media (min-width: 1300px) {
+  .show-card {
+    background-image: none;
+  }
+
+}
+

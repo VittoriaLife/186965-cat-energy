@@ -1,7 +1,60 @@
-.site-list__item a {
+.page-header {
+  display: flex;
+}
+
+.main-navigation {
+  display: flex;
+  flex-direction: column;
+}
+
+.site-list {
+  list-style: none;
+}
+
+.site-list__item--link {
+  text-decoration: none;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
+}
+
+@media (min-width: 768px) {
+  .site-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  .site-list__item--link {
+    font-size: 18px;
+    line-height: 25px;
+    color: #222222;
+  }
+
+  .main-navigation__toggle {
+    display: none;
+  }
+}
+
+@media (min-width: 1300px) {
+  .main-navigation__wrapper {
+    display: flex;
+    background-image: url("/img/index-background-desktop@1x.jpg")
+  }
+
+  .site-list {
+    display: flex;
+  }
+
+  .site-list__item--link {
+    font-size: 20px;
+    line-height: 25px;
+    color: #ffffff;
+  }
+
+  .main-navigation__toggle {
+    display: none;  
+  }
 }

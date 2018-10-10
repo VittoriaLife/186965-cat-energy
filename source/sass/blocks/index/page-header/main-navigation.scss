@@ -12,11 +12,11 @@
 }
 
 .site-list__item--link {
-  text-decoration: none;
-  font-weight: 500;
   font-size: 20px;
   line-height: 20px;
+  font-weight: 500;
   text-transform: uppercase;
+  text-decoration: none;
   color: #111111;
 }
 
@@ -55,6 +55,6 @@
   }
 
   .main-navigation__toggle {
-    display: none;  
+    display: none;
   }
 }

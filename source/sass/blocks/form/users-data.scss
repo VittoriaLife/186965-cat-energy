@@ -1,34 +1,17 @@
-.users-data__personal label {
-  @include form-label;
+.users-data__label {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #222222;
 }
 
-.users-data__goals label {
-  @include form-label;
+.users-data__legend {
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #111111;
 }
 
-.users-data__contacts {
-  @include form-label;
-}
-
-.users-data__contacts label {
-  @include form-label;
-}
-
-.users-data__contacts legend {
-  @include form-legend;
-}
-
-.users-data__comments legend {
-  @include form-legend;
-}
-
-.users-data__more label {
-  @include form-label;
-}
-
-.users-data__more legend {
-  @include form-legend;
-}
 
 .users-data__button-to-sbm {
   padding: 5px 75px;

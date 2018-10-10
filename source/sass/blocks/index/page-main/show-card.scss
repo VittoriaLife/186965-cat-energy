@@ -5,12 +5,6 @@
   background-image: url("/img/index-background-mobile@1x.jpg");
 }
 
-// .show-card__wrapper {
-//   background-image: url("/img/index-background-mobile@1x.jpg");
-//   background-repeat: no-repeat;
-//   background-size: cover;
-// }
-
 .show-card__name {
   margin: 0;
   font-size: 36px;
@@ -22,7 +16,6 @@
   margin: 0;
   font-size: 14px;
   line-height: 14px;
-  font-weight: 400;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -56,10 +49,15 @@
   }
 }
 
+@media (min-width: 768px) {
+  .show-card {
+    background-image: none;
+  }
+}
+
 @media (min-width: 1300px) {
   .show-card {
     background-image: none;
   }
-
 }
 

@@ -1,0 +1,18 @@
+.social-list {
+  margin: 0;
+  display: flex;
+  list-style: none;
+
+}
+
+.social-list__item {
+  text-decoration: none;
+}
+
+.social-list__link {
+  text-decoration: none;
+}
+
+.social-list__name-hidden {
+  @include visually-hidden;
+}

@@ -1,21 +1,109 @@
+.users-data__personal,
+.users-data__goals,
+.users-data__contacts,
+.users-data__comments,
+.users-data__more {
+  border: none;
+}
+
 .users-data__label {
-  font-size: 16px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #222222;
+  margin-right: 15px;
 }
 
-.users-data__legend {
-  font-size: 24px;
-  line-height: 24px;
-  text-transform: uppercase;
-  color: #111111;
+.user-data__name {
+  width: 181px;
+  height: 45px;
+  margin-bottom: 15px;
+  padding-left: 15px;
+}
+
+.user-data__weight {
+  width: 160px;
+  height: 45px;
+  margin-bottom: 15px;
+  padding-left: 15px;
+}
+
+.users-data__age {
+  width: 131px;
+  height: 45px;
+  padding-left: 15px;
 }
 
 
-.users-data__button-to-sbm {
-  padding: 5px 75px;
-  color: #ffffff;
-  text-transform: uppercase;
-  background-color: $color-light-green;
+@media (min-width: 768px) {
+  .users-data__label {
+    margin-right: 15px;
+    margin-left: 40px;
+  }
+
+  .user-data__name {
+    width: 569px;
+    height: 53px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+  }
+
+  .user-data__weight {
+    width: 547px;
+    height: 53px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+  }
+
+  .users-data__age {
+    width: 519px;
+    height: 53px;
+    padding-left: 15px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .users-data__personal {
+    width: 570px;
+  }
+
+  .users-data__wrapper {
+    display: flex;
+  }
+
+  .users-data__label {
+    margin-right: 15px;
+    margin-left: 0;
+  }
+
+  .user-data__name {
+    width: 499px;
+    height: 53px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+  }
+
+  .user-data__weight {
+    width: 478px;
+    height: 53px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+  }
+
+  .users-data__age {
+    width: 448px;
+    height: 53px;
+    padding-left: 15px;
+  }
+}
+
+.users-data__goals {
+  width: 280px;
+}
+
+.users-data__weight-loss,
+.users-data__mass,
+.users-data__idk {
+  margin: 0;
+  margin-right: 15px;
+}
+
+.users-data__label--radio {
+  margin-right: 154px;
 }

@@ -5,25 +5,13 @@ body {
   font-weight: 400;
 }
 
-@font-face {
-  font-family: "Oswald";
-  src: url("oswaldmedium.woff2") format("woff2"),
-    url("oswaldmedium.woff") format("woff");
-  font-weight: 500;
-}
-
-@font-face {
-  font-family: "Oswald";
-  src: url("oswaldregular.woff2") format("woff2"),
-    url("oswaldregular.woff") format("woff");
-  font-weight: 400;
-}
-
 @import "mixin.scss";
 @import "variables.scss";
+@import "fonts.scss";
 @import "blocks/index/page-header/main-navigation.scss";
 @import "blocks/index/page-main/show-card.scss";
 @import "blocks/index/page-main/programs.scss";
+@import "blocks/index/page-main/program.scss";
 @import "blocks/index/page-main/working-process.scss";
 @import "blocks/index/page-main/advantages.scss";
 @import "blocks/index/page-main/clients.scss";

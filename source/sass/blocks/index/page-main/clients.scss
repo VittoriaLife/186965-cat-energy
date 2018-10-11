@@ -14,6 +14,11 @@
 
 .clients__wrapper {
   display: flex;
+  flex-direction: column;
+}
+
+.clients__position {
+  display: flex;
 }
 
 .clients__story {
@@ -22,7 +27,6 @@
   font-weight: 400;
   color: #444444;
 }
-
 
 .clients__money {
   font-size: 14px;
@@ -62,10 +66,32 @@
     font-size: 16px;
     line-height: 24px;
   }
+
+  .clients__wrapper {
+    flex-direction: row;
+  }
 }
 
 @media (min-width: 1300px) {
+
+  .clients {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .clients__story {
+    width: 450px;
+  }
+
   .clients__switcher {
-    align-self: flex-end;
+
+  }
+
+  .clients__wrapper {
+    flex-direction: column;
+  }
+
+  .clients__background {
+    background-color: #f2f2f2;
   }
 }

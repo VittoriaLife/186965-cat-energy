@@ -19,6 +19,10 @@
   display: flex;
 }
 
+.advantages__number {
+  visibility: hidden;
+}
+
 .advantages__description {
   font-size: 14px;
   line-height: 18px;
@@ -37,6 +41,20 @@
   .advantages__wrapper {
     display: flex;
   }
+
+  .advantages__item {
+    flex-direction: column;
+  }
+
+  .advantages__number {
+    position: absolute;
+    z-index: -10;
+    visibility: visible;
+    font-size: 281px;
+    line-height: 281px;
+    color: #f2f2f2;
+  }
+
 }
 
 @media (min-width: 1300px) {

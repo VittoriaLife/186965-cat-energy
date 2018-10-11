@@ -9,19 +9,21 @@
   <body>
 
       <header class="page-header">
-          <img class="page-header__main-logo" src="http://placehold.it/150x100" width="" height="" alt="Логотип cat-energy">
+        <a class="page-header__main-logo" href="index.html">
+          <img src="http://placehold.it/150x100" width="" height="" alt="Логотип cat-energy">
+        </a>
           <nav class="main-navigation">
             <div class="main-navigation__wrapper">
               <button class="main-navigation__toggle" type="button">Открыть меню</button>
               <ul class="main-navigation__list site-list">
                 <li class="site-list__item">
-                  <a class="site-list__item--link" href="index.html">Главная</a>
+                  <a class="site-list__item-link" href="index.html">Главная</a>
                 </li>
                 <li class="site-list__item">
-                  <a class="site-list__item--link" href="catalog.html">Каталог продукции</a>
+                  <a class="site-list__item-link" href="catalog.html">Каталог продукции</a>
                 </li>
-                <li class="site-list__item">
-                  <a class="site-list__item--link site-list__item--current">Подбор программы</a>
+                <li class="site-list__item site-list__item--current">
+                  <a class="site-list__item-link">Подбор программы</a>
                 </li>
               </ul>
             </div>
@@ -32,28 +34,30 @@
       <h2 class="main-form__program-select">Подбор программы</h2>
       <p class="main-form__resume">Заполните анкету и мы подберем  программу питания для вашего кота</p>
       <form class="main-form__search users-data" action="https://echo.htmlacademy.ru" method="get">
+        <div class="users-data__wrapper">
         <fieldset class="users-data__personal">
           <label class="users-data__label" for="cat-name">Имя:<sup>*</sup></label>
-          <input class="user-data__name" type="text" name="Имя животного" id="cat-name" placeholder="Барсик" required>
+          <input class="user-data__name" type="text" name="Имя животного" id="cat-name" placeholder="БАРСИК" required>
           <label class="users-data__label" for="cat-weight">Вес (кг):<sup>*</sup></label>
           <input class="user-data__weight" type="number" name="Вес животного" id="cat-weight" placeholder="7" min="1" max="30" step="1" required>
           <label class="users-data__label" for="cat-age">Возраст (лет):</label>
           <input class="users-data__age" type="number" name="Возраст животного"id="cat-age" placeholder="7"  min="1" max="30" step="1">
         </fieldset>
         <fieldset class="users-data__goals">
-          <input class="users-data__weight-loss users-data__weight-loss" type="radio" name="Похудение" id="weight-loss" checked>
-          <label class="users-data__label" for="weight-loss">Похудение</label>
+          <input class="users-data__weight-loss" type="radio" name="Похудение" id="weight-loss" checked>
+          <label class="users-data__label users-data__label--radio" for="weight-loss">Похудение</label>
           <input class="users-data__mass" type="radio" name="Набор массы" id="mass">
-          <label class="users-data__label"  for="mass">Набор массы</label>
+          <label class="users-data__label users-data__label--radio"  for="mass">Набор массы</label>
           <input class="users-data__idk" type="radio" name="Я не знаю" id="idk">
-          <label class="users-data__label"  for="idk">Не знаю (нужен ваш совет)</label>
+          <label class="users-data__label users-data__label--radio"  for="idk">Не знаю (нужен ваш совет)</label>
         </fieldset>
+        </div>
         <fieldset class="users-data__contacts">
           <legend class="users-data__legend">Контактые данные (владельца кота)</legend>
           <label class="users-data__label"  for="email-address">E-mail:<sup>*</sup></label>
-          <input type="E-mail" name="Электронный адрес" placeholder="kuklachev@gmail.com" id="email-address" required>
-          <label class="users-data__label"  for="phone-number">Тел:<sup>*</sup></label>
-          <input type="tel" name="Номер телефона" placeholder="8 (960) 800-60-90" id="phone-number" required>
+          <input class="users-data__e-mail" type="E-mail" name="Электронный адрес" placeholder="kuklachev@gmail.com" id="email-address" required>
+          <label class="users-data__label"  for="phone-number">Телефон:<sup>*</sup></label>
+          <input class="users-data__phone" type="tel" name="Номер телефона" placeholder="8 (960) 800-60-90" id="phone-number" required>
         </fieldset>
         <fieldset class="users-data__comments">
           <legend class="users-data__legend">Комментарий</legend>

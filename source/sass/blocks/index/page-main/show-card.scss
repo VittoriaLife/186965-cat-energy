@@ -21,6 +21,7 @@
 }
 
 .show-card__wrapper {
+  width: 280px;
   background-color: $color-light-green;
   padding: 10px 70px;
 }
@@ -33,30 +34,38 @@
 
 @media (min-width: 768px) {
   .show-card {
+    margin-left: 90px;
+    background-image: none;
     background-color: #ffffff;
   }
 
   .show-card__name {
     font-size: 60px;
     line-height: 60px;
+    font-weight: 400;
     color: #111111;
   }
 
   .show-card__slogan {
     font-size: 20px;
     line-height: 20px;
+    font-weight: 400;
     color: #111111;
   }
-}
 
-@media (min-width: 768px) {
-  .show-card {
-    background-image: none;
+  .show-card__wrapper {
+    width: 245px;
   }
+
 }
 
 @media (min-width: 1300px) {
   .show-card {
     background-image: none;
+    margin-left: 115px;
+  }
+
+  .show-card__picture {
+    align-self: center;
   }
 }

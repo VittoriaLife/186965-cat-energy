@@ -1,6 +1,5 @@
 .cooperation {
   display: flex;
-  background-color: #ffffff;
 }
 
 .cooperation__welcome-words {
@@ -8,6 +7,16 @@
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  @media (min-width: 1300px) {
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
 
 .cooperation__address {

@@ -1,0 +1,15 @@
+.programs {
+  display: flex;
+  flex-direction: column;
+}
+
+.programs__header {
+  @include visually-hidden;
+}
+
+@media (min-width: 1300px) {
+  .programs {
+    display: flex;
+    flex-direction: row;
+  }
+}

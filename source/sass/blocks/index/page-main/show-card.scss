@@ -1,0 +1,70 @@
+.show-card {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-image: url("/img/index-background-mobile@1x.jpg");
+}
+
+.show-card__name {
+  margin: 0;
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+.show-card__slogan {
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.show-card__wrapper {
+  width: 280px;
+  background-color: $color-light-green;
+  padding: 10px 70px;
+}
+
+.show-card__button-program {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+@media (min-width: 768px) {
+  .show-card {
+    margin-left: 90px;
+    background-image: none;
+    background-color: #ffffff;
+  }
+
+  .show-card__name {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+    color: #111111;
+  }
+
+  .show-card__slogan {
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #111111;
+  }
+
+  .show-card__wrapper {
+    width: 245px;
+  }
+}
+
+@media (min-width: 1300px) {
+  .show-card {
+    background-image: none;
+    margin-left: 115px;
+  }
+
+  .show-card__picture {
+    align-self: center;
+  }
+}

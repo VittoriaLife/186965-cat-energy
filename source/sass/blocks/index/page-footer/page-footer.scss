@@ -1,0 +1,20 @@
+.page-footer__wrapper {
+  background-color: #f2f2f2;
+}
+
+.page-footer__wrapper--index-page {
+  background-color: #ffffff;
+}
+
+.page-footer__social {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+
+  @media (min-width: 1300px) {
+    flex-direction: row;
+  }
+}

@@ -1,0 +1,20 @@
+.card-product__name {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #222222;
+}
+
+.card-product__table {
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+}
+
+.card-product__button-to-order {
+  padding: 10px 105px;
+  background-color: $color-light-green;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+}

@@ -3,6 +3,10 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
+
+  @media (min-width: 768px) {
+    font-size: 20px;
+  }
 }
 
 .product__table {

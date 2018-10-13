@@ -1,5 +1,23 @@
+.main-catalog {
+  margin-left: 20px;
+}
+
 .main-catalog__list {
   font-size: 36px;
   line-height: 60px;
+  font-weight: 400;
   color: #111111;
+
+  @media (min-width: 768px) {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+  }
+
+  @media (min-width: 1300px) {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+  }
+
 }

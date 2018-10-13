@@ -2,69 +2,90 @@
   display: flex;
   flex-direction: column;
   margin: 0;
+  text-align: center;
   background-image: url("/img/index-background-mobile@1x.jpg");
+  background-repeat: no-repeat;
+
+  @media (min-width: 768px) {
+    position: relative;
+    margin: 0;
+    margin-left: 90px;
+    margin-top: 45px;
+    text-align: justify;
+    background-image: none;
+    background-color: #ffffff;
+  }
+
+  @media (min-width: 1300px) {
+   background-color: transparent;
+  }
 }
 
 .show-card__name {
   margin: 0;
+  margin-top: 25px;
+  margin-bottom: 20px;
   font-size: 36px;
+  font-weight: 400;
   line-height: 36px;
   color: #ffffff;
+
+  @media (min-width: 768px) {
+    margin: 0;
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+    color: #111111;
+  }
 }
 
 .show-card__slogan {
   margin: 0;
   font-size: 14px;
   line-height: 14px;
+  font-weight: 400;
   text-transform: uppercase;
   color: #ffffff;
+
+  @media (min-width: 768px) {
+    margin-top: 35px;
+    margin-bottom: 45px;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: 400;
+    color: #111111;
+  }
 }
 
 .show-card__wrapper {
-  width: 280px;
-  background-color: $color-light-green;
+  width: 180px;
   padding: 10px 70px;
+  margin-top: 10px;
+  background-color: $color-light-green;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  @media (min-width: 768px) {
+    position: absolute;
+    top: 210px;
+  }
 }
 
 .show-card__button-program {
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
-}
 
-@media (min-width: 768px) {
-  .show-card {
-    margin-left: 90px;
-    background-image: none;
-    background-color: #ffffff;
-  }
-
-  .show-card__name {
-    font-size: 60px;
-    line-height: 60px;
-    font-weight: 400;
-    color: #111111;
-  }
-
-  .show-card__slogan {
-    font-size: 20px;
-    line-height: 20px;
-    font-weight: 400;
-    color: #111111;
-  }
-
-  .show-card__wrapper {
-    width: 245px;
+  &:focus {
+    color: rgba(255, 255, 255, 0.3);
   }
 }
 
-@media (min-width: 1300px) {
-  .show-card {
-    background-image: none;
-    margin-left: 115px;
-  }
 
-  .show-card__picture {
-    align-self: center;
-  }
-}
+

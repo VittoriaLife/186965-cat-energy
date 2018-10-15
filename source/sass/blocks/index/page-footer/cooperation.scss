@@ -1,26 +1,50 @@
 .cooperation {
   display: flex;
+  justify-content: space-around;
+
+  @media (min-width: 1300px) {
+    width: 570px;
+    height: 201px;;
+    background-color: #ffffff;
+  }
 }
 
 .cooperation__welcome-words {
   font-size: 16px;
   line-height: 20px;
+  font-weight: 400;
   color: #111111;
   text-transform: uppercase;
 
   @media (min-width: 768px) {
     font-size: 20px;
     line-height: 25px;
+    font-weight: 400;
   }
 
   @media (min-width: 1300px) {
     font-size: 20px;
     line-height: 25px;
+    font-weight: 400;
   }
 }
 
 .cooperation__address {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 20px;
   color: #111111;
+  font-weight: 400;
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+
+  @media (min-width: 1300px) {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
+  }
+
 }

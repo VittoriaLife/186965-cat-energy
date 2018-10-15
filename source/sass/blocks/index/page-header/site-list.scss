@@ -20,11 +20,6 @@
   }
 }
 
-
-@media (min-width: 768px) {
-
-}
-
 .site-list__item-link {
   font-size: 20px;
   line-height: 20px;
@@ -54,6 +49,19 @@
     font-weight: 400;
     color: #ffffff;
   }
+
+    &:hover {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:focus {
+      color: rgba(255, 255, 255, 0.3);
+    }
+  }
+
+
+.site-list__item-link--color-black {
+  color: #111111;
 }
 
 .site-list__item--current {

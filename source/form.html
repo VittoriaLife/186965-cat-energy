@@ -8,31 +8,31 @@
   </head>
   <body>
 
-      <header class="page-header">
-        <a class="page-header__main-logo" href="index.html">
-          <img src="http://placehold.it/150x100" width="" height="" alt="Логотип cat-energy">
-        </a>
-          <nav class="main-navigation">
-            <div class="main-navigation__wrapper">
-              <button class="main-navigation__toggle" type="button">Открыть меню</button>
-              <ul class="main-navigation__list site-list">
-                <li class="site-list__item">
-                  <a class="site-list__item-link" href="index.html">Главная</a>
-                </li>
-                <li class="site-list__item">
-                  <a class="site-list__item-link" href="catalog.html">Каталог продукции</a>
-                </li>
-                <li class="site-list__item site-list__item--current">
-                  <a class="site-list__item-link">Подбор программы</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </header>
+    <header class="page-header">
+      <img class="page-header__main-logo" src="#" width="" height="" alt="Логотип cat-energy">
+      <nav class="main-navigation main-navigation--closed main-nav--nojs">
+        <div class="main-navigation__wrapper">
+          <button class="main-navigation__toggle" type="button">
+            <span class="main-navigation__hidden">Открыть меню</span>
+          </button>
+          <ul class="main-navigation__list site-list">
+            <li class="site-list__item site-list__item--current">
+              <a class="site-list__item-link site-list__item-link--color-black" href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__item-link site-list__item-link--color-black" href="catalog.html">Каталог продукции</a>
+            </li>
+            <li class="site-list__item">
+              <a class="site-list__item-link site-list__item-link--color-black">Подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
 
     <main class="main-form">
       <h2 class="main-form__program-select">Подбор программы</h2>
-      <p class="main-form__resume">Заполните анкету и мы подберем  программу питания для вашего кота</p>
+      <p class="main-form__resume">Заполните анкету и мы подберем <br> программу питания для вашего кота</p>
       <form class="main-form__search users-data" action="https://echo.htmlacademy.ru" method="get">
         <div class="users-data__wrapper">
         <fieldset class="users-data__personal">
@@ -44,45 +44,58 @@
           <input class="users-data__age" type="number" name="Возраст животного"id="cat-age" placeholder="7"  min="1" max="30" step="1">
         </fieldset>
         <fieldset class="users-data__goals">
-          <input class="users-data__weight-loss" type="radio" name="Похудение" id="weight-loss" checked>
-          <label class="users-data__label users-data__label--radio" for="weight-loss">Похудение</label>
-          <input class="users-data__mass" type="radio" name="Набор массы" id="mass">
-          <label class="users-data__label users-data__label--radio"  for="mass">Набор массы</label>
-          <input class="users-data__idk" type="radio" name="Я не знаю" id="idk">
-          <label class="users-data__label users-data__label--radio"  for="idk">Не знаю (нужен ваш совет)</label>
+          <label class="users-data__label users-data__label--radio" for="weight-loss">
+            <input class="users-data__weight-loss" type="radio" name="Похудение" id="weight-loss" checked>Похудение
+          </label>
+          <label class="users-data__label users-data__label--radio"  for="mass">
+            <input class="users-data__mass" type="radio" name="Набор массы" id="mass">Набор массы
+          </label>
+          <label class="users-data__label users-data__label--radio"  for="idk">
+            <input class="users-data__idk" type="radio" name="Я не знаю" id="idk">Не знаю (нужен ваш совет)
+          </label>
         </fieldset>
         </div>
         <fieldset class="users-data__contacts">
           <legend class="users-data__legend">Контактые данные (владельца кота)</legend>
           <label class="users-data__label"  for="email-address">E-mail:<sup>*</sup></label>
-          <input class="users-data__e-mail" type="E-mail" name="Электронный адрес" placeholder="kuklachev@gmail.com" id="email-address" required>
+          <input class="users-data__e-mail" type="E-mail" name="Электронный адрес" placeholder="KUKLACHEV@GMAIL.COM" id="email-address" required>
           <label class="users-data__label"  for="phone-number">Телефон:<sup>*</sup></label>
           <input class="users-data__phone" type="tel" name="Номер телефона" placeholder="8 (960) 800-60-90" id="phone-number" required>
         </fieldset>
         <fieldset class="users-data__comments">
           <legend class="users-data__legend">Комментарий</legend>
-          <textarea class="users-data__words" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+          <textarea class="users-data__words" rows="5" placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"></textarea>
         </fieldset>
         <fieldset class="users-data__more">
-          <legend class="users-data__legend">Дополнительно</legend>
-          <input type="checkbox" name="" id="sugar" checked>
-          <label class="users-data__label" for="sugar">Сахарозаминитель</label>
-          <input type="checkbox" name="" id="water">
-          <label class="users-data__label" for="water">Питьевая вода</label>
-          <input type="checkbox" name="" id="milk">
-          <label class="users-data__label" for="milk">Молоко</label>
-          <input type="checkbox" name="" id="vitamins">
-          <label class="users-data__label" for="vitamins">Витамины</label>
+            <legend class="users-data__legend">Дополнительно</legend>
+            <div class="users-data__wrapper">
+            <label class="users-data__label" for="sugar">
+              <input  class="users-data__checkbox" type="checkbox" name="" id="sugar" checked>Сахарозаминитель
+            </label>
+            <label class="users-data__label" for="water">
+                <input class="users-data__checkbox" type="checkbox" name="" id="water">Питьевая вода
+            </label>
+           </div>
+           <div class="users-data__wrapper">
+            <label class="users-data__label" for="milk">
+              <input class="users-data__checkbox" type="checkbox" name="" id="milk">Молоко
+            </label>
+            <label class="users-data__label" for="vitamins">
+              <input class="users-data__checkbox" type="checkbox" name="" id="vitamins">Витамины
+            </label>
+          </div>
         </fieldset>
-        <input class="users-data__button-to-sbm" type="submit" name="Отправка формы" value="Отправить заявку">
+        <div class="users-data__position">
+          <input class="users-data__button-to-sbm" type="submit" name="Отправка формы" value="ОТПРАВИТЬ ЗАЯВКУ">
+          <span class="main-form__required"><sup>*</sup> - Обязательные поля</span>
+        </div>
       </form>
-      <span class="main-form__required"><sup>*</sup> - Обязательные поля</span>
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper cooperation">
-        <p class="cooperation__welcome-words">Приглашаем  к сотрудничеству  дилеров!</p>
-        <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8  Санкт-Петербург</p>
+        <p class="cooperation__welcome-words">Приглашаем <br> к сотрудничеству <br> дилеров!</p>
+        <p class="cooperation__address">ул. Большая <br> Конюшенная, д. 19/8 <br> Санкт-Петербург</p>
       </div>
       <img class="page-footer__map" src="http://placehold.it/150x100" width="" height="" alt="Как нас найти">
       <div class="page-footer__social">

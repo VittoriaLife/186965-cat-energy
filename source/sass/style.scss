@@ -3,12 +3,6 @@ body {
   margin: 0;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
-
-  @media (min-width: 1300px) {
-    background-image: url("/img/index-background-desktop@1x.jpg");
-    background-repeat: no-repeat;
-    background-position: 100% 0%;
-  }
 }
 
 @import "mixin.scss";
@@ -17,6 +11,7 @@ body {
 @import "blocks/index/page-header/page-header.scss";
 @import "blocks/index/page-header/main-navigation.scss";
 @import "blocks/index/page-header/site-list.scss";
+@import "blocks/index/page-main/photo-wrapper.scss";
 @import "blocks/index/page-main/show-card.scss";
 @import "blocks/index/page-main/programs.scss";
 @import "blocks/index/page-main/program.scss";

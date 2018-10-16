@@ -1,5 +1,9 @@
-.working-process__header {
+.working-process {
   display: flex;
+  flex-direction: column;
+}
+
+.working-process__header {
   margin: 0;
   font-size: 36px;
   line-height: 60px;

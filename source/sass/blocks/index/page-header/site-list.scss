@@ -41,7 +41,27 @@
     font-size: 18px;
     line-height: 25px;
     font-weight: 400;
+
+    &:hover {
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    &:focus {
+      color: rgba(255, 255, 255, 0.3);
+    }
   }
+
+.site-list__item-link--inner {
+  color: #111111;
+
+  &:hover {
+    color: rgba(17, 17, 17, 0.6);
+  }
+
+  &:focus {
+    color: rgba(17, 17, 17, 0.3);
+  }
+}
 
   @media (min-width: 1300px) {
     font-size: 20px;
@@ -59,13 +79,21 @@
     }
   }
 
-
-.site-list__item-link--color-black {
+.site-list__item-link--inner {
   color: #111111;
+
+  &:hover {
+    color: rgba(17, 17, 17, 0.6);
+  }
+
+  &:focus {
+    color: rgba(17, 17, 17, 0.3);
+  }
 }
 
 .site-list__item--current {
   border-bottom: 2px solid $color-light-green;
+  cursor: pointer;
 
 
   @media (min-width: 768px) {

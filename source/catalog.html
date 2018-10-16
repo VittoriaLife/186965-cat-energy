@@ -17,13 +17,13 @@
           </button>
           <ul class="main-navigation__list site-list">
             <li class="site-list__item">
-              <a class="site-list__item-link site-list__item-link--color-black" href="index.html">Главная</a>
+              <a class="site-list__item-link site-list__item-link--inner" href="index.html">Главная</a>
             </li>
             <li class="site-list__item site-list__item--current">
-              <a class="site-list__item-link site-list__item-link--color-black">Каталог продукции</a>
+              <a class="site-list__item-link site-list__item-link--inner">Каталог продукции</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__item-link site-list__item-link--color-black" href="form.html">Подбор программы</a>
+              <a class="site-list__item-link site-list__item-link--inner" href="form.html">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -33,7 +33,7 @@
 
     <main class="main-catalog">
       <h1 class="main-catalog__list">Каталог продукции</h1>
-
+      <div class="main-catalog__wrapper">
       <article class="main-catalog__item product">
           <img class="product__image" src="http://placehold.it/150x100" width="" height="" alt="">
           <div class="product__body">
@@ -77,8 +77,7 @@
       </div>
         <button class="product__order-button">Заказать</button>
       </article>
-      </div>
-
+      
       <article class="main-catalog__item product">
           <img class="product__image" src="http://placehold.it/150x100" width="" height="" alt="">
           <div class="product__body">
@@ -195,12 +194,15 @@
         <p class="goods__tastes">На самом деле вкусов гораздо больше!</p>
         <button class="goods__to-show">Показать все</button>
       </section>
-      </div>
-      </div>
-
+    </div>
+       
+    
       <div class="main-catalog__another-goods extra-goods">
         <h2 class="extra-goods__title">Дополнительные товары</h2>
+        <div class="extra-goods__container">
+        <div class="extra-goods__wrapper">
         <article class="extra-goods__item card-product">
+          <div class="card-product__inner">
           <h2 class="card-product__name">Сахарозаменитель</h2>
           <table class="card-product__table">
             <tr>
@@ -208,10 +210,12 @@
               <td> 100р. </td>
             </tr>
           </table>
+        </div>
           <button  class="card-product__button-to-order" type="button">Заказать</button>
         </article>
 
       <article class="extra-goods__item card-product">
+        <div class="card-product__inner">
         <h2 class="card-product__name">Питьевая вода</h2>
         <table class="card-product__table">
           <tr>
@@ -219,10 +223,12 @@
             <td>50 р.</td>
           </tr>
         </table>
+        </div>
         <button class="card-product__button-to-order" type="button">Заказать</button>
       </article>
 
       <article class="extra-goods__item card-product">
+          <div class="card-product__inner">
         <h2 class="card-product__name">Молоко</h2>
         <table class="card-product__table">
           <tr>
@@ -230,10 +236,12 @@
             <td>100 р.</td>
           </tr>
         </table>
+        </div>
         <button  class="card-product__button-to-order" type="button">Заказать</button>
       </article>
 
       <article class="extra-goods__item card-product">
+          <div class="card-product__inner">
         <h2 class="card-product__name">Витамины</h2>
         <table class="card-product__table">
           <tr>
@@ -241,13 +249,17 @@
             <td>300 р.</td>
           </tr>
         </table>
+        </div>
         <button class="card-product__button-to-order" type="button">Заказать</button>
       </article>
       </div>
 
       <section class="main-catalog__present cat-house">
-        <p class="cat-house__rules">Закажите всё и получите чехол для кота в подарок!</p>
-      </section>
+          <img class="cat-house__present-picture" src="http://placehold.it/150x100" width="" height="" alt="Картинка подарка">
+          <p class="cat-house__rules">Закажите всё и получите чехол для кота в подарок!</p>
+        </section>
+        </div>
+      
     </main>
 
     <footer class="page-footer">

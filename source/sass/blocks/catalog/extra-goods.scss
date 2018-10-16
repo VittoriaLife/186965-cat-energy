@@ -16,3 +16,9 @@
     font-weight: 400;
   }
 }
+
+.extra-goods__content {
+  @media (min-width: 1300px) {
+    display: flex;
+  }
+}

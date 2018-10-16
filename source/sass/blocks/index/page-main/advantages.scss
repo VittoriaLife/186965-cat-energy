@@ -5,10 +5,7 @@
   color: #444444;
 }
 
-
 .advantages {
-  display: flex;
-  flex-direction: column;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -26,6 +23,12 @@
   }
 }
 
+.advantages__wrapper {
+  @media (min-width: 768px) {
+    display: flex;
+  }
+}
+
 .advantages__item {
   display: flex;
 }
@@ -40,19 +43,12 @@
   color: #444444;
 }
 
-  .advantages__wrapper {
-    display: flex;
-  }
-
-  .advantages__item {
-    flex-direction: column;
-  }
-
-  .advantages__number {
+  
+.advantages__number {
     position: absolute;
     z-index: -10;
     visibility: visible;
     font-size: 281px;
     line-height: 281px;
     color: #f2f2f2;
-  }
+}

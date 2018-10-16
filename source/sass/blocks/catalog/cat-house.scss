@@ -1,6 +1,10 @@
 .cat-house {
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
+  
+  @media (min-width: 768px) {
+    display: flex;
+  }
 }
 
 .cat-house__rules {

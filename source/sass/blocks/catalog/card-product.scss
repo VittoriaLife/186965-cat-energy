@@ -1,3 +1,22 @@
+.card-product {
+  @media (min-width: 1300px) {
+    display: flex;
+  }
+}
+
+.extra-goods__container {
+  @media (min-width: 1300px) {
+    display: flex;
+  }
+}
+
+.card-product__inner {
+  @media (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
 .card-product__name {
   font-size: 16px;
   line-height: 16px;
@@ -18,4 +37,8 @@
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+
+  @media (min-width: 1300px) {
+    padding: 10px 50px;
+  }
 }

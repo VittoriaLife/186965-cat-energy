@@ -1,10 +1,12 @@
 .clients {
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 37px;
   background-color: #f2f2f2;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     background-color: #ffffff;
     padding: 0 30px;
   }
@@ -19,14 +21,22 @@
 .clients__description {
   margin: 0;
   padding-top: 20px;
+  margin-bottom: 7px;
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
   color: #111111;
 
-  @media (min-width: 768px)  {
+  @media (min-width: $tablet-width)  {
     font-size: 60px;
     line-height: 60px;
+    padding-top: 10px;
+  }
+}
+
+.clients__box {
+  @media(min-width: $tablet-width) {
+    margin-top: 39px;
   }
 }
 
@@ -34,7 +44,7 @@
   display: flex;
   flex-direction: column;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     flex-direction: row;
   }
 
@@ -46,16 +56,19 @@
 .clients__inner{
   display: flex;
   justify-content: space-around;
+  margin-bottom: 6px;
 }
 
 .clients__story {
   width: 220px;
+  margin-bottom: 41px;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     width: 565px;
+    margin-bottom: 70px;
     font-size: 16px;
     line-height: 24px;
   }
@@ -85,6 +98,12 @@
   }
 }
 
+.clients__switcher--image-before {
+  margin-top: 18px;
+  margin-left: -19px;
+}
+
+
 .clients__switcher--image-after {
   display: none;
 }
@@ -97,4 +116,14 @@
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  margin-top: 33px;
+  margin-left: 22px;
+}
+
+.clients__switcher--before {
+  margin-right: 76px;
+}
+
+.clients__switcher--after {
+  margin-right: 17px;
 }

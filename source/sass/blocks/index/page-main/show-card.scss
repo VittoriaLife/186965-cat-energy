@@ -1,6 +1,7 @@
 .show-card {
   display: flex;
   flex-direction: column;
+  position: relative;
   margin: 0;
   padding: 0 20px;
   text-align: center;
@@ -10,8 +11,9 @@
   @media (min-width: $tablet-width) {
     position: relative;
     margin: 0;
-    margin-left: 90px;
-    margin-top: 45px;
+    margin-left: 87px;
+    margin-top: 54px;
+    padding: 0 30px;
     text-align: justify;
     background-image: none;
     background-color: #ffffff;
@@ -22,10 +24,15 @@
   }
 }
 
+.show-card__intro {
+  position: relative;
+  z-index: 1;
+}
+
 .show-card__name {
   margin: 0;
-  margin-top: 25px;
-  margin-bottom: 20px;
+  margin-top: 26px;
+  margin-bottom: 26px;
   font-size: 36px;
   font-weight: 400;
   line-height: 36px;
@@ -50,7 +57,7 @@
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    margin-top: 35px;
+    margin-top: 42px;
     margin-bottom: 45px;
     font-size: 20px;
     line-height: 20px;
@@ -60,20 +67,22 @@
 }
 
 .show-card__picture {
-  margin-top: 20px;
+  margin-top: 2px;
 
   @media(min-width: $tablet-width) {
-    position: relative;
-    bottom: 55px;
-    right: 30px;
+    width: 709px;
+    height: 609px;
 
   }
 }
 
 .show-card__wrapper {
-  width: 200px;
-  padding: 10px 70px;
-  background-color: $color-light-green;
+  position: absolute;
+  top: 438px;
+  width: 142px;
+  padding: 8px 70px;
+  background-color: $light-green-color;
+  background-color: $light-green-color;
 
   &:hover {
     background-color: #5eaa2f;
@@ -85,14 +94,25 @@
 
   @media (min-width: $tablet-width) {
     position: absolute;
-    top: 210px;
-    width: 245px;
-    padding: 18px 25px;
+    top: 228px;
+    width: 197px;
+    padding: 15px 25px;
     text-align: center;
   }
 }
 
+.show-card__image-wrapper {
+  @media(min-width: $tablet-width) {
+    position: absolute;
+    top: 201px;
+    right: 29px;
+  }
+}
+
+
 .show-card__button-program {
+  font-size: 14px;
+  line-height: 18px;
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
@@ -100,7 +120,9 @@
   &:focus {
     color: rgba(255, 255, 255, 0.3);
   }
+
+  @media(min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
-
-
-

@@ -5,16 +5,15 @@
 
   @media(min-width: $tablet-width) {
     padding: 0 30px;
+    margin-top: 182px;
+  }
+
+  @media(min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
   }
 }
 
 .programs__header {
   @include visually-hidden;
-}
-
-@media (min-width: 1300px) {
-  .programs {
-    display: flex;
-    flex-direction: row;
-  }
 }

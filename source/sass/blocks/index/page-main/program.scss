@@ -2,12 +2,12 @@
   display: flex;
   flex-direction: column;
   width: 280px;
-  margin-top: 25px;
+  margin-top: 19px;
   background-color: #f2f2f2;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     width: 708px;
-    margin-top: 20px;
+    margin-top: 23px;
   }
 
   @media (min-width: 1300px) {
@@ -19,14 +19,26 @@
 
 .program__wrapper {
   display: flex;
-  widows: 280px;
+  width: 280px;
   margin-bottom: 20px;
+
+  @media(min-width: $tablet-width) {
+    width: 708px;
+    margin-bottom: 25px;
+    position: relative;
+  }
+}
+
+.program__wrapper--pro {
+  @media(min-width: $tablet-width) {
+    position: relative;
+  }
 }
 
 .program__name {
   margin: 0;
-  padding-top: 40px;
-  margin-left: 20px;
+  padding-top: 29px;
+  margin-left: 18px;
   font-size: 24px;
   line-height: 37px;
   font-weight: 400;
@@ -34,27 +46,43 @@
   text-transform: uppercase;
 
   @media(min-width: $tablet-width) {
-    padding-left: 55px;
-    padding-top: 80px;
+    padding-left: 35px;
+    padding-top: 75px;
     font-size: 36px;
     line-height: 37px;
-    
+
   }
 }
 
 .program__description {
-  width: 194px;
+  position: relative;
   margin: 0;
   padding-left: 20px;
+  padding-right: 66px;
   font-size: 14px;
   line-height: 18px;
-  color: #444444; 
+  color: #444444;
+
+  &::after {
+    content: "";
+      position: absolute;
+      width: 240px;
+      left: 20px;
+      top: 112px;
+      height: 2px;
+      background: #eaeaea;
+    }
 
   @media(min-width: $tablet-width) {
     width: 296px;
-    margin-bottom: 60px;
+    margin-bottom: 58px;
+    padding-left: 53px;
     font-size: 16px;
     line-height: 24px;
+
+    &::after {
+      display: none;
+    }
   }
 }
 
@@ -71,19 +99,41 @@
   }
 
   @media(min-width: $tablet-width) {
+    padding-left: 53px;
     font-size: 20px;
     line-height: 20px;
   }
 }
 
 .program__image {
-  @media (min-width: 768px) {
+  padding-left: 6px;
+
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    bottom: 19px;
+    left: 22px;
     order: 1;
+    width: 140px;
+    height: 194px;
   }
 }
 
+.program__image--pro {
+  padding-top: 9px;
+  margin-left: -16px;
+
+  @media(min-width: $tablet-width) {
+    width: 268px;
+    position: absolute;
+    bottom: 2px;
+    left: -26px;
+    order: 1;
+  }
+
+}
 .program__link {
-  margin-top: 20px;
+  margin-top: 40px;
   margin-bottom: 20px;
 
   @media(min-width: $tablet-width) {
@@ -91,3 +141,5 @@
     margin-bottom: 60px;
   }
 }
+
+

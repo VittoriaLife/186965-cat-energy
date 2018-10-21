@@ -8,14 +8,18 @@
   </head>
   <body>
 
-    <div class="photo-wrapper">
     <header class="page-header">
-        <img class="page-header__main-logo" src="http://placehold.it/150x100" width="" height="" alt="Логотип cat-energy">
-        <nav class="main-navigation main-navigation--opened main-nav--nojs">
-          <div class="main-navigation__wrapper">
+      <div class="container">
+      <picture>
+        <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img class="page-header__main-logo" src="img/logo-mobile.svg" width="173px" height="58px" alt="Логотип cat-energy">
+      </picture>
+        <nav class="main-navigation main-navigation--closed">
           <button class="main-navigation__toggle" type="button">
-            <span class="main-navigation__hidden">Открыть меню</span>
+             <span class="main-navigation__visually-hidden">Открыть меню</span>
           </button>
+          <div class="main-navigation__wrapper">
           <ul class="main-navigation__list site-list">
             <li class="site-list__item site-list__item--current">
               <a class="site-list__item-link">Главная</a>
@@ -29,76 +33,91 @@
           </ul>
         </div>
       </nav>
+    </div>
     </header>
 
     <main class="page-main">
+      <div class="page-main__box">
       <section class="show-card">
-        <h1 class="show-card__name">Функциональное <br> питание для котов</h1>
-        <h2 class="show-card__slogan">Занялся собой? Займись котом!</h2>
-        <picture> 
+        <div class="show-card__intro">
+          <h1 class="show-card__name">Функциональное <br> питание для котов</h1>
+          <h2 class="show-card__slogan">Занялся собой? Займись котом!</h2>
+          <div class="show-card__wrapper">
+            <a href="form.html" class="show-card__button-program">Подобрать программу</a>
+          </div>
+       </div>
+       <div class="show-card__image-wrapper">
+        <picture>
           <source media="(min-width: 1300px)" srcset="\img\index-can-desktop@1x.png" width="552px">
-          <source media="(min-width: 768px)" srcset="\img\index-can-tablet@1x.jpg" width="709px">
-          <img class="show-card__picture" src="\img\index-can-mobile@1x.png" alt="Картинка упаковки продукта">
+          <source media="(min-width: 768px)" srcset="\img\index-can-tablet@1x.jpg" >
+          <img class="show-card__picture" src="\img\index-can-mobile@1x.png" width="280px" alt="Картинка упаковки продукта">
         </picture>
-        <div class="show-card__wrapper">
-          <a href="form.html" class="show-card__button-program">Подобрать программу</a>
-        </div>
+      </div>
       </section>
+      </div>
 
-      <section class="programs">
+       <section class="programs">
         <h1 class="programs__header">Список продукции</h1>
         <div class="programs__item program">
           <div class="program__wrapper">
-            <img class="program__image program__image--thin" src="http://placehold.it/150x100" width="" height="" alt="Картинка похудение">
+            <div class="icon-wrapper">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/icon-cat-slim.svg">
+              <img class="program__image" src="img/icon-cat-slim.svg" width="35" height="49" alt="Картинка похудение">
+            </picture>
+            </div>
             <h3 class="program__name">Похудение</h3>
           </div>
-          <p class="program__description">Ваш кот весит больше собаки и  почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+          <p class="program__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <div class="program__link">
             <a  class="program__catalog" href="catalog.html">Каталог Slim</a>
           </div>
         </div>
         <div class="programs__item program">
           <div class="program__wrapper">
-            <img class="program__image program__image--fat" src="http://placehold.it/60x60" width="" height="" alt="Картинка набор массы">
+            <div class="icon-wrapper--pro">
+              <picture>
+                  <img class="program__image program__image--pro" src="img/icon-cat-pro.svg" width="67" height="28" alt="Картинка набор массы">
+              </picture>
+            </div>
             <h3 class="program__name">Набор массы</h3>
           </div>
-          <p class="program__description">Заработать авторитет среди дворовых котов <br> и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые <br> мышцы!</p>
+          <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые <br> мышцы!</p>
           <div class="program__link">
             <a class="program__catalog" href="catalog.html">Каталог pro</a>
           </div>
         </div>
       </section>
 
+
       <section class="working-process">
         <h2 class="working-process__header">Как это работает</h2>
         <ul class="working-process__list advantages">
           <div class="advantages__wrapper">
           <li class="advantages__item ">
-            <!-- <span class="advantages__number advantages__number--one">1</span> -->
-            <img  class="advantages__image" src="\img\advantage-leaf@1x.png" width="60" alt="">
+              <source media="(min-width: 768px)" srcset="\img\advantage-leaf@1x.png">
+              <img  class="advantages__image" src="\img\advantage-leaf@1x.png" width="60" alt="">
+            </picture>
             <p class="advantages__description">Функциональное питание содержит только полезные питательные вещества.</p>
           </li>
           <li class="advantages__item">
-            <!-- <span class="advantages__number advantages__number--two">2</span> -->
             <img class="advantages__image" src="\img\advantage-powder@1x.png" width="60" alt="">
             <p class="advantages__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
           </li>
         </div>
         <div class="advantages__wrapper">
           <li class="advantages__item">
-            <!-- <span class="advantages__number advantages__number--three">3</span> -->
             <img class="advantages__image" src="\img\advantage-dining@1x.png" width="60" alt="">
             <p class="advantages__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
           <li class="advantages__item">
-            <!-- <span class="advantages__number advantages__number--four">4</span> -->
             <img class="advantages__image" src="\img\advantage-clock@1x.png" width="60" alt="">
             <p class='advantages__description'>Уже через месяц наслаждайтесь изменениями к лучшему <br> вашего питомца!</p>
           </li>
         </div>
         </ul>
 
-        <!-- <div class="working-process__numbers">
+         <!-- <div class="working-process__numbers">
           <div class="working-process__one">
             <span class="working-process__one">1</span>
             <span class="working-process__two">2</span>
@@ -106,23 +125,23 @@
           <div class="working-process__two">
               <span class="advantages__three">1</span>
               <span class="advantages__four">2</span>
-            </div> -->
+            </div>
 
-        </div>
+        </div> -->
       </section>
 
-      <section class="clients">
+       <section class="clients">
         <h2 class="clients__description ">Живой пример</h2>
-        <div class="clients__background">
+        <div class="clients__box">
           <p class="clients__story">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
           <div class="clients__wrapper">
             <div class="clients__inner">
             <div class="clients__result weight">
-              <span class="weight__loss">5 кг</span>
+              <span class="weight__loss">5 КГ</span>
               <p class="weight__caption">снижение  веса</p>
             </div>
           <div class="clients__result days">
-            <span class="days__count">60 дней</span>
+            <span class="days__count">60 ДНЕЙ</span>
             <p class="days__caption">затрачено времени</p>
           </div>
           </div>
@@ -150,8 +169,6 @@
         </div>
       </section>
     </main>
-    </div>
-   
 
     <footer class="page-footer">
       <div class="page-footer__wrapper page-footer__wrapper--index-page cooperation">

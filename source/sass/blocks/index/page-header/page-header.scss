@@ -1,18 +1,24 @@
-.page-header {
-  display: flex;
-  flex-direction: column;
-  padding-left: 20px;
-  padding-right: 20px;
-  
-  @media (min-width: $tablet-width) {
-    padding-left: 30px;
-    padding-right: 30px;
+.page-header__main-logo {
+  padding-top: 5px;
+
+  @media(min-width: $tablet-width) {
+    padding-top: 23px;
   }
 }
 
-.page-header__main-logo {
-  @media(min-width: $mobile-width) {
+.page-header::after {
+  @media(min-width: $desktop-width) {
+    content: "";
+    display: block;
     position: absolute;
-    z-index: 11;
+    z-index: -1;
+    width: 720px;
+    min-height: 696px;
+    top: 0;
+    right: 0;
+    background-image: url("/img/index-background-desktop@1x.jpg");
+    background-color: $light-green-color;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }

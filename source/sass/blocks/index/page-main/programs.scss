@@ -5,12 +5,14 @@
 
   @media(min-width: $tablet-width) {
     padding: 0 30px;
-    margin-top: 182px;
+    margin-top: 141px;
   }
 
   @media(min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
+    margin: 0;
+    padding: 0 40px;
   }
 }
 

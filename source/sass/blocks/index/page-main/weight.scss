@@ -1,3 +1,9 @@
+.weight {
+  @media(min-width: $desktop-width) {
+    margin-left: 60px;
+  }
+}
+
 .weight__loss {
   padding-left: 12px;
   margin-left: 10px;
@@ -6,9 +12,17 @@
   color: #111111;
 
   @media(min-width: $tablet-width) {
+    padding-left: 46px;
     font-size: 30px;
     line-height: 37px;
   }
+
+  @media(min-width: $desktop-width) {
+    margin: 0;
+    margin-left: 34px;
+    padding: 0;
+  
+    }
 }
 
 .weight__caption {
@@ -20,4 +34,18 @@
   font-size: 12px;
   line-height: 12px;
   color: #444444;
+
+  @media(min-width: $tablet-width) {
+    width: 115px;
+    margin-left: 21px;
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  @media(min-width: $desktop-width) {
+    margin: 0;
+    margin-top: 10px;
+  
+    }
 }

@@ -1,11 +1,26 @@
 .social-list {
+  display: flex;
+  width: 279px;
   margin: 0;
+  margin-top: 30px;
   padding: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: center;
   list-style: none;
-}
+  border-top: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
 
-.social-list__item {
-  text-decoration: none;
+  @media(min-width: $tablet-width) {
+    margin: 0;
+    border: none;
+  }
+
+  @media(min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-around;
+  }
+  
 }
 
 .social-list__link {

@@ -2,27 +2,45 @@
   display: flex;
   justify-content: space-around;
 
-  @media (min-width: 1300px) {
-    width: 570px;
-    height: 201px;;
+  @media(min-width: $tablet-width) {
+    justify-content: space-between;
+    padding-bottom: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 533px;
+    height: 158px;
+    position: absolute;
+    top: 94px;
+    left: 37px;
     background-color: #ffffff;
   }
 }
 
 .cooperation__welcome-words {
   width: 130px;
+  margin: 0;
+  margin-top: 15px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
   color: #111111;
   text-transform: uppercase;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
+    width: 165px;
+    padding-left: 50px;
     font-size: 20px;
     line-height: 25px;
+
+    &--form {
+      margin-top: 66px;
+    }
   }
 
-  @media (min-width: 1300px) {
+  @media (min-width: $desktop-width) {
+    padding-left: 57px;
+    margin-top: 66px;
     font-size: 20px;
     line-height: 25px;
   }
@@ -30,18 +48,27 @@
 
 .cooperation__address {
   width: 135px;
+  margin: 0;
+  margin-bottom: 26px;
+  margin-top: 15px;
   font-size: 14px;
   line-height: 20px;
   color: #111111;
   font-weight: 400;
 
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
+    padding-right: 52px;
     font-size: 16px;
-    line-height: 20px;
+    text-align: end;
+
+    &--form {
+      margin-top: 66px;
+    }
   }
 
-  @media (min-width: 1300px) {
+  @media (min-width: $desktop-width) {
+    margin-top: 63px;
     font-size: 16px;
-    line-height: 20px;
+    text-align: start;
   }
 }

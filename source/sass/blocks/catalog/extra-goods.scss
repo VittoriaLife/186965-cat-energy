@@ -1,21 +1,36 @@
-.extra-goods__container {
-  @media (min-width: 1300px) {
-    display: flex;
-  }
+.extra-goods {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+
 }
+
 .extra-goods__title {
+  position: relative;
+  margin-top: 28px;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   color: #111111;
 
-  @media (min-width: 768px) {
+  &::after {
+    content: "";
+    width: 53px;
+    height: 4px;
+    position: absolute;
+    background-color: $light-green-color;
+    top: 14px;
+    left: 246px;
+
+  }
+
+  @media (min-width: $tablet-width) {
     font-size: 36px;
     line-height: 36px;
     font-weight: 400;
   }
 
-  @media (min-width: 1300px) {
+  @media (min-width: $desktop-width) {
     font-size: 36px;
     line-height: 36px;
     font-weight: 400;
@@ -23,7 +38,7 @@
 }
 
 .extra-goods__content {
-  @media (min-width: 1300px) {
+  @media (min-width: $desktop-width) {
     display: flex;
   }
 }

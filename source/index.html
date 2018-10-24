@@ -48,7 +48,7 @@
        </div>
        <div class="show-card__image-wrapper">
         <picture>
-          <source media="(min-width: 1300px)" srcset="\img\index-can-desktop@1x.png" width="552px">
+          <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png">
           <source media="(min-width: 768px)" srcset="\img\index-can-tablet@1x.jpg" >
           <img class="show-card__picture" src="\img\index-can-mobile@1x.png" width="280px" alt="Картинка упаковки продукта">
         </picture>
@@ -56,12 +56,13 @@
       </section>
       </div>
 
-       <section class="programs">
+        <section class="programs">
         <h1 class="programs__header">Список продукции</h1>
         <div class="programs__item program">
           <div class="program__wrapper">
             <div class="icon-wrapper">
             <picture>
+              <source media="(min-width: 1300px)" srcset="img/icon-cat-slim.svg">
               <source media="(min-width: 768px)" srcset="img/icon-cat-slim.svg">
               <img class="program__image" src="img/icon-cat-slim.svg" width="35" height="49" alt="Картинка похудение">
             </picture>
@@ -73,17 +74,19 @@
             <a  class="program__catalog" href="catalog.html">Каталог Slim</a>
           </div>
         </div>
-        <div class="programs__item program">
+        <div class="programs__item program--pro">
           <div class="program__wrapper">
             <div class="icon-wrapper--pro">
               <picture>
-                  <img class="program__image program__image--pro" src="img/icon-cat-pro.svg" width="67" height="28" alt="Картинка набор массы">
+                <source media="(min-width: 1300px)" srcset="img/icon-cat-pro.svg">
+                <source media="(min-width: 768px)" srcset="img/icon-cat-pro.svg">
+                <img class="program__image program__image--pro" src="img/icon-cat-pro.svg" width="67" height="28" alt="Картинка набор массы">
               </picture>
             </div>
-            <h3 class="program__name">Набор массы</h3>
+            <h3 class="program__name program__name--pro">Набор массы</h3>
           </div>
-          <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые <br> мышцы!</p>
-          <div class="program__link">
+          <p class="program__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+          <div class="program__link program__link--pro">
             <a class="program__catalog" href="catalog.html">Каталог pro</a>
           </div>
         </div>
@@ -101,13 +104,19 @@
             <p class="advantages__description">Функциональное питание содержит только полезные питательные вещества.</p>
           </li>
           <li class="advantages__item">
+            <picture>
+              <source media="(min-width: 768px)" srcset="\img\advantage-powder@1x.png">
             <img class="advantages__image" src="\img\advantage-powder@1x.png" width="60" alt="">
+           </picture>
             <p class="advantages__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
           </li>
         </div>
         <div class="advantages__wrapper">
           <li class="advantages__item">
-            <img class="advantages__image" src="\img\advantage-dining@1x.png" width="60" alt="">
+            <picture>
+              <source media="(min-width: 768px)" srcset="\img\advantage-dining@1x.png">
+              <img class="advantages__image" src="\img\advantage-dining@1x.png" width="60" alt="">
+            </picture>
             <p class="advantages__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
           <li class="advantages__item">
@@ -128,11 +137,12 @@
             </div>
 
         </div> -->
-      </section>
+       </section>
 
        <section class="clients">
-        <h2 class="clients__description ">Живой пример</h2>
+        <h2 class="clients__heading">Живой пример</h2>
         <div class="clients__box">
+          <div class="clinets__content">
           <p class="clients__story">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
           <div class="clients__wrapper">
             <div class="clients__inner">
@@ -145,64 +155,80 @@
             <p class="days__caption">затрачено времени</p>
           </div>
           </div>
-          <p class="clients__money">Затраты на питание: 15 000 руб.</p>
+          <div class="clients__wrap">
+            <p class="clients__expenses">Затраты на питание:</p>
+            <p class="clients__money">15 000 РУБ. </p>
           </div>
+          </div>
+          </div> 
 
-        <div class="clients__switcher">
-          <div class="clients__image clients__image--wrap">
+        <div class="results">
+        <div class="results__container switcher">
+          <div class="switcher__image-wrap switcher__image-wrap--before">
             <picture>
               <source media="(min-width: 1300px)" srcset="\img\before-desktop@1x.png">
               <source media="(min-width: 768px)" srcset="\img\before-tablet@1x.png">
-              <img  class="clients__switcher clients__switcher--image-before" src="\img\before-mobile@1x.png" width="" height="" alt="Было">
+              <img  class="switcher__image switcher__image--before" src="\img\before-mobile@1x.png" width="" height="" alt="Было">
             </picture>
+            </div>
+            <div class="switcher__image-wrap switcher__image-wrap--after">
             <picture>
               <source media="(min-width: 1300px)" srcset="\img\after-desktop@1x.png">
               <source media="(min-width: 768px)" srcset="\img\after-tablet@1x.png">
-              <img class="clients__switcher clients__switcher--image-after" src="\img\after-mobile@1x.png" width="" height="" alt="Стало">
+              <img class="switcher__image switcher__image--after" src="\img\after-mobile@1x.png" width="" height="" alt="Стало">
             </picture>
+            </div>
           </div>
-          <div class="clients__switcher clients__switcher--wrap">
-            <span class="clients__switcher clients__switcher--before">Было</span>
-            <span class="clients__switcher clients__switcher--after">Стало</span>
+          <div class="switcher__box">
+            <span class="switcher__words switcher__words--before">Было</span>
+            <span class="switcher__words  switcher__words--after">Стало</span>
           </div>
         </div>
         </div>
-      </section>
+      </section> 
     </main>
 
     <footer class="page-footer">
       <div class="page-footer__wrapper page-footer__wrapper--index-page cooperation">
-        <p class="cooperation__welcome-words">Приглашаем  к сотрудничеству  дилеров!</p>
+        <p class="cooperation__welcome-words">Приглашаем  <br> к сотрудничеству  дилеров!</p>
         <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8  Санкт-Петербург</p>
       </div>
-      <img class="page-footer__map" src="http://placehold.it/150x100" width="" height="" alt="Как нас найти">
+      <picture>
+        <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png">
+        <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
+        <img class="page-footer__map" src="img/bg-map-mobile@1x.png" width="320px" height="400px" alt="Как нас найти">
+      </picture>
       <div class="page-footer__social">
-        <img  class="page-footer__logo" src="http://placehold.it/150x100" width="" height="" alt="Логотип">
+        <img  class="page-footer__logo" src="img/logo-footer.svg" width="128px" height="" alt="Логотип">
         <ul class="page-footer__contacts social-list">
           <li class="social-list__item social-list__item--vk">
             <a class="social-list__link" href="#" target="_blank" rel="noopener noreferrer">
-              <span class="social-list__name-hidden">Вконтакте</span>
+              <img src="img/icon-vk-mobile.svg" width="22px" height="12px" alt="Вконтакте">
+              <span class="social-list__name-hidden">ВКонтакте</span>
           </a>
           </li>
           <li class="social-list__item social-list__item--instagram">
             <a class="social-list__link" href="#" target="_blank" rel="noopener noreferrer">
+                <img src="img/icon-insta-mobile.svg" width="16px" height="16px" alt="Инстаграм">
               <span class="social-list__name-hidden">Инстаграм</span>
             </a>
           </li>
           <li class="social-list__item social-list__item--fb">
             <a class="social-list__link" href="#" target="_blank" rel="noopener noreferrer">
+              <img src="img/icon-fb-mobile.svg" width="10px" height="19px" alt="Фейсбук">
               <span class="social-list__name-hidden">Фейсбук</span>
             </a>
           </li>
+         </ul>
       <div class="page-footer__developer made-by">
         <a class="made-by__link" href="https://htmlacademy.ru/intensive/adaptive"  target="_blank" rel="noopener noreferrer">
           <span class="made-by__name">HTML Academy</span>
         </a>
         <a href="https://htmlacademy.ru/intensive/adaptive"  target="_blank" rel="noopener noreferrer" >
-          <img src="http://placehold.it/150x100" width="" height="" alt="Логотип академии">
+          <img src="img/htmlacademy.svg" width="27px" height="34px" alt="Логотип академии">
         </a>
       </div>
       </div>
-    </footer>
+    </footer> 
   </body>
 </html>

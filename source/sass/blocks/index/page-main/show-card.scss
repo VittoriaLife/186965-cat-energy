@@ -11,8 +11,8 @@
   @media (min-width: $tablet-width) {
     position: relative;
     margin: 0;
-    margin-left: 87px;
     margin-top: 54px;
+    margin-left: 87px;
     padding: 0 30px;
     text-align: justify;
     background-image: none;
@@ -20,7 +20,8 @@
   }
 
   @media (min-width: $desktop-width) {
-   background-color: transparent;
+    margin-top: 104px;
+    background-color: transparent;
   }
 }
 
@@ -72,7 +73,11 @@
   @media(min-width: $tablet-width) {
     width: 709px;
     height: 609px;
+  }
 
+  @media(min-width: $desktop-width) {
+    width: 552px;
+    height: 499px;
   }
 }
 
@@ -99,14 +104,24 @@
     padding: 15px 25px;
     text-align: center;
   }
+
+  @media(min-width: $desktop-width) {
+    top: 233px;
+  }
 }
 
 .show-card__image-wrapper {
   @media(min-width: $tablet-width) {
     position: absolute;
     top: 201px;
-    right: 29px;
+    right: 28px;
   }
+
+  @media(min-width: $desktop-width) {
+    top: -82px;
+    right: 308px;
+  }
+
 }
 
 

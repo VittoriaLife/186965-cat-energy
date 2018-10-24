@@ -4,6 +4,11 @@
   @media(min-width: $tablet-width) {
     padding-top: 23px;
   }
+
+  @media(min-width: $desktop-width) {
+    width: 202px;
+    height: 59px;
+  }
 }
 
 .page-header::after {
@@ -12,8 +17,8 @@
     display: block;
     position: absolute;
     z-index: -1;
-    width: 720px;
-    min-height: 696px;
+    width: 702px;
+    min-height: 666px;
     top: 0;
     right: 0;
     background-image: url("/img/index-background-desktop@1x.jpg");

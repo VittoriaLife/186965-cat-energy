@@ -41,7 +41,7 @@
 .main-navigation--opened .main-navigation__toggle {
   @media(max-width: $mobile-width-only) {
     top: 8px;
-    right: -5px;
+    left: 56px;
 
     &::before,
     &::after {
@@ -73,9 +73,10 @@
 
 .main-navigation--opened .main-navigation__wrapper {
   @media(max-width: $mobile-width-only) {
-    position: absolute;
+    position: relative;
     top: 52px;
-    right: -20px;
+    right: 193px;
+    margin-bottom: 36px;
   }
 }
 
@@ -101,5 +102,11 @@
 .main-navigation--closed .main-navigation__toggle {
   @media(min-width: $tablet-width) {
     display: none;
+  }
+}
+
+.main-navigation__wrapper {
+  @media(min-width: $desktop-width) {
+    margin-right: 49px;
   }
 }

@@ -1,11 +1,19 @@
 .card-product {
-  @media (min-width: 1300px) {
+
+  &:last-child {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ededed;
+  }
+  @media (min-width: $desktop-width) {
     display: flex;
   }
 }
 
 .card-product__inner {
-  @media (min-width: 768px) {
+  border-top: 1px solid #ededed;
+  margin-top: 14px;
+
+  @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-around;
   }
@@ -25,14 +33,23 @@
   color: #444444;
 }
 
+
+.card-product__row {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+}
+
 .card-product__button-to-order {
-  padding: 10px 105px;
-  background-color: $light-green-color;
+  margin-top: 8px;
+  padding: 9px 97px;
+  background-color: #68b738;
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+  text-transform: uppercase;
 
-  @media (min-width: 1300px) {
+  @media (min-width: $desktop-width) {
     padding: 10px 50px;
   }
 }

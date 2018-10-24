@@ -1,0 +1,11 @@
+.results {
+
+    @media(min-width: $tablet-width) {
+        background-color: #eaeaea;
+    }
+
+    @media(min-width: $desktop-width) {
+        width: 610px;
+        background-color: #f2f2f2;
+    }
+}

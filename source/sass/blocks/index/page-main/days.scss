@@ -4,6 +4,18 @@
   font-size: 24px;
   line-height: 24px;
   color: #111111;
+
+  @media(min-width: $tablet-width) {
+    padding: 0;
+    margin-left: 97px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  @media(min-width: $desktop-width) {
+    margin: 0;
+  
+    }
 }
 
 .days__caption {
@@ -15,4 +27,18 @@
   font-size: 12px;
   line-height: 12px;
   color: #444444;
-}
+
+  @media(min-width: $tablet-width) {
+    width: 115px;
+    margin-left: 87px;
+    margin-top: 8px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+@media(min-width: $desktop-width) {
+  margin: 0;
+  margin-top: 10px;
+
+  }
+}  

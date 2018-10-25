@@ -1,5 +1,9 @@
 .main-catalog {
   border-top: 1px solid #ededed;
+
+  @media(min-width: $tablet-width) {
+    border: none;
+  }
 }
 //   @media(min-width: $tablet-width) {
 //     border-top: none;
@@ -10,15 +14,21 @@
   margin: 0;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 30px;
-  margin-top: 11px;
-  margin-bottom: -3px;
+  padding-bottom: 29px;
+  padding-top: 15px;
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
   color: #111111;
   border-bottom: 1px solid #ededed; 
 
+  @media(min-width: $tablet-width) {
+    font-size: 60px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 54px;
+    border: none;
+  }
 } 
 
   
@@ -43,6 +53,14 @@
 .main-catalog__wrapper {
   display: flex;
   flex-direction: column;
+  padding-bottom: 23px;
+  border-bottom: 1px solid  #ededed;
+
+  @media(min-width: $tablet-width) {
+    border: none;
+    margin: 0;
+  }
+  
 }
 
 //   @media (min-width: $tablet-width) {
@@ -59,9 +77,16 @@
 // }
 
 
-// .main-catalog__food-box {
-//   padding-bottom: 23px;
-//   border-bottom: 1px solid  #ededed;
+.main-catalog__food-box {
+  padding: 0 20px;
+
+  @media(min-width: $tablet-width ) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 30px;
+  }
+}
 
 //   @media(min-width: $tablet-width) {
 //     width: 324px;

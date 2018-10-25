@@ -3,17 +3,12 @@
   flex-direction: column;
   position: relative;
   margin: 0;
-  padding: 0 20px;
   text-align: center;
-  background-image: url("/img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
     position: relative;
-    margin: 0;
-    margin-top: 54px;
-    margin-left: 87px;
-    padding: 0 30px;
+    padding-top: 54px;
+    padding-left: 87px;
     text-align: justify;
     background-image: none;
     background-color: #ffffff;
@@ -41,6 +36,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
+    padding-bottom: 41px;
     font-size: 60px;
     line-height: 60px;
     font-weight: 400;
@@ -58,8 +54,6 @@
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
-    margin-top: 42px;
-    margin-bottom: 45px;
     font-size: 20px;
     line-height: 20px;
     font-weight: 400;
@@ -68,8 +62,6 @@
 }
 
 .show-card__picture {
-  margin-top: 2px;
-
   @media(min-width: $tablet-width) {
     width: 709px;
     height: 609px;
@@ -83,10 +75,9 @@
 
 .show-card__wrapper {
   position: absolute;
-  top: 438px;
-  width: 142px;
+  top: 440px;
+  width: 139px;
   padding: 8px 70px;
-  background-color: $light-green-color;
   background-color: $light-green-color;
 
   &:hover {
@@ -98,8 +89,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    position: absolute;
-    top: 228px;
+    position: relative;
+    top: 21px;
     width: 197px;
     padding: 15px 25px;
     text-align: center;
@@ -113,8 +104,8 @@
 .show-card__image-wrapper {
   @media(min-width: $tablet-width) {
     position: absolute;
-    top: 201px;
-    right: 28px;
+    top: 255px;
+    right: 0px;
   }
 
   @media(min-width: $desktop-width) {

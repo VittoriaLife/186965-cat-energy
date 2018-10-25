@@ -4,12 +4,17 @@
   align-items: center;
   margin-top: 39px;
   min-height: 287px;
-  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-image: url("/img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
   border-top: 1px solid #ededed;
   
-  @media (min-width: 768px) {
+  @media (min-width: $tablet-width) {
     display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+    background-image: url("/img/gift-photo-tablet@1x.jpg");
+    background-repeat: no-repeat;
   }
 }
 
@@ -23,6 +28,10 @@
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
+
+  @media(min-width: $tablet-width) {
+    text-align: left;
+  }
 }
 
 

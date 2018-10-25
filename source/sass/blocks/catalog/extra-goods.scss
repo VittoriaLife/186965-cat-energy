@@ -28,6 +28,14 @@
     font-size: 36px;
     line-height: 36px;
     font-weight: 400;
+
+    &::after {
+      width: 371px;
+      height: 2px;
+      left: 377px;
+      top: 25px;
+    }
+
   }
 
   @media (min-width: $desktop-width) {

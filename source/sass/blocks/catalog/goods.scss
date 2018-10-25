@@ -1,10 +1,9 @@
-.goods {
+ .goods {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-bottom: 24px;
-  border-bottom: 1px solid #ededed; 
 
   &::before {
     content: "";
@@ -21,14 +20,31 @@
     height: 3px;
     background-color: #d3d3d3;
     position: absolute;
-    bottom: 142px;
+    bottom: 167px;
     transform: rotate(90deg);
   }
+
+  @media(min-width: $tablet-width) {
+    width: 324px;
+    border: 1px solid #e6e6e6;
+
+  &::after {
+    width: 60px;
+    height: 2px;
+    bottom: 360px;
+  }
+
+  &::before {
+    width: 60px;
+    height: 2px;
+    }
+  }
+
 }
 
 .goods__variants {
   margin: 0;
-  margin-top: 74px;
+  padding-top: 75px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -38,7 +54,7 @@
 
 .goods__tastes {
   margin: 0;
-  margin-top: 7px;
+  padding-top: 7px;
   font-size: 12px;
   line-height: 16px;
   color: #444444;

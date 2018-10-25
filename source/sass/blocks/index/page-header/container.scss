@@ -1,7 +1,6 @@
 .container {
   display: flex;
   padding: 0 20px;
-  background-color: transparent;
 
   @media(min-width: $tablet-width) {
     padding: 0 30px;

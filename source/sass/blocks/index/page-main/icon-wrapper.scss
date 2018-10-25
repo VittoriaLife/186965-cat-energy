@@ -3,17 +3,19 @@
   height: 52px;
   background-color: $light-green-color;
   border-radius: 50%;
-  margin-left: 23px;
-  margin-top: 24px;
 
   @media(min-width: $tablet-width) {
     position: absolute;
-    top: 69px;
-    left: 425px;
+    top: 17px;
+    left: 399px;
     order: 1;
     width: 200px;
     height: 200px;
-    background-color: $light-green-color;
+
+    &--pro {
+      left: 397px;
+
+    }
   }
 
   @media(min-width: $desktop-width) {
@@ -21,35 +23,14 @@
     height: 100px;
     top: 24px;
     left: 28px;
-    
-  }
-}
 
-.icon-wrapper--pro {
-  width: 50px;
-  height: 52px;
-  background-color: #68b738;
-  border-radius: 50%;
-  margin-left: 23px;
-  margin-top: 24px;
-
-  @media(min-width: $tablet-width) {
-    position: absolute;
-    top: 66px;
-    left: 424px;
-    order: 1;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    background-color: $light-green-color;
-
-  }
-
-  @media(min-width: $desktop-width) {
     width: 100px;
     height: 100px;
     top: 22px;
     left: 31px;
+    
   }
+
+
 }
 

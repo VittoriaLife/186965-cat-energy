@@ -11,7 +11,10 @@
   }
 }
 
-.page-header::after {
+.page-header {
+&--index {
+  
+&::after {
   @media(min-width: $desktop-width) {
     content: "";
     display: block;
@@ -26,4 +29,6 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+}
+}
 }

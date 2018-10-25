@@ -1,21 +1,22 @@
 .programs {
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
 
   @media(min-width: $tablet-width) {
-    padding: 0 30px;
-    margin-top: 141px;
+    margin-top: 490px;
   }
 
   @media(min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
     margin: 0;
-    padding: 0 40px;
   }
 }
 
 .programs__header {
   @include visually-hidden;
+}
+
+.programs__item {
+  background-color: #f2f2f2;
 }

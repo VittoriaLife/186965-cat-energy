@@ -9,3 +9,10 @@
         background-color: #f2f2f2;
     }
 }
+
+.results-box {
+
+  @media(min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+}

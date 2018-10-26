@@ -9,7 +9,6 @@
     display: flex;
     flex-direction: column;
     margin: 0;
-    margin-bottom: 96px;
     list-style: none;
   }
 
@@ -21,21 +20,23 @@
 .advantages__wrapper {
   display: flex;
   flex-wrap: wrap;
-  padding-top: 18px;
-  
 
   @media (min-width: $tablet-width) {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 686px;
-    padding-top: 63px;
-  
+    padding-top: 27px;
+
+    &--second {
+      padding-top: 14px;
+    }
+
   }
 
   @media(min-width: $desktop-width) {
-    &:last-child {
-      margin-top: 45px;
-    }
+    flex-wrap: nowrap;
+    padding-top: 23px;
+
   }
 
 }
@@ -48,12 +49,17 @@
     flex-direction: column;
     width: 300px;
     padding: 0;
-    margin-bottom: 141px;
-    
+    padding-top: 24px;
+    margin-bottom: 93px;
+
+    &--three,
+    &--four {
+     margin: 0;
+    }
   }
 
   @media(min-width: $desktop-width) {
-    margin-right: 130px;
+    width: 245px;
   }
 }
 
@@ -100,6 +106,6 @@
   }
 
   @media(min-width: $desktop-width) {
-    margin-top: 27px;
+
   }
 }

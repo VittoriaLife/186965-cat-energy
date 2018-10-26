@@ -15,7 +15,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 104px;
+    padding-top: 106px;
+    padding-left: 80px;
     background-color: transparent;
   }
 }
@@ -59,6 +60,10 @@
     font-weight: 400;
     color: #111111;
   }
+
+  @media(min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .show-card__picture {
@@ -97,7 +102,7 @@
   }
 
   @media(min-width: $desktop-width) {
-    top: 233px;
+    top: 52px;
   }
 }
 
@@ -109,8 +114,8 @@
   }
 
   @media(min-width: $desktop-width) {
-    top: -82px;
-    right: 308px;
+    top: 27px;
+    right: 228px
   }
 
 }

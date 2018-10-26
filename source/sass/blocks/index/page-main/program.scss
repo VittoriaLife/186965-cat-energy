@@ -21,21 +21,19 @@
     &--pro {
       margin-top: 25px;
       padding-bottom: 57px;
-      padding-left: 50px;
-      padding-right: 50px;
       padding-top: 75px;
     }
   }
 
   @media (min-width: $desktop-width) {
-    width: 570px;
-    margin-left: 1px;
-    margin-top: 2px;
+    width: 489px;
+    padding-left: 31px;
+    padding-bottom: 57px;
+    padding-top: 77px;
 
     &--pro {
-      width: 570px;
+      margin: 0;
       margin-left: 78px;
-      margin-top: 4px;
     }
   }
 }
@@ -46,7 +44,7 @@
   @media(max-width: $mobile-width-only) {
   display: flex;
   width: 280px;
-  padding-top: 27px;
+  padding-top: 25px;
 
   &--pro {
     padding-top: 28px;
@@ -55,10 +53,11 @@
 
   @media(min-width: $tablet-width) {
     position: relative;
-  
+
   }
 
   @media(min-width: $desktop-width) {
+    padding: 0;
     width: 570px;
   }
 }
@@ -78,11 +77,7 @@
   }
 
   @media(min-width: $desktop-width) {
-    margin-left: 179px;
-  
-    &--pro {
-      margin-left: 180px;
-    }
+    padding-left: 181px;
   }
 }
 
@@ -107,10 +102,9 @@
     }
 
   &--pro {
-    padding-left: 20px;
     padding-right: 66px;
     padding-bottom: 39px;
-  
+
   }
 
   @media(min-width: $tablet-width) {
@@ -128,27 +122,20 @@
     &--pro {
       width: 275px;
     }
-
-    }
   }
 
   @media(min-width: $desktop-width) {
     width: 370px;
     margin: 0;
-    margin-top: 48px;
-    padding-left: 51px;
-    padding-bottom: 32px;
-
-    &--pro {
-      width: 358px;
-    
-    }
-    
+    padding-top: 74px;
+    padding-left: 20px;
+    padding-bottom: 29px;
   }
-
+}
 
 
 .program__catalog {
+  position: relative;
   font-size: 16px;
   line-height: 16px;
   color: #111111;
@@ -159,9 +146,25 @@
     color: rgba(17, 17, 17, 0.3);
   }
 
+  &::after {
+    content: "";
+    position: absolute;
+    left: 94px;
+    top: 6px;
+    width: 52px;
+    height: 12px;
+    background-image: url("/img/icon-right-arrow-long.svg");
+    background-repeat: no-repeat;
+  }
+
   @media(min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+  }
+
+  &::after {
+    left: 126px;
+    top: 10px;
   }
 }
 
@@ -213,5 +216,10 @@
     padding: 0;
     padding-left: 6px;
     padding-top: 22px;
+  }
+
+  @media(min-width: $desktop-width) {
+    padding-top: 0;
+    padding-left: 19px;
   }
 }

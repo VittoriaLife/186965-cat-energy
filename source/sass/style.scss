@@ -1,6 +1,6 @@
 body {
   min-width: 320px;
-  margin: 0;
+  margin: 0 auto;
   font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
 }
@@ -8,6 +8,7 @@ body {
 @import "mixin.scss";
 @import "variables.scss";
 @import "fonts.scss";
+@import "blocks/cover.scss";
 @import "blocks/index/page-header/container.scss";
 @import "blocks/index/page-header/page-header.scss";
 @import "blocks/index/page-header/main-navigation.scss";

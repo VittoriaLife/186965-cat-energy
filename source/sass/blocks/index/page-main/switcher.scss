@@ -9,18 +9,25 @@
   @media(min-width: $tablet-width) {
       position: relative;
       height: 420px;
-      padding: 0 30px;
       margin: 0;
   }
 
   @media (min-width: $desktop-width) {
     height: 365px;
-    
+
   }
 }
 
 .switcher__image-wrap {
-  @media(max-width: $tablet-width) {  
+  @media(max-width: $mobile-width-only) {
+    &--before {
+      top: 8px;
+      right: 2px;
+    }
+  }
+
+
+  @media(max-width: $tablet-width) {
 
   &--before {
     position: relative;
@@ -37,14 +44,14 @@
 
     &--before {
       top: -170px;
-      left: 46px;
-      width: 44%;
+      left: 19px;
+      width: 48%;
     }
 
     &--after {
       top: -170px;
-      left: 384px;  
-      width: 46%;
+      left: 358px;
+      width: 49.5%;
     }
   }
 
@@ -65,16 +72,17 @@
 
 .switcher__image  {
   @media(max-width: $mobile-width-only) {
+
     &--after {
       display: none;
     }
-  }  
+  }
 
     @media(min-width: $tablet-width) {
       position: absolute;
       top: 0;
       bottom: 0;
-  
+
       &--before {
         left: 0;
       }
@@ -86,21 +94,21 @@
     }
 
     @media(min-width: $desktop-width) {
-      &--before { 
 
-      }
-    }
+   }
 }
 
 .switcher__box {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  width: 199px;
+  padding-left: 60px;
 
   @media(min-width: $tablet-width) {
     position: relative;
-    bottom: 50px;
-    justify-content: space-around;
-    padding-bottom: 22px;
+    bottom: 53px;
+    width: 575px;
+    padding-bottom: 12px;
   }
 
   @media(min-width: $desktop-width) {
@@ -113,9 +121,63 @@
   line-height: 20px;
   text-transform: uppercase;
 
-    @media(min-width: $tablet-width) {
-        font-size: 20px;
-        line-height: 20px;
-        text-transform: uppercase;
-    }
+  @media(min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    border-bottom: 1px dotted;
+  }
 }
+
+.switcher__scale {
+  width: 83px;
+  height: 10px;
+  position: relative;
+  left: 58px;
+  bottom: 20px;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  border-radius: 30px;
+
+  @media(min-width: $tablet-width) {
+    width: 427px;
+    height: 6px;
+    left: 80px;
+    background-color: #dcdcdc;
+    border: none;
+
+  }
+}
+
+.switcher__bar {
+  position: relative;
+  left: 4px;
+  top: 2px;
+  width: 35px;
+  height: 6px;
+  background-color: $light-green-color;
+  border-radius: 10px;
+
+  @media(min-width: $tablet-width) {
+    left: 199px;
+    top: -11px;
+    width: 33px;
+    height: 33px;
+    background-color: #ffffff;
+    border: 1px solid #cdcdcd;
+    border-radius: 16px;
+  }
+}
+
+.switcher__bar-inside {
+  @media(min-width: $tablet-width) {
+    position: relative;
+    background-color: $light-green-color;
+    width: 10px;
+    height: 10px;
+    top: 11px;
+    left: 11px;
+    border-radius: 5px;
+  }
+}
+

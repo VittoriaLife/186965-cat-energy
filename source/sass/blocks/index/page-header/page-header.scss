@@ -20,16 +20,16 @@
     @media(min-width: $desktop-width) {
       content: "";
       position: absolute;
-      left: 646px;
+      left: 580px;
       top: -1px;
       z-index: -1;
       width: 55.5%;
-      min-height: 696px;
+      min-height: 670px;
       background-image: url("/img/index-background-desktop@1x.jpg");
       background-repeat: no-repeat;
       background-color: $light-green-color;
-
+    }
   }
 }
 }
-}
+

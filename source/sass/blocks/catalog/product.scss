@@ -1,76 +1,44 @@
 .product {
   display: flex;
   flex-wrap: wrap;
+  position: relative;
+  padding-bottom: 25px;
+
+
+  @media(max-width: $mobile-width-only) {
+    &::after {
+      content: "";
+      position: absolute;
+      width: 372px;
+      height: 1px;
+      background-color: #ededed;
+      left: -72px;
+      top: 205px;
+    }
+  }
 
   @media(min-width: $tablet-width) {
     flex-direction: column;
     align-items: center;
     width: 324px;
-    margin-bottom: 40px;
+    margin-top: 136px;
+    border: 1px solid #ededed;
     background-color: #f2f2f2;
   }
-} 
 
-// //   @media (min-width: $tablet-width) {
-// //     flex-direction: column;
-// //     justify-content: center;
-// //     flex-wrap: wrap;
-// //   }
-// // }
-
-// // .product__image {
-// //   @media(max-width: $mobile-width-only) {
-// //   &--small {
-// //     flex: 0 0 140px;
-// //     padding-top: 4px;
-// //     width: 140px;
-// //     height: 144px;
-// //   }
-// // } 
-
-// //   @media (min-width: $tablet-width) {
-// //     flex-grow: 0;
-// //     flex-shrink: 0;
-// //     flex-basis: 140px;
-
-// //     // &--small {
-// //     //   width: 161px;
-// //     //   height: 172px;
-// //     // }
-
-// //     // &--big {
-// //     //   width: 195px;
-// //     //   height: 208px;
-// //     // }
-
-// //   }
-// // }
-
-
-// // .product__image-box {
-// //   @media(max-width: $mobile-width-only) {
-// //     display: flex;
-// //     flex-wrap: wrap;
-// //     justify-content: center;
-// //   }
-// // }
-
-.product__body {
-  @media(min-width: $tablet-width) {
-    text-align: center;
+  @media(min-width: $desktop-width) {
+    width: 245px;
+    margin-top: 140px;
   }
 }
 
-// // .product__box {
-// //   display: flex;
-// //   flex-direction: column;
-// //   margin-bottom: 7px;
-
-// //   @media(min-width: $tablet-width) {
-// //     text-align: center;
-// //     background-color: #f2f2f2;
-// //   }
-// // }
+.product__body {
+  @media(min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+}
 
 .product__name {
   width: 72px;
@@ -82,26 +50,14 @@
   color: #111111;
 
   @media(min-width: $tablet-width) {
-    width: 115px;
+    width: 140px;
+    padding-top: 11px;
+    padding-bottom: 10px;
+    align-self: center;
+    font-size: 20px;
   }
 
 }
-// //   // &--small {
-// //   //   margin-top: 25px;
-// //   // }
-
-// //   // &--big {
-// //   //   margin-top: 21px;
-// //   // }
-
-// //   @media (min-width: $tablet-width) {
-// //     font-size: 20px;
-// //   }
-
-// //   @media (min-width: $desktop-width) {
-// //     font-size: 20px;
-// //   }
-// // }
 
 
 .product__weight {
@@ -112,18 +68,19 @@
   color: #111111;
 }
 
-//   @media(min-width: $tablet-width) {
-//     font-size: 20px;
-//   }
-// }
 
 .product__row {
   display: flex;
   justify-content: space-between;
-  width: 135px; 
+  width: 135px;
 
   @media(min-width: $tablet-width) {
+    width: 246px;
     border-bottom: 1px solid #cdcdcd;
+  }
+
+  @media(min-width: $desktop-width) {
+    width: 177px;
   }
 }
 
@@ -136,22 +93,19 @@
   line-height: 16px;
   color: #444444;
 
+  @media(min-width: $tablet-width) {
+    padding-bottom: 7px;
+    padding-top: 10px;
+    font-size: 16px;
+  }
+
 }
-// //   &:first-child {
-// //     padding-right: 68px;
-// //   }
-// // }
-
-// //    @media(min-width: $tablet-width) {
-// //      font-size: 16px;
-// //     line-height: 16px;
-// //     text-transform: uppercase;
-
-// // }
 
 .product__order-button {
+  border: none;
+
   @media(max-width: $mobile-width-only) {
-    margin-top: -5px; 
+    margin-top: -5px;
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: 100%;
@@ -161,24 +115,24 @@
     line-height: 20px;
     color: #ffffff;
     text-transform: uppercase;
-  } 
+  }
 
   @media(min-width: $tablet-width) {
-    padding: 5px 94px;
-    margin-top: 20px;
-    margin-bottom: 25px;
+    padding: 10px 85px;
+    margin-top: 29px;
+    margin-bottom: 17px;
     font-size: 16px;
     line-height: 20px;
     color: #ffffff;
     text-transform: uppercase;
     background-color: $light-green-color;
+
+  }
+
+  @media(min-width: $desktop-width) {
+    padding: 9px 43px;
   }
 }
 
-// //   @media(min-width: $tablet-width) {
-// //     width: 258px;
-// //     padding: 8px 90px;
-// //     flex-grow: 0;
-// //   }
-// // }
+
 

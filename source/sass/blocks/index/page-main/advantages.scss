@@ -30,14 +30,17 @@
     &--second {
       padding-top: 14px;
     }
-
   }
 
   @media(min-width: $desktop-width) {
+    width: 570px;
     flex-wrap: nowrap;
     padding-top: 23px;
 
+  &--second {
+    padding-left: 10px;
   }
+}
 
 }
 
@@ -52,14 +55,24 @@
     padding-top: 24px;
     margin-bottom: 93px;
 
-    &--three,
-    &--four {
-     margin: 0;
+    &--dining,
+    &--clock {
+     padding-left: 0;
     }
   }
 
   @media(min-width: $desktop-width) {
     width: 245px;
+
+    &--dining {
+      padding-left: 67px;
+    }
+
+    &--clock {
+      padding-left: 128px;
+    }
+
+
   }
 }
 
@@ -106,6 +119,6 @@
   }
 
   @media(min-width: $desktop-width) {
-
+    padding-top: 27px;
   }
 }

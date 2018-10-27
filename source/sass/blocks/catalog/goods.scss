@@ -1,31 +1,27 @@
  .goods {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 24px;
+  @media(max-width: $mobile-width-only) {
+    position: relative;
 
-  &::before {
-    content: "";
-    width: 30px;
-    height: 3px;
-    background-color:#d3d3d3;
-    position: absolute;
-    top: 32px;
-  }
+      &:after {
+        content: "";
+        position: absolute;
+        width: 372px;
+        height: 1px;
+        background-color: #ededed;
+        left: -72px;
+        top: 205px;
+      }
+    }
 
-  &::after {
-    content:"";
-    width: 30px;
-    height: 3px;
-    background-color: #d3d3d3;
-    position: absolute;
-    bottom: 167px;
-    transform: rotate(90deg);
-  }
+      @media(min-width: $tablet-width) {
+        margin-top: 136px;
+      }
 
   @media(min-width: $tablet-width) {
     width: 324px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 1px solid #e6e6e6;
 
   &::after {
@@ -40,7 +36,69 @@
     }
   }
 
+  @media(min-width: $desktop-width) {
+    width: 245px;
+  }
+
 }
+
+.goods__container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 24px;
+
+  &::before {
+    content: "";
+    width: 30px;
+    height: 2px;
+    background-color:#d3d3d3;
+    position: absolute;
+    top: 37px;
+    left: 122px;
+  }
+
+  &::after {
+    content:"";
+    width: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+    position: absolute;
+    left: 122px;
+    bottom: 160px;
+    transform: rotate(90deg);
+  }
+
+
+  @media(min-width: $tablet-width) {
+    padding: 0;
+    &::before {
+      width: 60px;
+      top: -26px;
+      left: 131px;
+    }
+
+    &::after {
+      width: 60px;
+      left: 132px;
+      bottom: 239px;
+    }
+  }
+
+  @media(min-width: $desktop-width) {
+    &::before {
+      top: -9px;
+      left: 93px;
+    }
+
+    &::after {
+      left: 94px;
+      bottom: 250px;
+    }
+  }
+}
+
 
 .goods__variants {
   margin: 0;
@@ -50,6 +108,22 @@
   text-transform: uppercase;
   color: #111111;
 
+  @media(min-width: $tablet-width) {
+    padding-top: 60px;
+    padding-left: 95px;
+    padding-right: 93px;
+    margin-bottom: 19px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  @media(min-width: $desktop-width) {
+    padding-top: 72px;
+    padding-left: 50px;
+    padding-right: 53px;
+  }
+
 }
 
 .goods__tastes {
@@ -58,14 +132,28 @@
   font-size: 12px;
   line-height: 16px;
   color: #444444;
+
+  @media(min-width: $tablet-width) {
+    padding-left: 71px;
+    padding-right: 71px;
+    text-align: center;
+    font-size: 16px;
+  }
 }
 
 .goods__to-show {
   margin-top: 21px;
-  padding: 8px 79px;
+  padding: 10px 78px;
   font-size: 16px;
   line-height: 20px;
   color: #444444;
   text-transform: uppercase;
   background-color: #f2f2f2;
+  border: none;
+
+  @media(min-width: $desktop-width) {
+    padding: 9px 25px;
+  }
+
+
 }

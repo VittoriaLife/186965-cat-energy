@@ -9,6 +9,19 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 11px;
+    padding-bottom: 27px;
+    border: 1px solid #ededed;
+  }
+
+  @media(min-width: $desktop-width) {
+    flex-direction: row;
+    width: 895px;
+    padding: 0;
+    border: none;
+    border-top:  1px solid #ededed;
   }
 }
 
@@ -19,11 +32,19 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-around;
-    padding-top: 10px;
+    padding-bottom: 9px;
+    border: none;
   }
 }
 
-.card-product__name {
+.card-product__addition {
+  @media(min-width: $tablet-width) {
+    width: 385px;
+  }
+}
+
+
+.card-product__title {
   font-size: 16px;
   line-height: 16px;
   font-weight: 400;
@@ -32,6 +53,8 @@
 
   @media(min-width: $tablet-width) {
     margin: 0;
+    font-size: 20px;
+    line-height: 20px;
 
   }
 }
@@ -40,6 +63,11 @@
   font-size: 14px;
   line-height: 14px;
   color: #444444;
+
+  @media(min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 
@@ -47,6 +75,10 @@
   display: flex;
   justify-content: space-between;
   width: 280px;
+
+  @media(min-width: $tablet-width) {
+    width: 241px;
+  }
 }
 
 .card-product__button-to-order {
@@ -57,6 +89,11 @@
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
+
+  @media(min-width: $tablet-width) {
+    width: 633px;
+    align-self: center;
+  }
 
   @media (min-width: $desktop-width) {
     padding: 10px 50px;

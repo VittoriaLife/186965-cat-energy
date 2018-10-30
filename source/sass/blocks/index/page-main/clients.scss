@@ -1,196 +1,305 @@
 .clients {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 21px;
   background-color: #f2f2f2;
 
-  @media (min-width: $tablet-width) {
+  @media(min-width: $tablet-width) {
     background-color: #ffffff;
-    margin-bottom: 49px;
-    padding: 0;
   }
 
-  @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: column;
-    height: 597px;
-    margin: 0;
+}
+
+.clients__cover {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 19px;
+
+  @media(min-width: $tablet-width) {
+    padding-top: 44px;
+    padding-left: 28px;
+    padding-bottom: 182px;
   }
 }
 
-.clients-container {
-  @media(max-width: $mobile-width-only) {
-   padding-left: 20px;
-   padding-right: 20px;
-  }
-
-  @media(min-width: $desktop-width){
-    display: flex;
-    justify-content: space-between;
-    margin-top: 75px;
-    background-color: #f2f2f2;
-  }
-}
 
 .clients__heading {
   margin: 0;
-  padding-top: 20px;
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
-  color: #111111;
+  color: $black-color;
 
-  @media (min-width: $tablet-width)  {
+  @media(min-width: $tablet-width) {
     font-size: 60px;
-    padding-top: 46px;
-  }
-
-  @media(min-width: $desktop-width) {
-    padding-left: 37px;
-    padding-top: 0;
-  }
-}
-
-.clients__box {
-  @media(min-width: $tablet-width) {
-    margin-top: 39px;
-  }
-
-  @media(min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-
-  }
-}
-
-.clients__content {
-  @media(min-width: $desktop-width) {
-    padding-left: 41px;
-    padding-top: 50px;
-  }
-
-  @media(min-width: $desktop-width) {
-    padding-top: 72px;
-  }
-}
-
-.clients__wrapper {
-  display: flex;
-  flex-direction: column;
-
-
-  @media (min-width: $tablet-width) {
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 236px;
-    padding-right: 28px;
-    padding-left: 56px;
-  }
-
-  @media(min-width: $desktop-width) {
-    flex-direction: column;
-    padding: 0;
-  }
-}
-
-.clients__inner{
-  display: flex;
-  justify-content: space-around;
-  width: 296px;
-  margin-bottom: 8px;
-
-  @media(min-width: $tablet-width) {
-    justify-content: space-between;
-    width: 317px;
-    text-align: center;
-  }
-
-  @media(min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-    padding-top: 14px;
-    padding-left: 24px;
-    margin-bottom: 56px;
-    width: 317px;
+    line-height: 60px;
+    color: $black-color;
   }
 }
 
 .clients__story {
-  display: flex;
-  flex-direction: column;
-  width: 220px;
   margin: 0;
   padding-top: 20px;
-  padding-bottom: 41px;
+  padding-bottom: 59px;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
 
-  @media (min-width: $tablet-width) {
-    width: 565px;
-    padding-bottom: 69px;
+  @media(min-width: $tablet-width) {
+    padding-top: 63px;
+    padding-right: 155px;
     font-size: 16px;
     line-height: 24px;
   }
+}
 
-  @media(min-width: $desktop-width) {
-    width: 352px;
-    padding: 0;
-    padding-bottom: 64px;
+.clients__inner { 
+  display: flex;
+  justify-content: space-between;
+
+  @media(min-width: $tablet-width) {
+    width: 385px;
   }
 }
 
-.clients__wrap {
+.clients__box {
   display: flex;
-  justify-content: center;
-  margin-bottom: 11px;
+  padding-top: 14px;
 
   @media(min-width: $tablet-width) {
+    position: relative;
+    left: 490px;
+    top: 20p;
+    bottom: 70px;
     flex-direction: column;
-
+    width: 221px;
   }
 
-  @media(min-width: $desktop-width) {
-    flex-direction: row;
-    justify-content: space-between;
-    width: 325px;
-  }
 }
 
 .clients__expenses {
   margin: 0;
-  margin-top: 11px;
+  padding-top: 7px;
+  padding-left: 46px;
   font-size: 14px;
   line-height: 20px;
-  text-align: center;
-  color: #111111;
+  color: $black-color;
   text-transform: uppercase;
 
   @media(min-width: $tablet-width) {
-    margin: 0;
-    font-size: 20px;
+    font-size:20px;
     line-height: 20px;
-    text-align: right;
-  }
-
-  @media(min-width: $desktop-width) {
-    margin: 0;
   }
 }
 
 .clients__money {
-  margin-top: 8px;
-  margin-left: 5px;
+  margin: 0;
+  padding-top: 7px;
+  padding-left: 5px;
+  font-size: 14px;
+  line-height: 20px;
+  color: $black-color;
+  text-transform: uppercase;
 
   @media(min-width: $tablet-width) {
-  margin-top: 8px;
-  font-size: 20px;
-  line-height: 20px;
-  text-align: right;
-  }
-
-  @media(min-width: $desktop-width) {
-    margin: 0;
+    font-size:20px;
+    line-height: 20px;
+    text-align: right;
   }
 }
+
+// .clients {
+//   display: flex;
+//   flex-direction: column;
+//   padding-bottom: 21px;
+//   background-color: #f2f2f2;
+
+//   @media (min-width: $tablet-width) {
+//     background-color: #ffffff;
+//     margin-bottom: 49px;
+//     padding: 0;
+//   }
+
+//   @media (min-width: $desktop-width) {
+//     display: flex;
+//     flex-direction: column;
+//     height: 597px;
+//     margin: 0;
+//   }
+// }
+
+// .clients-container {
+//   @media(max-width: $mobile-width-only) {
+//    padding-left: 20px;
+//    padding-right: 20px;
+//   }
+
+//   @media(min-width: $desktop-width){
+//     display: flex;
+//     justify-content: space-between;
+//     margin-top: 75px;
+//     background-color: #f2f2f2;
+//   }
+// }
+
+// .clients__heading {
+//   margin: 0;
+//   padding-top: 20px;
+//   font-size: 36px;
+//   line-height: 60px;
+//   font-weight: 400;
+//   color: #111111;
+
+//   @media (min-width: $tablet-width)  {
+//     font-size: 60px;
+//     padding-top: 46px;
+//   }
+
+//   @media(min-width: $desktop-width) {
+//     padding-left: 37px;
+//     padding-top: 0;
+//   }
+// }
+
+// .clients__box {
+//   @media(min-width: $tablet-width) {
+//     margin-top: 39px;
+//   }
+
+//   @media(min-width: $desktop-width) {
+//     display: flex;
+//     justify-content: space-between;
+//     margin: 0;
+
+//   }
+// }
+
+// .clients__content {
+//   @media(min-width: $desktop-width) {
+//     padding-left: 41px;
+//     padding-top: 50px;
+//   }
+
+//   @media(min-width: $desktop-width) {
+//     padding-top: 72px;
+//   }
+// }
+
+// .clients__wrapper {
+//   display: flex;
+//   flex-direction: column;
+
+
+//   @media (min-width: $tablet-width) {
+//     flex-direction: row;
+//     justify-content: space-between;
+//     margin-bottom: 236px;
+//     padding-right: 28px;
+//     padding-left: 56px;
+//   }
+
+//   @media(min-width: $desktop-width) {
+//     flex-direction: column;
+//     padding: 0;
+//   }
+// }
+
+// .clients__inner{
+//   display: flex;
+//   justify-content: space-around;
+//   width: 296px;
+//   margin-bottom: 8px;
+
+//   @media(min-width: $tablet-width) {
+//     justify-content: space-between;
+//     width: 317px;
+//     text-align: center;
+//   }
+
+//   @media(min-width: $desktop-width) {
+//     display: flex;
+//     justify-content: space-between;
+//     padding-top: 14px;
+//     padding-left: 24px;
+//     margin-bottom: 56px;
+//     width: 317px;
+//   }
+// }
+
+// .clients__story {
+//   display: flex;
+//   flex-direction: column;
+//   width: 220px;
+//   margin: 0;
+//   padding-top: 20px;
+//   padding-bottom: 41px;
+//   font-size: 14px;
+//   line-height: 18px;
+//   color: #444444;
+
+//   @media (min-width: $tablet-width) {
+//     width: 565px;
+//     padding-bottom: 69px;
+//     font-size: 16px;
+//     line-height: 24px;
+//   }
+
+//   @media(min-width: $desktop-width) {
+//     width: 352px;
+//     padding: 0;
+//     padding-bottom: 64px;
+//   }
+// }
+
+// .clients__wrap {
+//   display: flex;
+//   justify-content: center;
+//   margin-bottom: 11px;
+
+//   @media(min-width: $tablet-width) {
+//     flex-direction: column;
+
+//   }
+
+//   @media(min-width: $desktop-width) {
+//     flex-direction: row;
+//     justify-content: space-between;
+//     width: 325px;
+//   }
+// }
+
+// .clients__expenses {
+//   margin: 0;
+//   margin-top: 11px;
+//   font-size: 14px;
+//   line-height: 20px;
+//   text-align: center;
+//   color: #111111;
+//   text-transform: uppercase;
+
+//   @media(min-width: $tablet-width) {
+//     margin: 0;
+//     font-size: 20px;
+//     line-height: 20px;
+//     text-align: right;
+//   }
+
+//   @media(min-width: $desktop-width) {
+//     margin: 0;
+//   }
+// }
+
+// .clients__money {
+//   margin-top: 8px;
+//   margin-left: 5px;
+
+//   @media(min-width: $tablet-width) {
+//   margin-top: 8px;
+//   font-size: 20px;
+//   line-height: 20px;
+//   text-align: right;
+//   }
+
+//   @media(min-width: $desktop-width) {
+//     margin: 0;
+//   }
+// }

@@ -1,17 +1,35 @@
-.page-main__box {
-  padding: 0 20px;
+.page-main__background-image {
+  @media(max-width: $mobile-width-only) {
   background-image: url("/img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-
-  @media(min-width: $tablet-width) {
-    min-height: 609px;
-    padding: 0 30px;
-    background-image: none;
-    border-bottom: 1px solid #e6e6e6;
-  }
-
-  @media(min-width: $desktop-width) {
-    padding:  0 40px;
-    border: none;
   }
 }
+
+.page-main__cover {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 41px;
+
+  @media(min-width: $tablet-width) {
+    padding: 0 30px;
+    border-bottom: 1px solid #e6e6e6;
+  }
+}
+
+// .page-main__box {
+//   padding: 0 20px;
+//   background-image: url("/img/index-background-mobile@1x.jpg");
+//   background-repeat: no-repeat;
+
+//   @media(min-width: $tablet-width) {
+//     min-height: 609px;
+//     padding: 0 30px;
+//     background-image: none;
+//     border-bottom: 1px solid #e6e6e6;
+//   }
+
+//   @media(min-width: $desktop-width) {
+//     padding:  0 40px;
+//     border: none;
+//   }
+// }

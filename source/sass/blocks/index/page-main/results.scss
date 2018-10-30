@@ -1,19 +1,35 @@
 .results {
-    @media(min-width: $tablet-width) and (max-width: 1299px) {
-        background-color: #eaeaea;
-    }
+  padding: 0 20px;
 
-    @media(min-width: $desktop-width) {
-        width: 610px;
-    }
-}
-
-.results-box {
   @media(min-width: $tablet-width) {
     padding: 0 30px;
+    background-color: #eaeaea;
   }
 
-  @media(min-width: $desktop-width) {
-    padding: 0;
+}
+
+.results__container {
+  @media(min-wdth: $tablet-width) {
+    
   }
 }
+
+// .results {
+//     @media(min-width: $tablet-width) and (max-width: 1299px) {
+//         background-color: #eaeaea;
+//     }
+
+//     @media(min-width: $desktop-width) {
+//         width: 610px;
+//     }
+// }
+
+// .results-box {
+//   @media(min-width: $tablet-width) {
+//     padding: 0 30px;
+//   }
+
+//   @media(min-width: $desktop-width) {
+//     padding: 0;
+//   }
+// }

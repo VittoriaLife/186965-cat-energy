@@ -1,35 +1,86 @@
-.page-header__main-logo {
-  padding-top: 5px;
-
-  @media(min-width: $tablet-width) {
-    padding-top: 23px;
-  }
-
-  @media(min-width: $desktop-width) {
-    width: 202px;
-    height: 59px;
-  }
-}
-
-.page-header {
-  position: relative;
-
-  &--index {
-
+.page-header--index {
+ @media(min-width: $desktop-width) {
   &::after {
-    @media(min-width: $desktop-width) {
-      content: "";
+    content: "";
       position: absolute;
-      left: 580px;
+      left: 640px;
       top: -1px;
       z-index: -1;
-      width: 55.5%;
-      min-height: 670px;
+      width: 720px;
+      min-height: 696px;
       background-image: url("/img/index-background-desktop@1x.jpg");
       background-repeat: no-repeat;
       background-color: $light-green-color;
-    }
+  }
   }
 }
+
+.page-header__container {
+  display: flex;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e6e6e6;
+
+  @media(min-width: $tablet-width) {
+    padding: 0 30px;
+    border: none;
+  }
+
+  @media(min-width: $desktop-width) {
+    justify-content: space-between;
+    padding: 0 40px;
+
+  }
 }
+
+.page-header__logo {
+  padding-top: 13px;
+
+  @media(min-width: $tablet-width) {
+    width: 174px;
+    padding-top: 24px;
+  }
+
+  @media(min-width: $desktop-width) {
+    width: 193px;
+    padding-top: 56px;
+  }
+}
+
+
+// .page-header__main-logo {
+//   padding-top: 5px;
+
+//   @media(min-width: $tablet-width) {
+//     padding-top: 23px;
+//   }
+
+//   @media(min-width: $desktop-width) {
+//     width: 202px;
+//     height: 59px;
+//   }
+// }
+
+// .page-header {
+//   position: relative;
+
+//   &--index {
+
+//   &::after {
+//     @media(min-width: $desktop-width) {
+//       content: "";
+//       position: absolute;
+//       left: 580px;
+//       top: -1px;
+//       z-index: -1;
+//       width: 55.5%;
+//       min-height: 670px;
+//       background-image: url("/img/index-background-desktop@1x.jpg");
+//       background-repeat: no-repeat;
+//       background-color: $light-green-color;
+//     }
+//   }
+// }
+// }
 

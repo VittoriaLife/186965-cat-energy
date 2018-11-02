@@ -6,21 +6,14 @@
   list-style: none;
 
   @media(min-width: $tablet-width) {
-    width: 354px;
-
-    &--second{
-    margin-left: 54px;
-    }
+   flex-direction: row;
+   flex-wrap: wrap;
+   padding-bottom: 72px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 610px;
     flex-direction: row;
-    
-    &--second {
-    margin-left: 78px;
   }
-}
 }
 
 .advantages__item {
@@ -40,33 +33,56 @@
 
   @media(min-width: $tablet-width) {
     flex-direction:column; 
-    margin-bottom: 136px;
+    width: 264px;
+    padding-right: 30px;
+    padding-top: 2px;
+    padding-right: 50px;
+    padding-left: 68px;
 
-    &--clock {
-      margin-bottom: 100px;
+    &--leaf, 
+    &--dining {
+      padding-left: 0;
     }
 
+    &--leaf, 
     &--powder {
-      margin-bottom: 100px;
+      margin-bottom: 118px;
     }
   }
 
   @media(min-width: $desktop-width) {
-    &--leaf {
-      margin-right: 128px;
+    padding: 0;
+    width: 245px;
+
+    &--powder {
+      padding-left: 69px;
     }
 
+    &--dining, 
     &--clock {
-      margin-left: 131px;
+      padding-left: 80px;
     }
 
   }
 }
 
 
+.advantages__image {
+  width: 60px;
+  height: 56px;
+  padding-bottom: 6px;
+  background-color: $light-green-color;
+
+  @media(min-width: $tablet-width) {
+    width: 80px;
+    height: 75px;
+  }
+}
+
+
 .advantages__description {
-  padding-left: 21px;
-  padding-top: 4px;
+  padding-left: 15px;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
@@ -74,6 +90,7 @@
   @media(min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    padding-top: 10px;
   }
 
 }
@@ -154,35 +171,4 @@
 //   }
 // }
 
-.advantages__image {
-  width: 60px;
-  height: 56px;
-  padding-bottom: 6px;
-  background-color: $light-green-color;
 
-  @media(min-width: $tablet-width) {
-    width: 80px;
-    height: 75px;
-  }
-}
-
-.advantages__description {
-  width: 180px;
-  margin: 0;
-  font-size: 14px;
-  line-height: 18px;
-  color: #444444;
-
-  @media(min-width: $tablet-width) {
-    margin: 0;
-    padding: 0;
-    padding-top: 26px;
-    width: 199px;
-    font-size: 16px;
-    line-height: 24px;
-  }
-
-  @media(min-width: $desktop-width) {
-    padding-top: 27px;
-  }
-}

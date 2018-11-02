@@ -47,6 +47,7 @@
 .cooperation__address {
   width: 135px;
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #111111;
@@ -63,6 +64,8 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 63px;
+    padding-right: 70px;
+    width: 157px;
     font-size: 16px;
     text-align: start;
   }

@@ -1,0 +1,45 @@
+.inputs {
+  display: flex;
+  justify-content: center;
+  margin-top: 23px;
+
+  @media(min-width: $tablet-width) {
+    flex-direction: column;
+    text-align: right;
+    margin: 0;
+    margin-left: 174px;
+    margin-bottom: 23px;
+  }
+
+  @media(min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    width: 327px;
+  }
+}
+
+.inputs__expenses {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: $black-color;
+  text-transform: uppercase;
+
+  @media(min-width: $tablet-width) {
+    padding-bottom: 10px;
+    font-size: 20px;
+  }
+}
+
+.inputs__money {
+  margin: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: $black-color;
+  text-transform: uppercase;
+
+  @media(min-width: $tablet-width) {
+    font-size: 20px;
+  }
+}

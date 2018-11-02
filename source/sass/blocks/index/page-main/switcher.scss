@@ -1,289 +1,90 @@
 .switcher {
   display: flex;
-  flex-direction: column;
-  padding-top: 31px;
-
-  @media(min-width: $tablet-width) {
-    position: relative;
-    height: 620px;
-  }
-
-}
-
-
-.switcher__image-wrap {
-  position: relative;
-  right: 20px;
- 
-  @media(max-width: $mobile-width-only) {
-
-    &--after {
-      display: none;
-      bottom: 234px;
-    }
-  }
-}
-
-.switcher__box {
-  display: flex;
   justify-content: space-around;
-  padding-top: 29px;
-  padding-left: 5px;
-  padding-bottom: 20px;
+  padding-left: 32px;
+  margin-top: 61px;
+  width: 220px;
 
   @media(min-width: $tablet-width) {
     position: relative;
-    left: 18px;
-    bottom: 311px;
-    width: 662px;
-    padding-bottom: 12px;
+    top: 310px;
+    width: 595px;
+    padding-left: 86px;
+    margin-top: 58px;
   }
+
+  @media(min-width: $desktop-width) {
+    padding-left: 160px;
+  }
+ 
+
 }
 
 .switcher__words {
+  font-family: "Oswald";
   font-size: 16px;
   line-height: 20px;
   color: $black-color;
+  border: none;
+  background-color: transparent;
   text-transform: uppercase;
 
   @media(min-width: $tablet-width) {
+    padding: 0;
+    padding-bottom: 6px;
     font-size: 20px;
-    border-bottom: 1px dotted;
-  }
-}
-
-.switcher__scale {
-  width: 83px;
-  height: 10px;
-  position: relative;
-  left: 58px;
-  bottom: 20px;
-  background-color: #ffffff;
-  border: 1px solid #cdcdcd;
-  border-radius: 30px;
-
-  @media(min-width: $tablet-width) {
-    width: 427px;
-    height: 3px;
-    left: 70px;
-    bottom: 15px;
-    background-color: #dcdcdc;
-    border: none;
+    border-bottom: 1px dotted #b8b8b8;
+   
   }
 }
 
 .switcher__bar {
   position: relative;
-  left: 4px;
-  top: 2px;
-  width: 35px;
-  height: 6px;
-  background-color: $light-green-color;
-  border-radius: 10px;
+  width: 82px;
+  height: 12px;
+  background-color: #ffffff;
+  border: 1px solid #cdcdcd;
+  border-radius: 5px;
+
 
   @media(min-width: $tablet-width) {
-    left: 198px;
-    top: -15px;
-    width: 33px;
-    height: 33px;
-    background-color: #ffffff;
-    border: 1px solid #cdcdcd;
-    border-radius: 16px;
+    top: 8px;
+    width: 430px;
+    height: 5px;
+    background-color: #dcdcdc;
+    border: none;
   }
 }
 
 .switcher__bar-inside {
+  width: 35px;
+  height: 6px;
+  background-color: #68b738;
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  border-radius: 2px;
+
   @media(min-width: $tablet-width) {
-    position: relative;
-    background-color: $light-green-color;
-    width: 10px;
-    height: 10px;
-    top: 11px;
-    left: 11px;
-    border-radius: 5px;
-  }
-}
+    top: -15px;
+    left: 199px;
+    width: 33px;
+    height: 33px;
+    background-color: #ffffff;
+    border-radius: 19px;
+    border: 1px solid #cdcdcd;
+    cursor: pointer;
+    
 
-// .switcher {
-//   display: flex;
-//   flex-direction: column;
-//   margin-bottom: 36px;
-//   font-size: 16px;
-//   line-height: 20px;
-//   text-transform: uppercase;
-
-//   @media(min-width: $tablet-width) {
-//       position: relative;
-//       height: 420px;
-//       margin: 0;
-//   }
-
-//   @media (min-width: $desktop-width) {
-//     height: 365px;
-
-//   }
-// }
-
-.switcher__image-wrap {
-  @media(max-width: $mobile-width-only) {
-    &--before {
-      top: 8px;
-      right: 2px;
-    }
-  }
-
-  @media(max-width: $tablet-width) {
-
-  &--before {
-    position: relative;
-    top: 10px;
-    right: 20px;
-  }
-
-}
-  @media(min-width: $tablet-width) {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    overflow: hidden;
-
-    &--before {
-      top: -170px;
-      left: 19px;
-      width: 48%;
-    }
-
-    &--after {
-      top: -170px;
-      left: 358px;
-      width: 49.5%;
-    }
-  }
-
-  @media(min-width: $desktop-width) {
-    &--before {
-      width: 60%;
-      top: -189px;
-      left: -83px;
-    }
-
-    &--after {
-      width: 54%;
-      top: -189px;
-      left: 283px;
-    }
-  }
-}
-
-.switcher__image  {
-  @media(max-width: $mobile-width-only) {
-
-    &--after {
-      display: none;
-    }
-  }
-
-    @media(min-width: $tablet-width) {
+    &::after {
+      content: "";
       position: absolute;
-      top: 0;
-      bottom: 0;
-
-      &--before {
-        left: 0;
-      }
-
-      &--after {
-        right: 0;
-        visibility: visible;
-      }
+      left: 12px;
+      top: 12px;
+      width: 10px;
+      height: 10px;
+      background-color: $light-green-color;
+      border-radius: 10px;
     }
-
+  }
 }
-
-// .switcher__box {
-//   display: flex;
-//   justify-content: space-between;
-//   width: 199px;
-//   padding-left: 60px;
-
-//   @media(min-width: $tablet-width) {
-//     position: relative;
-//     bottom: 53px;
-//     width: 575px;
-//     padding-bottom: 12px;
-//   }
-
-//   @media(min-width: $desktop-width) {
-//     top: 5px;
-//     right: 60px;
-//   }
-// }
-
-// .switcher__words {
-//   font-size: 16px;
-//   line-height: 20px;
-//   text-transform: uppercase;
-
-//   @media(min-width: $tablet-width) {
-//     font-size: 20px;
-//     line-height: 20px;
-//     text-transform: uppercase;
-//     border-bottom: 1px dotted;
-//   }
-// }
-
-// .switcher__scale {
-//   width: 83px;
-//   height: 10px;
-//   position: relative;
-//   left: 58px;
-//   bottom: 20px;
-//   background-color: #ffffff;
-//   border: 1px solid #cdcdcd;
-//   border-radius: 30px;
-
-//   @media(min-width: $tablet-width) {
-//     width: 427px;
-//     height: 6px;
-//     left: 80px;
-//     background-color: #dcdcdc;
-//     border: none;
-//   }
-
-//   @media(min-width: $desktop-width) {
-//     left: 71px;
-//   }
-// }
-
-// .switcher__bar {
-//   position: relative;
-//   left: 4px;
-//   top: 2px;
-//   width: 35px;
-//   height: 6px;
-//   background-color: $light-green-color;
-//   border-radius: 10px;
-
-//   @media(min-width: $tablet-width) {
-//     left: 199px;
-//     top: -11px;
-//     width: 33px;
-//     height: 33px;
-//     background-color: #ffffff;
-//     border: 1px solid #cdcdcd;
-//     border-radius: 16px;
-//   }
-// }
-
-// .switcher__bar-inside {
-//   @media(min-width: $tablet-width) {
-//     position: relative;
-//     background-color: $light-green-color;
-//     width: 10px;
-//     height: 10px;
-//     top: 11px;
-//     left: 11px;
-//     border-radius: 5px;
-//   }
-// }
-

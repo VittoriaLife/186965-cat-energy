@@ -59,17 +59,6 @@
   }
 }
 
-.card-product__table {
-  font-size: 14px;
-  line-height: 14px;
-  color: #444444;
-
-  @media(min-width: $tablet-width) {
-    font-size: 16px;
-    line-height: 20px;
-  }
-}
-
 
 .card-product__row {
   display: flex;
@@ -78,6 +67,18 @@
 
   @media(min-width: $tablet-width) {
     width: 241px;
+  }
+}
+
+.card-product__cell {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+
+  @media(min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
   }
 }
 

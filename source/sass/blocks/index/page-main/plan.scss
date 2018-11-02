@@ -24,11 +24,11 @@
     width: 520px;
     padding: 0;
     padding-top: 71px;
-    padding-left: 55px;
+    padding-left: 44px;
 
     &--pro {
       margin: 0;
-      padding-left: 65px;
+      padding-left: 57px;
     }
   }
 } 
@@ -62,7 +62,7 @@
     height: 100px;
 
     &--pro {
-      right: 431px;
+      right: 425px;
     }
   }
 }
@@ -129,7 +129,7 @@
     padding-left: 161px;
 
     &--pro {
-      padding-left: 146px;
+      padding-left: 155px;
     }
   }
 }
@@ -138,8 +138,9 @@
 .plan__description {
   position: relative;
   padding-top: 7px;
-  padding-right: 66px;
+  padding-right: 35px;
   padding-bottom: 23px;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
@@ -164,13 +165,13 @@
   @media(min-width: $tablet-width) {
     padding-top: 8px;
     padding-left: 18px;
-    padding-right: 352px;
-    padding-bottom: 42px;
+    padding-right: 280px;
+    padding-bottom: 41px;
     font-size: 16px;
     line-height: 24px;
 
     &--pro {
-      padding-right: 385px;
+      padding-right: 312px;
       padding-top: 10px;
     }
   }
@@ -179,7 +180,7 @@
     padding: 0;
     padding-top: 55px;
     padding-bottom: 19px;
-    width: 395px;
+    width: 465px;
   }
 }
 

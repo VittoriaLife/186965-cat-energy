@@ -1,77 +1,50 @@
 .card-product {
+  display: flex;
+  flex-direction: column;
+  
+  // border-top: 1px solid #cdcdcd;
+} 
 
-  &:last-child {
-    padding-bottom: 20px;
-    border-bottom: 1px solid #ededed;
-  }
 
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: column;
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-top: 11px;
-    padding-bottom: 27px;
-    border: 1px solid #ededed;
-  }
-
-  @media(min-width: $desktop-width) {
-    flex-direction: row;
-    width: 895px;
-    padding: 0;
-    border: none;
-    border-top:  1px solid #ededed;
-  }
-}
-
-.card-product__inner {
-  border-top: 1px solid #ededed;
-  margin-top: 14px;
-
-  @media (min-width: $tablet-width) {
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 9px;
-    border: none;
-  }
-}
-
-.card-product__addition {
+.card-product__wrapper {
   @media(min-width: $tablet-width) {
-    width: 385px;
+    display: flex;
+    justify-content: space-between;
+    width: 630px;
   }
 }
-
 
 .card-product__title {
+  margin: 0;
+  padding-bottom: 10px;
   font-size: 16px;
   line-height: 16px;
-  font-weight: 400;
+  font-weight: 500;
   text-transform: uppercase;
-  color: #222222;
+  color: #222222; 
 
   @media(min-width: $tablet-width) {
-    margin: 0;
     font-size: 20px;
     line-height: 20px;
-
   }
 }
 
+.card-product__table {
+  margin-bottom: 12px;
+ 
+}
 
 .card-product__row {
   display: flex;
   justify-content: space-between;
-  width: 280px;
 
   @media(min-width: $tablet-width) {
-    width: 241px;
+    width: 232px;
   }
 }
 
 .card-product__cell {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: $font-arial;
   font-size: 14px;
   line-height: 14px;
   color: #444444;
@@ -80,23 +53,20 @@
     font-size: 16px;
     line-height: 20px;
   }
-}
+ }
 
 .card-product__button-to-order {
-  margin-top: 8px;
-  padding: 9px 97px;
-  background-color: #68b738;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: "Oswald", "Arial", sans-serif; 
   font-size: 16px;
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
+  background-color: $light-green-color;
+  border: none;
 
   @media(min-width: $tablet-width) {
-    width: 633px;
-    align-self: center;
+    width: 635px;
   }
-
-  @media (min-width: $desktop-width) {
-    padding: 10px 50px;
-  }
-}
+ }

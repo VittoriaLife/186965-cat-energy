@@ -1,91 +1,35 @@
 .extra-goods {
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
 
-  @media(min-width: $desktop-width) {
-    padding: 0 40px;
+  @media(min-width: $tablet-width) {
+    
   }
-
 }
 
-.extra-goods__title {
-  position: relative;
-  margin-top: 28px;
+.extra-goods__heading {
+  margin: 0;
+  margin-bottom: 34px;
   font-size: 24px;
   line-height: 24px;
-  font-weight: 400;
-  color: #111111;
+  font-weight: 500;
+  color: $black-color;
 
-  &::after {
-    content: "";
-    width: 53px;
-    height: 4px;
-    position: absolute;
-    background-color: $light-green-color;
-    top: 14px;
-    left: 246px;
-  }
-
-  @media (min-width: $tablet-width) {
-    padding-left: 48px;
-    margin-top: 67px;
-    font-size: 36px;
-    line-height: 36px;
-    font-weight: 400;
-
-    &::before {
-      content: "";
-      position: absolute;
-      width: 30px;
-      height: 3px;
-      top: 22px;
-      left: -20px;
-      background-color: $light-green-color;
-    }
-
-    &::after {
-      width: 325px;
-      height: 3px;
-      left: 423px;
-      top: 22px;
-    }
-
-  }
-
-  @media (min-width: $desktop-width) {
-    padding: 0;
-    margin-top: 74px;
-    font-size: 36px;
-    line-height: 36px;
-    font-weight: 400;
-
-    &::before {
-      display: none;
-    }
-
-    &::after {
-      width: 888px;
-      left: 372px;
-    }
-  }
-}
-
-.extra-goods__content {
-  @media (min-width: $desktop-width) {
-    display: flex;
-  }
-}
-
-.extra-goods__container {
   @media(min-width: $tablet-width) {
-    margin-top: 51px;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  @media(min-width: $desktop-width) {
-    display: flex;
+    font-size: 36px;
+    line-height: 36px;
   }
 }
 
+.extra-goods__wrapper {
+  padding-left: 5px;
+  border-top: 1px solid #cdcdcd;
+
+  @media(min-width: $tablet-width) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 36px;
+    border: 1px solid #d9d9d9;
+    border-bottom: none;
+  }
+}

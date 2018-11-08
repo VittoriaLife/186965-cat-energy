@@ -1,4 +1,5 @@
 .main-form__box {
+  padding: 0 20px;
 
   @media(min-width: $desktop-width) {
     padding: 0 40px;
@@ -9,8 +10,6 @@
   margin: 0;
   margin-top: 13px;
   margin-bottom: 26px;
-  padding-left: 20px;
-  padding-right: 20px;
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
@@ -34,8 +33,6 @@
 
 .main-form__resume {
   margin: 0;
-  padding-left: 20px;
-  padding-right: 20px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;

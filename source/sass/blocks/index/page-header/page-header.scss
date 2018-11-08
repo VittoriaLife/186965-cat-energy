@@ -19,7 +19,7 @@
   display: flex;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 10px;
+  padding-bottom: 9px;
   border-bottom: 1px solid #e6e6e6;
 
   @media(min-width: $tablet-width) {
@@ -44,6 +44,6 @@
   @media(min-width: $desktop-width) {
     width: 193px;
     padding-top: 56px;
-    
+
   }
 }

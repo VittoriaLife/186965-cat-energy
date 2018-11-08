@@ -3,6 +3,7 @@
   flex-direction: column;
   margin-top: 40px;
   padding-top: 65px;
+  padding-bottom: 51px;
   align-items: center;
   background-image: url("/img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
@@ -10,6 +11,8 @@
 
 
 .cat-present__text {
+  width: 162px;
+  margin-top: 54px;
   font-family: $font-arial;
   font-size: 16px;
   line-height: 20px;

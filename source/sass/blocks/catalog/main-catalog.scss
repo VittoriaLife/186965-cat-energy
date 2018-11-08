@@ -31,6 +31,7 @@
   }
 
   @media(min-width: $tablet-width) {
+    padding-left: 10px;
     padding-top: 51px;
     font-size: 60px;
   }
@@ -49,7 +50,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 166px;
+    margin-top: 20px;
+    padding-left: 9px;
   }
 
   @media(min-width: $desktop-width) {

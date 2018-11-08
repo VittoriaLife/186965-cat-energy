@@ -36,8 +36,8 @@
   @media(max-width: $mobile-width-only) {
     content: "";
     position: absolute;
-    left: 9px;
-    top: 5px;
+    left: 7px;
+    top: 7px;
     width: 24px;
     height: 2px;
     box-shadow: 0 8px 0 0 #222222, 0 16px 0 0 #222222;
@@ -74,7 +74,7 @@
     position: relative;
     top: 52px;
     right: 213px;
-    
+
   }
 }
 
@@ -87,7 +87,7 @@
 
 .main-navigation__wrapper {
   @media(min-width: $tablet-width) {
-    padding-left: 76px;
+    padding-left: 86px;
     padding-top: 25px;
   }
 
@@ -200,6 +200,6 @@
 
 // .main-navigation__wrapper {
 //   @media(min-width: $desktop-width) {
-    
+
 //   }
 // }

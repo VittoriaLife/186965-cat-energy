@@ -1,5 +1,5 @@
 .users-data {
-  margin-top: 39px;
+  margin-top: 41px;
 
   @media(min-width: $tablet-width) {
     margin-top: 0;
@@ -18,11 +18,21 @@
   @media(min-width: $desktop-width) {
     margin-bottom: 7px;
   }
-  
+
 }
 
 .users-data__inner {
-  border-bottom: 1px solid #ededed;
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 320px;
+    height: 1px;
+    background-color: #ededed;
+    position: absolute;
+    left: -20px;
+
+  }
 
   @media(min-width: $tablet-width) {
     border: none;
@@ -53,8 +63,6 @@
 .users-data__more {
   border: none;
   padding: 0;
-  padding-left: 20px;
-  padding-right: 20px;
   margin: 0;
 
   @media(min-width: $tablet-width) {
@@ -75,7 +83,7 @@
 }
 
 .users-data__label {
-  margin-right: 9px;
+  margin-right: 10px;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
@@ -104,7 +112,7 @@
 }
 
 .users-data__name {
-  width: 213px;
+  width: 215px;
   height: 42px;
   margin-bottom: 13px;
   padding-left: 12px;
@@ -148,7 +156,7 @@
 }
 
 .users-data__age {
-  width: 154px;
+  width: 157px;
   height: 42px;
   padding-left: 13px;
   margin-bottom: 20px;
@@ -170,7 +178,6 @@
 
 .users-data__inner-goals {
   padding-bottom: 40px;
-  border: 1px solid #cdcdcd;
 
   @media(min-width: $tablet-width) {
     width: 630px;
@@ -203,12 +210,20 @@
 
 }
 
+.users-data__radio {
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border: 1px solid #bfbfbf;
+}
+
 .users-data__weight-loss,
 .users-data__mass,
 .users-data__idk {
   margin: 0;
   margin-right: 15px;
   margin-bottom: 13px;
+  @include visually-hidden;
 
   @media (min-width: $tablet-width) {
     margin-right: 25px;
@@ -224,19 +239,19 @@
 
 .users-data__legend {
   position: relative;
-  
+
   &--contacts {
     font-size: 24px;
-    line-height: 24px;  
+    line-height: 24px;
 
     &:after {
       content: "";
-      width: 159px;
+      width: 100px;
       height: 3px;
       position: absolute;
       background-color: $light-green-color;
       top: 15px;
-      left: 141px;
+      left: 200px;
     }
 
   &--more {
@@ -286,7 +301,7 @@
             top: 21px;
             right: 223px;
           }
-  
+
           &:after {
             content: "";
             width: 145px;
@@ -308,7 +323,7 @@
             top: 21px;
             right: 254px;
           }
-  
+
           &:after {
             content: "";
             width: 145px;
@@ -324,7 +339,7 @@
     @media (min-width: $desktop-width) {
       margin-bottom: 52px;
       margin-left: 0;
-    
+
     &:after {
       content: "";
       width: 777px;
@@ -333,8 +348,8 @@
       background-color: $light-green-color;
       top: 21px;
       left: 553.5px;
-    } 
-    
+    }
+
     &:before {
       content: "";
       width: 70px;
@@ -394,7 +409,7 @@
 
 .users-data__contacts {
   position: relative;
-  margin-top: 28px;
+  margin-top: 65px;
 
   // &:after {
   //   content:"";
@@ -504,8 +519,7 @@
 }
 
 .users-data__holder {
-  padding-left: 20px;
-  padding-right: 20px;
+
 
   @media(min-width: $tablet-width) {
     padding-bottom: 41px;
@@ -550,4 +564,4 @@
     font-size: 20px;
     line-height: 20px;
   }
-} 
+}

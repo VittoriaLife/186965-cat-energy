@@ -30,10 +30,6 @@
     width: 165px;
     font-size: 20px;
     line-height: 25px;
-
-    &--form {
-      margin-top: 66px;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -56,10 +52,6 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     text-align: end;
-
-    &--form {
-      margin-top: 66px;
-    }
   }
 
   @media (min-width: $desktop-width) {

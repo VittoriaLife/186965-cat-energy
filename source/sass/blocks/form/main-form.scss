@@ -1,90 +1,61 @@
-.main-form__box {
+.main-form__container {
+  display: flex;
+  flex-direction: column;
   padding: 0 20px;
 
-  @media(min-width: $desktop-width) {
-    padding: 0 40px;
+  @media(min-width: $tablet-width) {
+    padding: 0 30px;
   }
 }
 
-.main-form__program-select {
+.main-form__head-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+
+  @media(min-width: $tablet-width) {
+    padding-top: 53px;
+  }
+
+}
+
+.main-form__heading {
   margin: 0;
-  margin-top: 13px;
-  margin-bottom: 26px;
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
-  color: #111111;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 55px;
-    margin-bottom: 53px;
-    padding: 0;
-    font-size: 60px;
-    line-height: 60px;
-  }
-
-  @media (min-width: 1300px) {
-    margin-top: 70px;
-    margin-bottom: 55px;
-    font-size: 60px;
-    line-height: 60px;
-  }
-}
-
-.main-form__resume {
-  margin: 0;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: #111111;
-
-  @media (min-width: $tablet-width) {
-    padding: 0;
-    margin-bottom: 67px;
-    margin-left: 40px;
-    font-size: 20px;
-    line-height: 30px;
-  }
-
-  @media (min-width: 1300px) {
-    margin: 0;
-    margin-bottom: 65px;
-    font-size: 20px;
-    line-height: 30px;
-  }
-}
-
-.main-form__required {
-  margin-left: 60px;
-  margin-right: 60px;
-  font-size: 14px;
-  line-height: 16px;
+  color: $black-color;
 
   @media(min-width: $tablet-width) {
-    position: relative;
-    padding-left: 29px;
-    font-size: 16px;
-    line-height: 16px;
+    font-size: 60px;
+  }
 
-    &:before {
-      content: "";
-    width: 15px;
-    height: 2px;
-    position: absolute;
-    background-color: #444444;
-    top: 11px;
-    left: 5px;
-    }
+}
+
+.main-form__title {
+  margin-top: 25px;
+  font-size: 14px;
+  line-height: 18px;
+  color: $black-color;
+  text-transform: uppercase;
+
+  @media(min-width: $tablet-width) {
+    margin-top: 55px;
+    padding-left: 41px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.main-form__search-wrapper {
+  margin-top: 26px;
+
+  @media(min-width: $tablet-width) {
+    margin-top: 47px;
   }
 
   @media(min-width: $desktop-width) {
-    margin-left: 0;
+    margin-top: 66px;
   }
 }
 
-.users-data__position {
-  @media (min-width: $tablet-width) {
-    display: flex;
-
-  }
-}

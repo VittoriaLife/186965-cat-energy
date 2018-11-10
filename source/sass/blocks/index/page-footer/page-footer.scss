@@ -4,6 +4,16 @@
   margin-top: 9px;
   background-color: #f2f2f2;
 
+  &--form{
+    margin-top: 29px;
+  }
+
+  @media(min-width: $tablet-width) {
+    &--form {
+      margin-top: 20px;
+    }
+  }
+
 
   @media(min-width: $desktop-width) {
     margin: 0;

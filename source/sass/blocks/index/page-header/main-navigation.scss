@@ -87,7 +87,7 @@
 
 .main-navigation__wrapper {
   @media(min-width: $tablet-width) {
-    padding-left: 86px;
+    padding-left: 76px;
     padding-top: 25px;
   }
 
@@ -96,110 +96,3 @@
     padding-left: 188px;
   }
 }
-
-
-
-// .main-navigation {
-//   @media(max-width: $mobile-width-only) {
-//     display: flex;
-//     position: relative;
-//     margin: 0 auto;
-//   }
-// }
-
-// .main-navigation__toggle {
-//   @media(max-width: $mobile-width-only) {
-//     position: absolute;
-//     top: 19px;
-//     left: 59px;
-//     z-index: 2;
-//     display: block;
-//     padding: 0;
-//     width: 40px;
-//     height: 30px;
-//     background-color: transparent;
-//     cursor: pointer;
-//     border: none;
-//   }
-// }
-
-// .main-navigation--closed .main-navigation__toggle::before {
-//   @media(max-width: $mobile-width-only) {
-//     content: "";
-//     position: absolute;
-//     top: 7px;
-//     left: 8px;
-//     width: 24px;
-//     height: 2px;
-//     background-color: #222222;
-//     box-shadow: 0 8px 0 0 #222222, 0 16px 0 0 #222222;
-//   }
-// }
-
-// .main-navigation--opened .main-navigation__toggle {
-//   @media(max-width: $mobile-width-only) {
-//     top: 20px;
-//     left: 75px;
-
-//     &::before,
-//     &::after {
-//       content: "";
-
-//       position: absolute;
-//       top: 16px;
-//       left: 4px;
-//       width: 30px;
-//       height: 2px;
-
-//       background-color: #222222;
-//     }
-
-//     &::before {
-//       transform: rotate(45deg);
-//       box-shadow: none;
-//     }
-
-//     &::after {
-//       transform: rotate(-45deg);
-//     }
-//   }
-
-//   @media(min-width: $tablet-width) {
-//     display: none;
-//   }
-// }
-
-// .main-navigation--opened .main-navigation__wrapper {
-//   @media(max-width: $mobile-width-only) {
-//     position: relative;
-//     top: 52px;
-//     right: 193px;
-//     margin-bottom: 36px;
-//   }
-// }
-
-// .main-navigation--closed .site-list {
-//   @media(max-width: $mobile-width-only) {
-//     border: none;
-//     display: none;
-//   }
-// }
-
-// .main-navigation--closed .site-list__item {
-//   @media (max-width: $mobile-width-only) {
-//     display: none;
-//   }
-// }
-
-
-// .main-navigation--closed .main-navigation__toggle {
-//   @media(min-width: $tablet-width) {
-//     display: none;
-//   }
-// }
-
-// .main-navigation__wrapper {
-//   @media(min-width: $desktop-width) {
-
-//   }
-// }

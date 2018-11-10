@@ -3,7 +3,7 @@
   &::after {
     content: "";
       position: absolute;
-      left: 640px;
+      left: 717px;
       top: -1px;
       z-index: -1;
       width: 720px;
@@ -44,6 +44,7 @@
   @media(min-width: $desktop-width) {
     width: 193px;
     padding-top: 56px;
+    padding-left: 77px;
 
   }
 }

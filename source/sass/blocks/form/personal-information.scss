@@ -1,0 +1,88 @@
+.personal-information {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.personal-information__label {
+  font-size: 16px;
+  line-height: 18px;
+  color: $black-color;
+  text-transform: uppercase;
+
+  &--personal:last-child {
+    margin-bottom: 7px;
+  }
+
+  &--radio {
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+
+    &:last-child {
+      margin-bottom: 17px;
+    }
+
+  }
+
+  @media(min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.personal-information__field {
+  margin-left: 10px;
+  margin-bottom: 15px;
+  padding-left: 14px;
+  height: 38px;
+
+  &--name {
+    width: 211px;
+
+  }
+
+  &--weight {
+    margin-left: 13px;
+    width: 186px;
+  }
+
+  &--age {
+    width: 155px;
+  }
+
+  @media(min-width: $tablet-width) {
+    margin-left: 14px;
+    margin-bottom: 22px;
+    height: 44px;
+
+    &--name {
+      width: 550px;
+    }
+
+    &--weight {
+      width: 521px;
+    }
+
+    &--age {
+      width: 478px;
+    }
+  }
+
+  @media(min-width: $desktop-width) {
+
+    &--name {
+      width: 489px;
+    }
+
+    &--weight {
+      width: 463px;
+    }
+
+    &--age {
+      width: 420px;
+    }
+  }
+
+
+}

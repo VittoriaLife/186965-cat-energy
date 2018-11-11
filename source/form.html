@@ -45,106 +45,89 @@
         <div class="main-form__search-wrapper">
           <form class="main-form__search users-data" action="https://echo.htmlacademy.ru" method="get">
             <div class="users-data__wrapper">
-              <fieldset class="users-data__personal">
-                <label class="users-data__label users-data__label--personal" for="cat-name">Имя:<sup>*</sup>
-                  <input class="users-data__field users-data__field--name" type="text" name="Имя животного" id="cat-name" placeholder="БАРСИК" required>
+              <fieldset class="users-data__heading personal-information">
+                <label class="personal-information__label personal-information--name" for="cat-name">Имя:<sup>*</sup>
+                  <input class="personal-information__field personal-information__field--name" type="text" name="Имя животного" id="cat-name" placeholder="БАРСИК" required>
                 </label>
-                <label class="users-data__label users-data__label--personal" for="cat-weight">Вес (кг):<sup>*</sup>
-                  <input class="users-data__field users-data__field--weight" type="number" name="Вес животного" id="cat-weight" placeholder="7" min="1" max="30" step="1" required>
+                <label class="personal-information__label personal-information__label--personal" for="cat-weight">Вес (кг):<sup>*</sup>
+                  <input class="personal-information__field personal-information__field--weight" type="number" name="Вес животного" id="cat-weight" placeholder="7" min="1" max="30" step="1" required>
                 </label>
-                <label class="users-data__label users-data__label--personal" for="cat-age">Возраст (лет):
-                  <input class="users-data__field users-data__field--age" type="number" name="Возраст животного"id="cat-age" placeholder="7"  min="1" max="30" step="1">
+                <label class="personal-information__label personal-information__label--personal" for="cat-age">Возраст (лет):
+                  <input class="personal-information__field personal-information__field--age" type="number" name="Возраст животного"id="cat-age" placeholder="7"  min="1" max="30" step="1">
                 </label>
               </fieldset>
-              <fieldset class="users-data__goals">
-                <label class="users-data__label users-data__label--radio" for="weight-loss">
-                  <input class="users-data__input users-data__input--weight-loss" type="radio" name="Похудение" id="weight-loss" checked>Похудение
-                  <span class="users-data__radio"></span>
+              <fieldset class="users-data__heading goals">
+                <label class="goals__label" for="weight-loss">
+                  <input class="goals__input goals__input--weight-loss" type="radio" name="Похудение" id="weight-loss" checked>Похудение
+                  <span class="goals__radio"></span>
                 </label>
-                <label class="users-data__label users-data__label--radio"  for="mass">
-                  <input class="users-data__input users-data__input--mass" type="radio" name="Набор массы" id="mass">Набор массы
-                  <span class="users-data__radio"></span>
+                <label class="goals__label"  for="mass">
+                  <input class="goals__input goals__input--mass" type="radio" name="Набор массы" id="mass">Набор массы
+                  <span class="goals__radio"></span>
                 </label>
-                <label class="users-data__label users-data__label--radio"  for="idk">
-                  <input class="users-data__input users-data__input--idk" type="radio" name="Я не знаю" id="idk">Не знаю (нужен ваш совет)
-                  <span class="users-data__radio"></span>
+                <label class="goals__label"  for="idk">
+                  <input class="goals__input goals__input--idk" type="radio" name="Я не знаю" id="idk">Не знаю (нужен ваш совет)
+                  <span class="goals__radio"></span>
                 </label>
               </fieldset>
             </div>
             <div class="users-data__contacts-wrapper">
-              <fieldset class="users-data__contacts">
-                <legend class="users-data__legend users-data__legend--contacts">Контактные данные (владельца кота)</legend>
-                  <label class="users-data__label users-data__label--e-mail" for="email-address">E-mail:<sup>*</sup>
-                    <input class="users-data__e-mail" type="E-mail" name="Электронный адрес" placeholder="KUKLACHEV@GMAIL.COM" id="email-address" required>
+              <fieldset class="users-data__heading contacts">
+                <legend class="contacts__legend">Контактные данные (владельца кота)</legend>
+                  <label class="contacts__label" for="email-address">E-mail:<sup>*</sup>
+                    <input class="contacts__input  contacts__input--e-mail" type="E-mail" name="Электронный адрес" placeholder="KUKLACHEV@GMAIL.COM" id="email-address" required>
                   </label>
-                      
-                  <label class="users-data__label users-data__label--phone "  for="phone-number">Телефон:<sup>*</sup>
-                    <input class="users-data__phone" type="tel" name="Номер телефона" placeholder="8 (960) 800-60-90" id="phone-number" required>
+                  <label class="contacts__label"  for="phone-number">Телефон:<sup>*</sup>
+                    <input class="contacts__input contacts__input--phone" type="tel" name="Номер телефона" placeholder="8 (960) 800-60-90" id="phone-number" required>
                   </label>
-                      
               </fieldset>
             </div>
-            
+            <div class="users-data__comments-wrapper">
+              <fieldset class="users-data__heading comments">
+                <legend class="comments__legend">Комментарий</legend>
+                  <textarea class="comments__words" rows="5" placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"></textarea>
+              </fieldset>
+            </div>
+            <div class="users-data__more-wrapper">
+              <fieldset class="users-data__heading more">
+                <legend class="more__legend">Дополнительно</legend>
+                <div class="more__wrapper">
+                  <label class="more__label" for="sugar">
+                    <input  class="more__checkbox" type="checkbox" name="" id="sugar" checked>Сахарозаминитель
+                    <span class="more__custom-checkbox"></span>
+                  </label>
+                  <label class="more__label" for="water">
+                    <input class="more__checkbox" type="checkbox" name="" id="water">Питьевая вода
+                    <span class="more__custom-checkbox"></span>
+                  </label>
+                </div>
+                <div class="more__wrapper">
+                  <label class="more__label" for="milk">
+                    <input class="more__checkbox" type="checkbox" name="" id="milk">Молоко
+                    <span class="more__custom-checkbox"></span>
+                  </label>
+                  <label class="more__label more__label--checkbox" for="vitamins">
+                    <input class="more__checkbox" type="checkbox" name="" id="vitamins">Витамины
+                    <span class="more__custom-checkbox"></span>
+                  </label>
+                </div>
+               </fieldset>
+              </div>
+              <div class="users-data__button-wrapper">
+                <input class="users-data__button-to-sbm" type="submit" name="Отправка формы" value="ОТПРАВИТЬ ЗАЯВКУ">
+                <div class="users-data__holder-wrapper">
+                  <span>
+                    <sup>*</sup>
+                  </span>
+                  <span>—</span>
+                  <span class="users-data__required">Обязательные поля</span>
+                </div>
+            </div>
           </form>
         </div>
-        
+
       </div>
-      <!-- 
-    
-        <div class="users-data__wrapper users-data__wrapper--contacts">
-        <fieldset class="users-data__contacts">
-          <legend class="users-data__legend users-data__legend--contacts">Контактные данные (владельца кота)</legend>
-          <div class="users-data__contact-information-wrapper">
-            <label class="users-data__label users-data__label--e-mail" for="email-address">E-mail:<sup>*</sup></label>
-            <input class="users-data__e-mail" type="E-mail" name="Электронный адрес" placeholder="KUKLACHEV@GMAIL.COM" id="email-address" required>
-            <label class="users-data__label users-data__label--phone "  for="phone-number">Телефон:<sup>*</sup></label>
-            <input class="users-data__phone" type="tel" name="Номер телефона" placeholder="8 (960) 800-60-90" id="phone-number" required>
-          </div>
-          </div>
-        </fieldset>
-        <div class="users-data__wrapper users-data__wrapper--comments">
-        <fieldset class="users-data__comments">
-          <legend class="users-data__legend users-data__legend--comments ">Комментарий</legend>
-          <textarea class="users-data__words" rows="5" placeholder="РАССКАЖИТЕ ОБО ВСЕХ ПОВАДКАХ КОТА"></textarea>
-        </fieldset>
-        <fieldset class="users-data__more">
-            <legend class="users-data__legend users-data__legend--more">Дополнительно</legend>
-            <div class="users-data__container">
-            <div class="users-data__box">
-            <label class="users-data__label users-data__label--checkbox" for="sugar">
-              <input  class="users-data__checkbox" type="checkbox" name="" id="sugar" checked>Сахарозаминитель
-              <span class="users-data__custom-checkbox"></span>
-            </label>
-            <label class="users-data__label users-data__label--checkbox" for="water">
-              <input class="users-data__checkbox" type="checkbox" name="" id="water">Питьевая вода
-              <span class="users-data__custom-checkbox"></span>
-            </label>
-           </div>
-          
-           <div class="users-data__box">
-            <label class="users-data__label users-data__label--checkbox" for="milk">
-              <input class="users-data__checkbox" type="checkbox" name="" id="milk">Молоко
-              <span class="users-data__custom-checkbox"></span>
-            </label>
-            <label class="users-data__label users-data__label--checkbox" for="vitamins">
-              <input class="users-data__checkbox" type="checkbox" name="" id="vitamins">Витамины
-              <span class="users-data__custom-checkbox"></span>
-            </label>
-          </div>
-          </div>
-        </fieldset>
-        <div class="users-data__holder">
-          <input class="users-data__button-to-sbm" type="submit" name="Отправка формы" value="ОТПРАВИТЬ ЗАЯВКУ">
-          <div class="users-data__holder-wrap">
-            <span>
-              <sup>*</sup>
-            </span>
-            <span>—</span>
-            <span class="main-form__required">Обязательные поля</span>
-          </div>
-        </div>
-      </form>
-    </div> -->
+
     </main>
 
     <footer class="page-footer page-footer--form">

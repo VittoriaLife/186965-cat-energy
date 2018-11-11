@@ -1,0 +1,122 @@
+.more {
+  display: flex;
+  flex-direction: column;
+}
+
+.more__legend {
+  position: relative;
+  margin-bottom: 35px;
+  font-size: 24px;
+  line-height: 24px;
+  color: $black-color;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 14px;
+    right: -155px;
+    width: 136px;
+    height: 3px;
+    background-color: $light-green-color;
+
+  }
+
+  @media(min-width: $tablet-width) {
+    margin-bottom: 57px;
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      left: -65px;
+      top: 22px;
+      width: 30px;
+      height: 3px;
+      background-color: $light-green-color;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 20px;
+      right: -487px;
+      width: 446px;
+      height: 3px;
+      background-color: $light-green-color;
+
+    }
+  }
+}
+
+.more__wrapper {
+  @media(min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 23px;
+    width: 534px;
+
+    &:last-child {
+      width: 497px;
+    }
+
+  }
+}
+
+.more__label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 18px;
+  color: $black-color;
+  text-transform: uppercase;
+
+  @media(min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+}
+
+.more__checkbox {
+  @include visually-hidden;
+}
+
+
+.more__checkbox:checked + .more__custom-checkbox::after {
+   content: "";
+   position: absolute;
+   top: 7px;
+   left: 5px;
+   width: 20px;
+   height: 20px;
+   background-image: url("/img/icon-tick.svg");
+   background-repeat: no-repeat;
+
+
+  @media(min-width: $tablet-width) {
+    top: 10px;
+    left: 13px;
+   }
+
+}
+
+.more__custom-checkbox {
+  display: inline-block;
+  position: relative;
+  margin-right: 14px;
+  width: 30px;
+  height: 30px;
+  order: -1;
+  border: 1px solid #cfcfcf;
+
+  @media(min-width: $tablet-width) {
+    margin-right: 18px;
+    width: 41px;
+    height: 36px;
+
+
+  }
+
+}

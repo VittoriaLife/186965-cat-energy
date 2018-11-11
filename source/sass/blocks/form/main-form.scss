@@ -17,6 +17,11 @@
     padding-top: 53px;
   }
 
+  @media(min-width: $desktop-width) {
+    padding-left: 80px;
+    padding-top: 71px;
+  }
+
 }
 
 .main-form__heading {
@@ -33,6 +38,7 @@
 }
 
 .main-form__title {
+  padding: 0;
   margin-top: 25px;
   font-size: 14px;
   line-height: 18px;
@@ -45,6 +51,10 @@
     font-size: 20px;
     line-height: 30px;
   }
+
+  @media(min-width: $desktop-width) {
+    padding: 0;
+  }
 }
 
 .main-form__search-wrapper {
@@ -52,10 +62,11 @@
 
   @media(min-width: $tablet-width) {
     margin-top: 47px;
+    margin-bottom: 52px;
   }
 
   @media(min-width: $desktop-width) {
-    margin-top: 66px;
+
   }
 }
 

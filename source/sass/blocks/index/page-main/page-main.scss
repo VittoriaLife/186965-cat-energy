@@ -1,14 +1,15 @@
-.page-main__background-image {
-  @media(max-width: $mobile-width-only) {
-  background-image: url("/img/index-background-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  }
-}
+
 
 .page-main__cover {
   padding-left: 20px;
   padding-right: 20px;
   padding-bottom: 28px;
+
+
+  @media(max-width: $mobile-width-only) {
+    background-image: url("/img/index-background-mobile@1x.jpg");
+    background-repeat: no-repeat;
+    }
 
   @media(min-width: $tablet-width) {
     padding: 0 30px;

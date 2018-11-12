@@ -7,11 +7,12 @@
       position: relative;
       height: 465px;
       padding: 0;
-      background: linear-gradient(to right, #f2f2f2 54%, #eaeaea 50%);
+      background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
     }
 
     @media(min-width: $desktop-width) {
       width: 852px;
+      background: linear-gradient(to right, #f2f2f2 53%, #eaeaea 50%);
     }
 
 
@@ -42,12 +43,12 @@
     top: -187px;
 
     &--before {
-      left: 94px;
+      left: 78px;
       width: 364px;
     }
 
     &--after {
-      right: 67px;
+      right: 68px;
       width: 328px;
     }
   }

@@ -14,9 +14,10 @@
   }
 
   @media(min-width: $desktop-width) {
-    padding-left: 160px;
+    padding-left: 143px;
+    top: 312px;
   }
- 
+
 
 }
 
@@ -34,7 +35,7 @@
     padding-bottom: 6px;
     font-size: 20px;
     border-bottom: 1px dotted #b8b8b8;
-   
+
   }
 }
 
@@ -74,7 +75,7 @@
     border-radius: 19px;
     border: 1px solid #cdcdcd;
     cursor: pointer;
-    
+
 
     &::after {
       content: "";

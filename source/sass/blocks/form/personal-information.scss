@@ -1,16 +1,36 @@
 .personal-information {
   display: flex;
   flex-direction: column;
+  position: relative;
+
+  @media(max-width: $mobile-width-only) {
+    &::after {
+      content: "";
+      width: 320px;
+      height: 1px;
+      position: absolute;
+      left: -20px;
+      background-color: #ededed;
+    }
+  }
 }
 
+.personal-information__wrapper {
+  display: flex;
+
+  @media(min-width: $desktop-width) {
+    padding-left: 5px;
+  }
+}
 
 .personal-information__label {
+  padding-top: 9px;
   font-size: 16px;
   line-height: 18px;
   color: $black-color;
   text-transform: uppercase;
 
-  &--personal:last-child {
+  &--age {
     margin-bottom: 7px;
   }
 
@@ -28,6 +48,18 @@
   @media(min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+
+    &--age {
+      padding-top: 14px;
+    }
+  }
+
+  @media(min-width: $desktop-width) {
+
+
+    &--weight {
+      padding-top: 11px;
+    }
   }
 }
 
@@ -52,8 +84,10 @@
   }
 
   @media(min-width: $tablet-width) {
-    margin-left: 14px;
+    margin-left: 18px;
     margin-bottom: 22px;
+    padding-left: 19px;
+
     height: 44px;
 
     &--name {
@@ -62,6 +96,7 @@
 
     &--weight {
       width: 521px;
+      margin-left: 21px;
     }
 
     &--age {
@@ -72,15 +107,15 @@
   @media(min-width: $desktop-width) {
 
     &--name {
-      width: 489px;
+      width: 483px;
     }
 
     &--weight {
-      width: 463px;
+      width: 452px;
     }
 
     &--age {
-      width: 420px;
+      width: 412px;
     }
   }
 

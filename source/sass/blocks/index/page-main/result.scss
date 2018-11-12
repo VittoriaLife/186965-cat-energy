@@ -7,12 +7,14 @@
       position: relative;
       height: 465px;
       padding: 0;
-      background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+      background: linear-gradient(to right, #f2f2f2 54%, #eaeaea 50%);
     }
 
     @media(min-width: $desktop-width) {
-      width: 790px;
+      width: 852px;
     }
+
+
 
 }
 
@@ -45,7 +47,7 @@
     }
 
     &--after {
-      right: 4px;
+      right: 67px;
       width: 328px;
     }
   }
@@ -61,7 +63,7 @@
       display: none;
       top: -205px;
     }
-  } 
+  }
 
   @media(min-width: $tablet-width) {
     position: absolute;
@@ -78,6 +80,6 @@
 
   }
 
-  
-  
+
+
 }

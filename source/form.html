@@ -46,15 +46,23 @@
           <form class="main-form__search users-data" action="https://echo.htmlacademy.ru" method="get">
             <div class="users-data__wrapper">
               <fieldset class="users-data__heading personal-information">
-                <label class="personal-information__label personal-information--name" for="cat-name">Имя:<sup>*</sup>
-                  <input class="personal-information__field personal-information__field--name" type="text" name="Имя животного" id="cat-name" placeholder="БАРСИК" required>
-                </label>
-                <label class="personal-information__label personal-information__label--personal" for="cat-weight">Вес (кг):<sup>*</sup>
+                <div class="personal-information__wrapper">
+                    <label class="personal-information__label personal-information--name" for="cat-name">Имя:<sup>*</sup>
+                    </label>
+                    <input class="personal-information__field personal-information__field--name" type="text" name="Имя животного" id="cat-name" placeholder="БАРСИК" required>
+                </div>
+
+                <div class="personal-information__wrapper">
+                  <label class="personal-information__label personal-information__label--weight" for="cat-weight">Вес (кг):<sup>*</sup>
+                  </label>
                   <input class="personal-information__field personal-information__field--weight" type="number" name="Вес животного" id="cat-weight" placeholder="7" min="1" max="30" step="1" required>
-                </label>
-                <label class="personal-information__label personal-information__label--personal" for="cat-age">Возраст (лет):
+                </div>
+
+                <div class="personal-information__wrapper">
+                  <label class="personal-information__label personal-information__label--age" for="cat-age">Возраст (лет):
+                  </label>
                   <input class="personal-information__field personal-information__field--age" type="number" name="Возраст животного"id="cat-age" placeholder="7"  min="1" max="30" step="1">
-                </label>
+                </div>
               </fieldset>
               <fieldset class="users-data__heading goals">
                 <label class="goals__label" for="weight-loss">
@@ -74,12 +82,17 @@
             <div class="users-data__contacts-wrapper">
               <fieldset class="users-data__heading contacts">
                 <legend class="contacts__legend">Контактные данные (владельца кота)</legend>
-                  <label class="contacts__label" for="email-address">E-mail:<sup>*</sup>
+                <div class="contacts__container contacts__container--e-mail">
+                    <label class="contacts__label contacts__label--e-mail" for="email-address">E-mail:<sup>*</sup>
+                    </label>
                     <input class="contacts__input  contacts__input--e-mail" type="E-mail" name="Электронный адрес" placeholder="KUKLACHEV@GMAIL.COM" id="email-address" required>
-                  </label>
-                  <label class="contacts__label"  for="phone-number">Телефон:<sup>*</sup>
+                </div>
+                <div class="contacts__container">
+                    <label class="contacts__label contacts__label--phone"  for="phone-number">Телефон:<sup>*</sup>
+                    </label>
                     <input class="contacts__input contacts__input--phone" type="tel" name="Номер телефона" placeholder="8 (960) 800-60-90" id="phone-number" required>
-                  </label>
+                </div>
+
               </fieldset>
             </div>
             <div class="users-data__comments-wrapper">

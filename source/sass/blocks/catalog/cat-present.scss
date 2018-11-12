@@ -1,4 +1,6 @@
 .cat-present {
+  display: flex;
+  flex-direction: column;
   margin-top: 40px;
   padding-top: 65px;
   padding-bottom: 51px;
@@ -11,6 +13,12 @@
     padding-top: 30px;
     background-image: url("/img/gift-photo-tablet@1x.jpg");
   }
+
+  @media(min-width: $desktop-width) {
+    margin: 0;
+    margin-left: 77px;
+    background-image: url("/img/gift-photo-desktop@1x.jpg");
+  }
 }
 
 
@@ -22,9 +30,17 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-left: 92px;
-    width: 493px;
-  }
+    padding-left: 20px;
+    padding-right: 55px;
+    width: 500px;
+ }
+
+  @media(min-width: $desktop-width) {
+    flex-direction: column;
+    padding-left: 27px;
+    padding-top: 21px;
+    width: 195px;
+ }
 }
 
 .cat-present__text {
@@ -41,9 +57,16 @@
     text-align: left;
   }
 
+  @media(min-width: $desktop-width) {
+    margin-top: 59px;
+    text-align: center;
+  }
+
 }
 
 .cat-present__image {
+  align-self: center;
+
 
   @media(min-width: $tablet-width) {
     margin-top: 12px;

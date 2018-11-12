@@ -6,6 +6,10 @@
   @media(min-width: $desktop-width) {
     flex-direction: row;
   }
+
+  @media(min-width: $desktop-width) {
+    width: 896px;
+  }
 }
 
 
@@ -14,6 +18,10 @@
     display: flex;
     justify-content: space-between;
     width: 630px;
+  }
+
+  @media(min-width: $desktop-width) {
+    padding-top: 12px;
   }
 }
 
@@ -60,7 +68,16 @@
     &--vitamins {
       width: 212px;
     }
+  }
 
+  @media(min-width: $desktop-width) {
+    width: 291px;
+    padding-right: 16px;
+
+    &--water {
+      width: 283px;
+      padding-right: 23px;
+    }
   }
 }
 
@@ -89,5 +106,11 @@
 
   @media(min-width: $tablet-width) {
     width: 635px;
+  }
+
+  @media(min-width: $desktop-width) {
+    width: 247px;
+    height: 40px;
+    margin-left: 17px;
   }
  }

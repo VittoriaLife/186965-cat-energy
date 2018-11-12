@@ -22,7 +22,6 @@
     margin: 0;
     margin-top: 136px;
     width: 324px;
-    height: 438px;
     border: 1px solid #e6e6e6;
 
      &::before {
@@ -37,11 +36,24 @@
       top: 86px;
     }
 
-
   }
 
   @media(min-width: $desktop-width) {
     width: 245px;
+
+    margin-top: 143px;
+
+    &::before {
+      left: 92px;
+      width: 62px;
+      top: 85px;
+    }
+
+    &::after {
+      left: 92px;
+      width: 62px;
+      top: 85px;
+    }
   }
 }
 
@@ -110,6 +122,11 @@
     padding-left: 82px;
     padding-right: 80px;
     border: none;
+  }
+
+  @media(min-width: $desktop-width) {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
 }

@@ -68,13 +68,10 @@
 
 
               <article class="main-catalog__item product">
-
                 <picture>
                   <source media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.png">
                   <img class="product__image product__image--big" src="img/chicken-big-mobile@1x.jpg" width="140" height="144" alt="Упаковка продукта">
                 </picture>
-
-
                 <div class="product__body">
                   <p class="product__name">Cat energy pro 1000 г</p>
                   <table class="product__table">
@@ -96,12 +93,10 @@
             </article>
 
             <article class="main-catalog__item product">
-
                 <picture>
                   <source media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.png">
                   <img class="product__image product__image--small" src="img/fish-small-mobile@1x.jpg" width="140" height="144" alt="Упаковка продукта">
                 </picture>
-
               <div class="product__body">
                 <p class="product__name">Cat energy pro 500 г</p>
                 <table class="product__table">
@@ -123,7 +118,6 @@
             </article>
 
             <article class="main-catalog__item product">
-
                 <picture>
                   <source media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.png">
                   <img class="product__image product__image--big" src="img/fish-big-mobile@1x.jpg" width="140" height="144" alt="Упаковка продукта">
@@ -247,7 +241,7 @@
                   <div class="card-product__wrapper">
                   <h2 class="card-product__title">Сахарозаменитель</h2>
                     <table class="card-product__table">
-                      <tr class="card-product__row">
+                      <tr class="card-product__row card-product__row--sugar">
                         <td class="card-product__cell"> 1 упаковка (100 г)</td>
                         <td class="card-product__cell"> 200 P. </td>
                       </tr>
@@ -262,7 +256,7 @@
                   <div class="card-product__wrapper">
                   <h2 class="card-product__title">Питьевая вода</h2>
                   <table class="card-product__table">
-                    <tr class="card-product__row">
+                    <tr class="card-product__row card-product__row--water">
                       <td class="card-product__cell">5 литров</td>
                       <td class="card-product__cell">50 P.</td>
                     </tr>
@@ -276,7 +270,7 @@
                 <article class="extra-goods__item card-product">
                   <div class="card-product__wrapper">
                   <h2 class="card-product__title card-product__title--milk">Молоко</h2>
-                    <table class="card-product__table">
+                    <table class="card-product__table card-product__row--milk">
                       <tr class="card-product__row">
                         <td class="card-product__cell">1 литр</td>
                         <td class="card-product__cell">100 P.</td>
@@ -291,7 +285,7 @@
                     <div class="card-product__wrapper">
                       <h2 class="card-product__title">Витамины</h2>
                       <table class="card-product__table">
-                        <tr class="card-product__row">
+                        <tr class="card-product__row card-product__row--vitamins">
                           <td class="card-product__cell">1 упаковка (30 г)</td>
                           <td class="card-product__cell">300 P.</td>
                         </tr>
@@ -303,10 +297,12 @@
                 </section>
 
                 <section class="main-catalog__item cat-present">
-                  <picture>
-                    <img class="cat-present__image" src="img/icon-gift.svg" width="56" alt="Подарок">
-                  </picture>
-                  <p class="cat-present__text">Закажите все <br> и получите чехол для кота в подарок!</p>
+                  <div class="cat-present-wrapper">
+                    <picture>
+                      <img class="cat-present__image" src="img/icon-gift.svg" width="56" alt="Подарок">
+                      </picture>
+                      <p class="cat-present__text">Закажите все <br> и получите чехол для кота в подарок!</p>
+                  </div>
                 </section>
               </div>
     </main>

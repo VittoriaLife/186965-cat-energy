@@ -35,6 +35,10 @@
 .card-product__table {
   margin-bottom: 12px;
 
+  @media(min-width: $tablet-width) {
+    margin-bottom: 18px;
+  }
+
 }
 
 .card-product__row {
@@ -43,7 +47,20 @@
   width: 280px;
 
   @media(min-width: $tablet-width) {
-    width: 232px;
+    width: 155px;
+
+    &--sugar {
+      width: 221px;
+    }
+
+    &--milk {
+      width: 137px;
+    }
+
+    &--vitamins {
+      width: 212px;
+    }
+
   }
 }
 

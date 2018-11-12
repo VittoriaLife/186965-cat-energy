@@ -43,8 +43,31 @@
   }
 
   @media(min-width: $tablet-width) {
+    padding-left: 36px;
+    margin-bottom: 80px;
     font-size: 36px;
     line-height: 36px;
+
+
+    &::before {
+      content: "";
+      width: 29px;
+      height: 3px;
+      position: absolute;
+      top: 21px;
+      left: -30px;
+      background-color: $light-green-color;
+    }
+
+    &::after {
+      content: "";
+      width: 327px;
+      height: 3px;
+      position: absolute;
+      top: 21px;
+      right: -30px;
+      background-color: $light-green-color;
+    }
   }
 }
 
@@ -54,8 +77,8 @@
   border-top: 1px solid #cdcdcd;
 
   @media(min-width: $tablet-width) {
-    padding-top: 32px;
-    padding-bottom: 32px;
+    padding-top: 26px;
+    padding-bottom: 28px;
     padding-left: 36px;
     border: 1px solid #d9d9d9;
     border-bottom: none;

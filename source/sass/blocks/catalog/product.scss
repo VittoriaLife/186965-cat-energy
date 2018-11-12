@@ -25,14 +25,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    margin-top: 146px;
+    padding-bottom: 38px;
+    margin-top: 143px;
     width: 324px;
     background-color: #f2f2f2;
 
-    &:last-child {
-      margin-bottom: 115px;
+    &:nth-child(7) {
+      margin-top: 138px;
+      padding-bottom: 36px;
     }
+
   }
 
   @media(min-width: $desktop-width) {
@@ -54,11 +56,14 @@
     width: 324px;
 
     &--small {
+      margin-bottom: -12px;
       bottom: 44px;
       height: 172px;
     }
 
     &--big {
+      bottom: 79px;
+      margin-bottom: -47px;
       height: 208px;
     }
   }

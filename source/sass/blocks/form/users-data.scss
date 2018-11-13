@@ -11,6 +11,7 @@
   @media(min-width: $desktop-width) {
     flex-direction: row;
     padding-left: 79px;
+    margin-bottom: 46px;
   }
 }
 
@@ -22,18 +23,28 @@
 
 .users-data__contacts-wrapper {
   margin-top: 29px;
+  margin-bottom: 28px;
 
   @media(min-width: $tablet-width) {
-    margin-bottom: 48px;
+    margin-bottom: 49px;
     padding-left: 35px;
+  }
+
+  @media(min-width: $desktop-width) {
+    margin-top: 0;
+    margin-bottom: 45px;
+    padding-left: 78px;
   }
 }
 
 .users-data__comments-wrapper {
-  margin-top: 22px;
 
   @media(min-width: $tablet-width) {
     padding-left: 39px;
+  }
+
+  @media(min-width: $desktop-width) {
+    padding-left: 42px;
   }
 }
 
@@ -46,12 +57,21 @@
     margin-top: 61px;
     padding-left: 36px;
   }
+
+  @media(min-width: $desktop-width) {
+    margin-bottom: 31px;
+    padding-left: 78px;
+  }
 }
 
 .users-data__button-wrapper {
   @media(min-width: $tablet-width) {
     display: flex;
     padding-left: 41px;
+  }
+
+  @media(min-width: $desktop-width) {
+    padding-left: 84px;
   }
 }
 
@@ -77,6 +97,11 @@
 
   }
 
+
+  @media(min-width: $desktop-width) {
+    padding-left: 205px;
+    padding-right: 205px;
+  }
 }
 
 .users-data__holder-wrapper {
@@ -86,6 +111,10 @@
   @media(min-width: $tablet-width) {
     margin-top: 6px;
     padding-left: 64px;
+  }
+
+  @media(min-width: $desktop-width) {
+    padding-left: 86px;
   }
 }
 

@@ -11,8 +11,8 @@
     }
 
     @media(min-width: $desktop-width) {
-      width: 852px;
-      background: linear-gradient(to right, #f2f2f2 53%, #eaeaea 50%);
+      width: 854px;
+      background: linear-gradient(to right, #f2f2f2 54%, #eaeaea 50%);
     }
 
 
@@ -40,15 +40,15 @@
   }
 
   @media(min-width: $desktop-width) {
-    top: -187px;
+    top: -190px;
 
     &--before {
-      left: 78px;
+      left: 95px;
       width: 364px;
     }
 
     &--after {
-      right: 68px;
+      right: 66px;
       width: 328px;
     }
   }

@@ -19,9 +19,9 @@
   @media(min-width: $tablet-width) {
     width: 601px;
     margin-top: 51px;
-    padding-top: 25px;
+    padding-top: 31px;
     padding-left: 29px;
-    padding-bottom: 16px;
+    padding-bottom: 7px;
     border: 1px solid #e6e6e6;
   }
 
@@ -29,6 +29,11 @@
     margin: 0;
     margin-left: 77px;
   }
+}
+
+.goals__wrapper {
+  display: flex;
+  margin-bottom: 13px;
 }
 
 .goals__label {
@@ -71,6 +76,7 @@
 .goals__radio {
   display: inline-block;
   position: relative;
+  top: -4px;
   margin-right: 14px;
   width: 30px;
   height: 30px;

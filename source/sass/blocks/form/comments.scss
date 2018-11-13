@@ -3,6 +3,7 @@
   flex-direction: column;
 }
 
+
 .comments__legend {
   position: relative;
   margin-bottom: 35px;
@@ -29,8 +30,8 @@
     &::before {
       content: "";
       position: absolute;
-      left: -65px;
-      top: 22px;
+      left: -70px;
+      top: 24px;
       width: 30px;
       height: 3px;
       background-color: $light-green-color;
@@ -39,11 +40,25 @@
     &::after {
       content: "";
       position: absolute;
-      top: 21px;
+      top: 24px;
       right: -515px;
       width: 479px;
       height: 3px;
       background-color: $light-green-color;
+    }
+  }
+
+  @media(min-width: $desktop-width) {
+    padding-left: 35px;
+
+    &::before {
+      top: 22px;
+      width: 71px;
+    }
+
+    &::after {
+      right: -1150px;
+      width: 1111px;
     }
   }
 }
@@ -60,4 +75,9 @@
     height: 158px;
   }
 
+  @media(min-width: $desktop-width) {
+    padding-left: 56px;
+    width: 1236px;
+    
+  }
 }

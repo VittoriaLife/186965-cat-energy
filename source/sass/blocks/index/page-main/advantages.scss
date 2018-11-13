@@ -8,7 +8,7 @@
   @media(min-width: $tablet-width) {
    flex-direction: row;
    flex-wrap: wrap;
-   padding-bottom: 72px;
+   padding-bottom: 88px;
   }
 
   @media (min-width: $desktop-width) {
@@ -18,9 +18,15 @@
 
 .advantages__item {
   display: flex;
+ 
 
   &--leaf {
-    margin-bottom: 3px;
+    margin-bottom: 12px;
+  }
+
+
+  &--powder {
+    margin-bottom: 12px;
   }
 
   &--dining {
@@ -42,7 +48,7 @@
 
     &--leaf,
     &--powder {
-      margin-bottom: 118px;
+      margin-bottom: 131px;
     }
   }
 
@@ -77,15 +83,19 @@
 
 
 .advantages__description {
+  padding-left: 18px;
+  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
 
   @media(min-width: $tablet-width) {
+    padding: 0;
+    padding-top: 28px;
     font-size: 16px;
     line-height: 24px;
-    padding-top: 10px;
+    
   }
 
 }

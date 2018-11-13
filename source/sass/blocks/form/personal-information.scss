@@ -24,14 +24,20 @@
 }
 
 .personal-information__label {
+  margin-right: 14px;
   padding-top: 9px;
   font-size: 16px;
   line-height: 18px;
   color: $black-color;
   text-transform: uppercase;
 
+  &--weight {
+    margin-right: 18px;
+  }
+
   &--age {
-    margin-bottom: 7px;
+    padding-top: 12px;
+    margin-bottom: 8px;
   }
 
   &--radio {
@@ -46,8 +52,14 @@
   }
 
   @media(min-width: $tablet-width) {
+    margin-right: 18px;
     font-size: 20px;
     line-height: 20px;
+    
+
+    &--weight {
+      margin-right: 22px;
+    }
 
     &--age {
       padding-top: 14px;
@@ -55,7 +67,11 @@
   }
 
   @media(min-width: $desktop-width) {
+    margin-right: 15px; 
 
+    &--name {
+      margin-right: 15px;
+    }
 
     &--weight {
       padding-top: 11px;
@@ -64,39 +80,36 @@
 }
 
 .personal-information__field {
-  margin-left: 10px;
   margin-bottom: 15px;
   padding-left: 14px;
   height: 38px;
 
   &--name {
     width: 211px;
-
   }
 
   &--weight {
-    margin-left: 13px;
-    width: 186px;
+    
+    width: 184px;
   }
 
   &--age {
+    margin-bottom: 22px;
     width: 155px;
   }
 
   @media(min-width: $tablet-width) {
-    margin-left: 18px;
     margin-bottom: 22px;
     padding-left: 19px;
 
     height: 44px;
 
     &--name {
-      width: 550px;
+      width: 546px;
     }
 
     &--weight {
-      width: 521px;
-      margin-left: 21px;
+      width: 515px;
     }
 
     &--age {

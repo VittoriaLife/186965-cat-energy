@@ -4,14 +4,15 @@
 
   @media(min-width: $tablet-width) {
     justify-content: space-between;
-    padding-bottom: 46px;
+    padding-bottom: 58px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 96px;
+    top: 90px;
     left: 110px;
     padding-left: 18px;
+    padding-bottom: 49px;
     width: 535px;
     height: 154px;
     background-color: #ffffff;

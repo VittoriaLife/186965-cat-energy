@@ -29,8 +29,8 @@
     &::before {
       content: "";
       position: absolute;
-      left: -65px;
-      top: 22px;
+      left: -66px;
+      top: 24px;
       width: 30px;
       height: 3px;
       background-color: $light-green-color;
@@ -39,13 +39,32 @@
     &::after {
       content: "";
       position: absolute;
-      top: 20px;
+      top: 23px;
       right: -487px;
       width: 446px;
       height: 3px;
       background-color: $light-green-color;
 
     }
+  }
+
+  @media(min-width: $desktop-width) {
+    &::before {
+      left: -110px;
+      top: 24px;
+      width: 72px;
+    }
+
+    &::after {
+      right: -1117px;
+      width: 1077px;
+    }
+  }
+}
+
+.more__container {
+  @media(min-width: $desktop-width) {
+    display: flex;
   }
 }
 
@@ -59,8 +78,21 @@
     &:last-child {
       width: 497px;
     }
-
   }
+
+  @media(min-width: $desktop-width) {
+     width: 514px;
+
+     &:last-child {
+      margin-left: 135px;
+      width: 477px;
+     }
+  }
+}
+
+.more__box {
+  display: flex;
+  margin-bottom: 10px;
 }
 
 .more__label {
@@ -72,9 +104,17 @@
   color: $black-color;
   text-transform: uppercase;
 
+  &:first-child {
+    padding-top: 5px;
+  }
+
   @media(min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+
+    &:first-child {
+      padding-top: 9px;
+    }
   }
 
 }

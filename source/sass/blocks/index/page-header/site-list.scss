@@ -10,12 +10,10 @@
   @media(min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
-    width: 476px;
-    justify-content: space-around;
+    
   }
 
   @media(min-width: $desktop-width) {
-    justify-content: space-between;
     background-color: transparent;
   }
 
@@ -32,9 +30,9 @@
     padding: 20px 70px;
     text-align: center;
     border-top: 1px solid #e6e6e6;
-
-    }
   }
+
+}
 
 .main-navigation--closed .site-list__item {
   @media(max-width: $mobile-width-only) {
@@ -46,6 +44,11 @@
 .site-list__item {
   @media(min-width: $tablet-width) {
 
+    &:nth-child(2) {
+      margin-left: 34px;
+      margin-right: 37px;
+    }
+
     &--current {
       position: relative;
       
@@ -55,7 +58,6 @@
         right: 0;
         bottom: -9px;
         left: 1px;
-      
         height: 2px;
         background-color: $light-green-color;
       }
@@ -77,6 +79,7 @@
 
   @media(min-width: $desktop-width) {
     font-size: 20px;
+    color: #ffffff;
   }
 }
 
@@ -103,4 +106,4 @@
     }
   }
  }
-}
+}  

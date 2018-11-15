@@ -2,6 +2,10 @@
   @media(min-width: $tablet-width) {
     margin-top: -40px;
   }
+
+  @media(min-width: $desktop-width) {
+    margin-top: -185px;
+  }
 }
 
 .programs-title__visually-hidden {
@@ -19,9 +23,7 @@
 
     @media(min-width: $desktop-width) {
       flex-direction: row;
-      margin-top: 138px;
-      padding-left: 67px;
-      
+
     }
 }
 

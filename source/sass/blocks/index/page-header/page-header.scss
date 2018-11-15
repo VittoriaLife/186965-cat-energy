@@ -30,6 +30,7 @@
   }
 
   @media(min-width: $desktop-width) {
+    max-width: 1220px;
     justify-content: space-between;
     padding: 0 40px;
 
@@ -37,7 +38,7 @@
       &::after {
         content: "";
           position: absolute;
-          left: 722px;
+          left: 719px;
           top: -1px;
           z-index: -1;
           width: 720px;
@@ -61,8 +62,7 @@
   @media(min-width: $desktop-width) {
     width: 193px;
     padding-top: 56px;
-    padding-left: 77px;
+    padding-left: 3px;
 
   }
 }
-  

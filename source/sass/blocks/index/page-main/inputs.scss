@@ -1,14 +1,15 @@
 .inputs {
   display: flex;
   justify-content: center;
-  margin-top: 23px;
+  margin-top: 34px;
+  margin-bottom: 5px;
 
   @media(min-width: $tablet-width) {
     flex-direction: column;
     text-align: right;
-    margin: 0;
-    margin-left: 174px;
+    margin-left: 169px;
     margin-bottom: 23px;
+    margin-top: 18px;
   }
 
   @media(min-width: $desktop-width) {

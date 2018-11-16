@@ -37,147 +37,140 @@
     </header>
     <main class="page-main">
       <div class="page-main__cover">
-            <section class="show-card">
-              <div class="show-container">
-                <h1 class="show-card__name">Функциональное <br> питание для котов</h1>
-                <h2 class="show-card__slogan">Занялся собой? Займись котом!</h2>
-                <div class="show-card__button-wrapper">
-                  <a href="form.html" class="show-card__button-program">Подобрать программу</a>
+        <section class="show-card">
+          <div class="show-container">
+            <h1 class="show-card__name">Функциональное <br> питание для котов</h1>
+            <h2 class="show-card__slogan">Занялся собой? Займись котом!</h2>
+            <div class="show-card__button-wrapper">
+              <a href="form.html" class="show-card__button-program">Подобрать программу</a>
+            </div>
+          </div>
+          <div class="show-card__image-wrapper">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png">
+              <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg" >
+              <img class="show-card__picture" src="img/index-can-mobile@1x.png" width="280px" alt="Картинка упаковки продукта">
+            </picture>
+          </div>
+        </section>
+        <section class="programs">
+          <div class="programs__wrapper">
+            <h1 class="programs-title__visually-hidden">Программы питания</h1>
+              <div class="programs__item plan plan--slim">
+                <div class="programs__inner">
+                  <div class="plan__icon-wrapper">
+                    <picture>
+                      <source media="(min-width: 1300px)" srcset="img/icon-cat-slim.svg">
+                      <source media="(min-width: 768px)" srcset="img/icon-cat-slim.svg">
+                      <img class="plan__image" src="img/icon-cat-slim.svg" width="35" height="49" alt="Картинка похудение">
+                    </picture>
+                  </div>
+                  <h3 class="plan__name">Похудение</h3>
+                </div>
+                <p class="plan__description ">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+                <div class="plan__link">
+                  <a  class="plan__catalog" href="catalog.html">Каталог Slim</a>
                 </div>
               </div>
-              <div class="show-card__image-wrapper">
+              <div class="programs__item plan plan--pro">
+                <div class="programs__inner">
+                  <div class="plan__icon-wrapper plan__icon-wrapper--pro">
+                    <picture>
+                      <source media="(min-width: 1300px)" srcset="img/icon-cat-pro.svg">
+                      <source media="(min-width: 768px)" srcset="img/icon-cat-pro.svg">
+                      <img class="plan__image plan__image--pro" src="img/icon-cat-pro.svg" width="67" height="28" alt="Картинка набор массы">
+                    </picture>
+                  </div>
+                  <h3 class="plan__name plan__name--pro">Набор массы</h3>
+                </div>
+                <p class="plan__description plan__description--pro">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+                <div class="plan__link plan__link--pro">
+                  <a class="plan__catalog plan__catalog--pro" href="catalog.html">Каталог pro</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="work-process">
+            <h2 class="work-process__header">Как это работает</h2>
+            <div class="work-process__box">
+              <ul class="work-process__list advantages">
+                <li class="advantages__item  advantages__item--leaf">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="\img\advantage-leaf@1x.png">
+                    <img  class="advantages__image" src="\img\advantage-leaf@1x.png" width="60" alt="">
+                    </picture>
+                    <p class="advantages__description">Функциональное питание содержит только полезные питательные вещества.</p>
+                </li>
+                <li class="advantages__item  advantages__item--powder">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="\img\advantage-powder@1x.png">
+                    <img class="advantages__image" src="\img\advantage-powder@1x.png" width="60" alt="">
+                  </picture>
+                  <p class="advantages__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
+                </li>
+                <li class="advantages__item  advantages__item--dining">
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="\img\advantage-dining@1x.png">
+                    <img class="advantages__image" src="\img\advantage-dining@1x.png" width="60" alt="">
+                  </picture>
+                  <p class="advantages__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
+                </li>
+                <li class="advantages__item advantages__item--clock">
+                  <img class="advantages__image" src="\img\advantage-clock@1x.png" width="60" alt="">
+                  <p class='advantages__description'>Уже через месяц наслаждайтесь изменениями к лучшему <br> вашего питомца!</p>
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+        <section class="clients">
+          <div class="clients__holder">
+            <div class="clients__wrapper">
+              <h2 class="clients__heading">Живой пример</h2>
+              <p class="clients__story">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+              <div class="clients__container">
+                <div class="clients__inner">
+                  <div class="clients__box weight">
+                    <span class="weight__loss">5 КГ</span>
+                      <p class="weight__caption">снижение  веса</p>
+                  </div>
+                  <div class="clients__box days">
+                    <span class="days__count">60 ДНЕЙ</span>
+                    <p class="days__caption">затрачено времени</p>
+                  </div>
+                </div>
+                <div class="clients__box inputs">
+                  <p class="inputs__expenses">Затраты на питание:</p>
+                  <p class="inputs__money">15 000 РУБ. </p>
+                </div>
+              </div>
+            </div>
+            <div class="result">
+              <div class="result__image-wrapper result__image-wrapper--before">
                 <picture>
-                  <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png">
-                    <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg" >
-                    <img class="show-card__picture" src="img/index-can-mobile@1x.png" width="280px" alt="Картинка упаковки продукта">
+                  <source media="(min-width: 1300px)" srcset="\img\before-desktop@1x.png">
+                  <source media="(min-width: 768px)" srcset="\img\before-tablet@1x.png">
+                  <img  class="result__image result__image--before" src="\img\before-mobile@1x.png" width="" height="" alt="Было">
                 </picture>
               </div>
-            </section>
-
-            <section class="programs">
-              <div class="programs__wrapper">
-                <h1 class="programs-title__visually-hidden">Программы питания</h1>
-                  <div class="programs__item plan plan--slim">
-                    <div class="programs__inner">
-                      <div class="plan__icon-wrapper">
-                        <picture>
-                          <source media="(min-width: 1300px)" srcset="img/icon-cat-slim.svg">
-                          <source media="(min-width: 768px)" srcset="img/icon-cat-slim.svg">
-                          <img class="plan__image" src="img/icon-cat-slim.svg" width="35" height="49" alt="Картинка похудение">
-                        </picture>
-                      </div>
-                    <h3 class="plan__name">Похудение</h3>
-                    </div>
-                    <p class="plan__description ">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-                      <div class="plan__link">
-                        <a  class="plan__catalog" href="catalog.html">Каталог Slim</a>
-                      </div>
-                  </div>
-                  <div class="programs__item plan plan--pro">
-                    <div class="programs__inner">
-                      <div class="plan__icon-wrapper plan__icon-wrapper--pro">
-                        <picture>
-                          <source media="(min-width: 1300px)" srcset="img/icon-cat-pro.svg">
-                          <source media="(min-width: 768px)" srcset="img/icon-cat-pro.svg">
-                          <img class="plan__image plan__image--pro" src="img/icon-cat-pro.svg" width="67" height="28" alt="Картинка набор массы">
-                        </picture>
-                      </div>
-                      <h3 class="plan__name plan__name--pro">Набор массы</h3>
-                    </div>
-                    <p class="plan__description plan__description--pro">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-                    <div class="plan__link plan__link--pro">
-                      <a class="plan__catalog plan__catalog--pro" href="catalog.html">Каталог pro</a>
-                    </div>
-                  </div>
-                </div>
-              </section>
-
-              <section class="work-process">
-                <h2 class="work-process__header">Как это работает</h2>
-                <div class="work-process__box">
-                  <ul class="work-process__list advantages">
-                    <li class="advantages__item  advantages__item--leaf">
-                      <picture>
-                        <source media="(min-width: 768px)" srcset="\img\advantage-leaf@1x.png">
-                        <img  class="advantages__image" src="\img\advantage-leaf@1x.png" width="60" alt="">
-                      </picture>
-                      <p class="advantages__description">Функциональное питание содержит только полезные питательные вещества.</p>
-                    </li>
-                    <li class="advantages__item  advantages__item--powder">
-                      <picture>
-                        <source media="(min-width: 768px)" srcset="\img\advantage-powder@1x.png">
-                        <img class="advantages__image" src="\img\advantage-powder@1x.png" width="60" alt="">
-                      </picture>
-                      <p class="advantages__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
-                    </li>
-                    <li class="advantages__item  advantages__item--dining">
-                      <picture>
-                        <source media="(min-width: 768px)" srcset="\img\advantage-dining@1x.png">
-                        <img class="advantages__image" src="\img\advantage-dining@1x.png" width="60" alt="">
-                      </picture>
-                      <p class="advantages__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
-                    </li>
-                    <li class="advantages__item advantages__item--clock">
-                      <img class="advantages__image" src="\img\advantage-clock@1x.png" width="60" alt="">
-                      <p class='advantages__description'>Уже через месяц наслаждайтесь изменениями к лучшему <br> вашего питомца!</p>
-                    </li>
-                  </ul>
-                </div>
-              </section>
-            </div>
-            <section class="clients">
-              <div class="clients__holder">
-                <div class="clients__wrapper">
-                  <h2 class="clients__heading">Живой пример</h2>
-                  <p class="clients__story">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-                  <div class="clients__container">
-                    <div class="clients__inner">
-                      <div class="clients__box weight">
-                        <span class="weight__loss">5 КГ</span>
-                        <p class="weight__caption">снижение  веса</p>
-                      </div>
-                          <div class="clients__box days">
-                            <span class="days__count">60 ДНЕЙ</span>
-                            <p class="days__caption">затрачено времени</p>
-                          </div>
-                        </div>
-                        <div class="clients__box inputs">
-                          <p class="inputs__expenses">Затраты на питание:</p>
-                          <p class="inputs__money">15 000 РУБ. </p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="result">
-                      <div class="result__image-wrapper result__image-wrapper--before">
-                        <picture>
-                          <source media="(min-width: 1300px)" srcset="\img\before-desktop@1x.png">
-                          <source media="(min-width: 768px)" srcset="\img\before-tablet@1x.png">
-                          <img  class="result__image result__image--before" src="\img\before-mobile@1x.png" width="" height="" alt="Было">
-                        </picture>
-                      </div>
-                      <div class="result__image-wrapper result__image-wrapper--after">
-                        <picture>
-                          <source media="(min-width: 1300px)" srcset="\img\after-desktop@1x.png">
-                          <source media="(min-width: 768px)" srcset="\img\after-tablet@1x.png">
-                          <img class="result__image result__image--after" src="\img\after-mobile@1x.png" width="" height="" alt="Стало">
-                        </picture>
-                      </div>
-
-                      <div class="switcher">
-                        <button class="switcher__words switcher__words--before">Было</button>
-                          <div class="switcher__bar">
-                            <div class="switcher__bar-inside"></div>
-                          </div>
-                        <button class="switcher__words  switcher__words--after">Стало</button>
-                      </div>
-                    </div>
+              <div class="result__image-wrapper result__image-wrapper--after">
+                <picture>
+                  <source media="(min-width: 1300px)" srcset="\img\after-desktop@1x.png">
+                  <source media="(min-width: 768px)" srcset="\img\after-tablet@1x.png">
+                  <img class="result__image result__image--after" src="\img\after-mobile@1x.png" width="" height="" alt="Стало">
+                </picture>
               </div>
-
-
+              <div class="switcher">
+                <button class="switcher__words switcher__words--before">Было</button>
+                <div class="switcher__bar">
+                  <div class="switcher__bar-inside"></div>
+                </div>
+                <button class="switcher__words  switcher__words--after">Стало</button>
+                </div>
+              </div>
+            </div>
           </section>
         </main>
-
 
         <footer class="page-footer">
           <div class="page-footer__wrapper page-footer__wrapper--index-page cooperation">
@@ -189,7 +182,7 @@
               <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png">
               <img class="page-footer__map" src="img/bg-map-mobile@1x.png" width="320px" height="400px" alt="Как нас найти">
             </picture>
-          <div class="page-footer__container">
+            <div class="page-footer__container">
               <div class="page-footer__social">
                   <img  class="page-footer__logo" src="img/logo-footer.svg" width="128px" height="" alt="Логотип">
                     <ul class="page-footer__contacts social-list">
@@ -220,8 +213,8 @@
                       <img src="img/htmlacademy.svg" width="27px" height="34px" alt="Логотип академии">
                     </a>
                   </div>
-          </div>
-        </div>
-    </footer>
-  </body>
-</html>
+              </div>
+            </div>
+         </footer>
+       </body>
+      </html>

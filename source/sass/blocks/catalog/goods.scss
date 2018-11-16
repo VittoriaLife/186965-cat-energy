@@ -24,18 +24,18 @@
     width: 324px;
     border: 1px solid #e6e6e6;
 
-      &::before {
-        left: 132px;
-        width: 62px;
-        top: 86px;
-      }
-
-      &::after {
-        left: 132px;
-        width: 62px;
-        top: 86px;
-      }
+    &::before {
+      left: 132px;
+      width: 62px;
+      top: 86px;
     }
+
+    &::after {
+      left: 132px;
+      width: 62px;
+      top: 86px;
+    }
+  }
 
   @media(min-width: $desktop-width) {
     width: 245px;

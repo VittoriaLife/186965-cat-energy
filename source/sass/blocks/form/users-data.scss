@@ -38,7 +38,6 @@
 }
 
 .users-data__comments-wrapper {
-
   @media (min-width: $tablet-width) {
     padding-left: 39px;
   }
@@ -75,7 +74,6 @@
   }
 }
 
-
 .users-data__button-to-sbm {
   padding-left: 79px;
   padding-right: 79px;
@@ -85,7 +83,7 @@
   line-height: 20px;
   font-family: $font-oswald;
   color: #ffffff;
-  background-color:  $light-green-color;
+  background-color: $light-green-color;
   border: none;
 
   @media (min-width: $tablet-width) {
@@ -94,9 +92,7 @@
     padding-top: 14px;
     padding-bottom: 16px;
     font-size: 20px;
-
   }
-
 
   @media (min-width: $desktop-width) {
     padding-left: 205px;
@@ -117,7 +113,6 @@
     padding-left: 86px;
   }
 }
-
 
 .users-data__required {
   font-family: $font-arial;

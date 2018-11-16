@@ -132,15 +132,15 @@
 .contacts__input {
   height: 38px;
 
-    &--e-mail {
-      margin-bottom: 15px;
-      padding-left: 10px;
-      width: 203px;
-    }
+  &--e-mail {
+    margin-bottom: 15px;
+    padding-left: 10px;
+    width: 203px;
+  }
 
-    &--phone {
-      width: 197px;
-    }
+  &--phone {
+    width: 197px;
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 15px;

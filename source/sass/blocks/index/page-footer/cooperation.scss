@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     justify-content: space-between;
     padding-bottom: 58px;
   }
@@ -45,7 +45,7 @@
 .cooperation__address {
   width: 135px;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #111111;

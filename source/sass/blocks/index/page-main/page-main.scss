@@ -6,17 +6,17 @@
   padding-right: 20px;
   padding-bottom: 28px;
 
-  @media(max-width: $mobile-width-only) {
+  @media (max-width: $mobile-width-only) {
     background-image: url("/img/index-background-mobile@1x.jpg");
     background-repeat: no-repeat;
     }
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 0 30px;
     border-bottom: 1px solid #e6e6e6;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     max-width: 1220px;
     padding-left: 40px;
     padding-right: 40px;
@@ -30,14 +30,14 @@
 //   background-image: url("/img/index-background-mobile@1x.jpg");
 //   background-repeat: no-repeat;
 
-//   @media(min-width: $tablet-width) {
+//   @media (min-width: $tablet-width) {
 //     min-height: 609px;
 //     padding: 0 30px;
 //     background-image: none;
 //     border-bottom: 1px solid #e6e6e6;
 //   }
 
-//   @media(min-width: $desktop-width) {
+//   @media (min-width: $desktop-width) {
 //     padding:  0 40px;
 //     border: none;
 //   }

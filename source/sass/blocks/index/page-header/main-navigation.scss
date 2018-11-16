@@ -2,17 +2,17 @@
   display: flex;
   position: relative;
 
-  @media(max-width: $mobile-width-only) {
-  width: 107px;
+  @media (max-width: $mobile-width-only) {
+    width: 107px;
   }
 }
 
-.main-navigation__visually-hidden:not(:focus):not(:active)  {
+.main-navigation__visually-hidden:not(:focus):not(:active) {
   @include visually-hidden;
 }
 
 .main-navigation__button {
-  @media(max-width: $mobile-width-only) {
+  @media (max-width: $mobile-width-only) {
     position: absolute;
     top: 15px;
     left: 55px;
@@ -26,13 +26,13 @@
     border: none;
   }
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
 .main-navigation--closed .main-navigation__button::before {
-  @media(max-width: $mobile-width-only) {
+  @media (max-width: $mobile-width-only) {
     content: "";
     position: absolute;
     left: 7px;
@@ -45,7 +45,7 @@
 }
 
 .main-navigation--opened .main-navigation__button {
-  @media(max-width: $mobile-width-only) {
+  @media (max-width: $mobile-width-only) {
     &::before,
     &::after {
       content: "";
@@ -68,18 +68,17 @@
 }
 
 .main-navigation--opened .main-navigation__wrapper {
-  @media(max-width: $mobile-width-only) {
+  @media (max-width: $mobile-width-only) {
     width: 320px;
     position: relative;
     top: 52px;
     right: 213px;
     margin-bottom: 28px;
-
   }
 }
 
 .main-navigation--closed .main-navigation__wrapper {
-  @media(max-width: $mobile-width-only) {
+  @media (max-width: $mobile-width-only) {
     width: 80px;
   }
 }
@@ -93,11 +92,11 @@
 // }
 
 .main-navigation__wrapper {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 25px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-top: 58px;
   }
 }

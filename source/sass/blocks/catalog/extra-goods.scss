@@ -4,7 +4,7 @@
   position: relative;
 
 
-  @media(max-width: $mobile-width-only) {
+  @media (max-width: $mobile-width-only) {
     margin-top: 50px;
 
     &::before {
@@ -16,10 +16,6 @@
       right: -20px;
       bottom: 481px;
     }
-  }
-
-  @media(min-width: $tablet-width) {
-
   }
 }
 
@@ -42,7 +38,7 @@
     background-color: #68b738;
   }
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-left: 36px;
     margin-bottom: 80px;
     font-size: 36px;
@@ -70,7 +66,7 @@
     }
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-left: 68px;
 
     &::before {
@@ -85,19 +81,17 @@
   }
 }
 
-
 .extra-goods__container {
   display: flex;
   flex-direction: column;
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     flex-direction: row;
   }
 }
 
-
 .extra-goods__box {
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-left: 69px;
   }
 }
@@ -107,7 +101,7 @@
   padding-bottom: 16px;
   border-top: 1px solid #cdcdcd;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding-top: 26px;
     padding-bottom: 28px;
     padding-left: 36px;
@@ -115,7 +109,7 @@
     border-bottom: none;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-top: 14px;
     padding-left: 2px;
     padding-bottom: 1px;

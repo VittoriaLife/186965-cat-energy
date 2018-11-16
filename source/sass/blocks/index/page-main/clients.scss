@@ -7,19 +7,19 @@
   padding-top: 18px;
   background-color: #f2f2f2;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     padding: 0;
     background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     flex-direction: row;
     background: linear-gradient(to right, #f2f2f2 72.5%, #eaeaea 50%);
   }
 }
 
 .clients__holder {
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     display: flex;
     max-width: 1220px;
     padding: 0 40px;
@@ -28,7 +28,7 @@
 }
 
 .clients__wrapper {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
     padding-top: 42px;
@@ -37,7 +37,7 @@
     background-color: #ffffff;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-left: 0;
     padding-bottom: 41px;
     background-color: #f2f2f2;
@@ -51,12 +51,12 @@
   font-weight: 400;
   color: $black-color;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     position: absolute;
     top: -138px;
     left: 107px;
@@ -71,9 +71,9 @@
   font-size: 14px;
   line-height: 18px;
   color: #444444;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Arial", "Helvetica", sans-serif;
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
     padding-top: 65px;
@@ -81,7 +81,7 @@
     padding-bottom: 48px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     width: 436px;
     padding-top: 27px;
     padding-bottom: 63px;
@@ -89,11 +89,11 @@
 }
 
 .clients__container {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     display: flex;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     flex-direction: column;
     padding: 0;
     width: 370px;
@@ -104,7 +104,7 @@
   display: flex;
   justify-content: space-between;
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     margin-bottom: 54px;
   }
 }

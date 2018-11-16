@@ -1,19 +1,17 @@
 .result {
-    padding-bottom: 33px;
+  padding-bottom: 33px;
 
-    @media(min-width: $tablet-width) {
-      display: flex;
-      flex-direction: column;
-      position: relative;
-      height: 465px;
-      padding: 0;
-
-    }
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 465px;
+    padding: 0;
+  }
 }
 
 .result__image-wrapper {
-
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     position: absolute;
     overflow: hidden;
     top: -168px;
@@ -31,7 +29,7 @@
     }
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     top: -190px;
 
     &--before {
@@ -47,7 +45,7 @@
 }
 
 .result__image {
-  @media(max-width: $mobile-width-only) {
+  @media (max-width: $mobile-width-only) {
     position: relative;
     top: 30px;
     right: 20px;
@@ -58,7 +56,7 @@
     }
   }
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -70,9 +68,5 @@
     &--after {
       right: 0;
     }
-
   }
-
-
-
 }

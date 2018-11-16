@@ -1,70 +1,42 @@
 .programs {
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-top: -40px;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     margin-top: -185px;
   }
 }
 
 .programs-title__visually-hidden {
-    @include visually-hidden;
+  @include visually-hidden;
 }
 
 .programs__wrapper {
-    display: flex;
-    flex-direction: column;
-    margin-top: 46px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 46px;
 
-    @media(min-width: $tablet-width) {
-      margin: 0;
-    }
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
 
-    @media(min-width: $desktop-width) {
-      flex-direction: row;
-
-    }
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
 }
 
 .programs__inner {
-    display: flex;
+  display: flex;
 
-    @media(min-width: $tablet-width) {
-      flex-direction: row-reverse;
-      justify-content: flex-end;
-      position: relative;
-    }
+  @media (min-width: $tablet-width) {
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    position: relative;
+  }
 
-    @media(min-width: $desktop-width) {
-      flex-direction: row;
-      justify-content: flex-start;
-    }
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
 }
-
-
-
-// .programs {
-//   display: flex;
-//   flex-direction: column;
-
-//   @media(min-width: $tablet-width) {
-//     margin-top: 490px;
-//   }
-
-//   @media(min-width: $desktop-width) {
-//     display: flex;
-//     flex-direction: row;
-//     margin: 0;
-//     margin-top: 317px;
-//     padding-left: 3px;
-//   }
-// }
-
-// .programs__header {
-//   @include visually-hidden;
-// }
-
-// .programs__item {
-//   background-color: #f2f2f2;
-// }

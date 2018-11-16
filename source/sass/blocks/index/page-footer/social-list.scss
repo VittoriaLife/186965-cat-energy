@@ -9,7 +9,7 @@
   justify-content: center;
   list-style: none;
 
-  @media(max-width: $mobile-width-only) {
+  @media (max-width: $mobile-width-only) {
     &::before {
       content: "";
       position: absolute;
@@ -29,12 +29,12 @@
     }
   }
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin: 0;
     border: none;
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-around;
   }

@@ -3,7 +3,7 @@
   flex-direction: column;
   position: relative;
 
-  @media(max-width: $mobile-width-only) {
+  @media (max-width: $mobile-width-only) {
     &::after {
       content: "";
       width: 320px;
@@ -18,7 +18,7 @@
 .personal-information__wrapper {
   display: flex;
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     padding-left: 5px;
   }
 }
@@ -50,7 +50,7 @@
     }
   }
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-right: 18px;
     font-size: 20px;
     line-height: 20px;
@@ -64,7 +64,7 @@
     }
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
     margin-right: 15px;
 
     &--name {
@@ -95,7 +95,7 @@
     width: 155px;
   }
 
-  @media(min-width: $tablet-width) {
+  @media (min-width: $tablet-width) {
     margin-bottom: 22px;
     padding-left: 19px;
 
@@ -114,7 +114,7 @@
     }
   }
 
-  @media(min-width: $desktop-width) {
+  @media (min-width: $desktop-width) {
 
     &--name {
       width: 483px;

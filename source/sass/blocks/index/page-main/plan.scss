@@ -225,10 +225,10 @@
 
     &--pro {
       &::after {
-      left: 143px;
+        left: 143px;
+      }
     }
   }
-}
 
   @media (min-width: $desktop-width) {
     &::after {

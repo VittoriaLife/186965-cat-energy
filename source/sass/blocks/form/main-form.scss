@@ -1,52 +1,70 @@
-.main-form {
-  padding-left: 20px;
-  padding-right: 20px;
+.main-form__container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
 }
 
-.main-form__program-select {
+.main-form__head-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 80px;
+    padding-top: 71px;
+  }
+}
+
+.main-form__heading {
+  margin: 0;
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
-  color: #111111;
+  color: $black-color;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+  }
 }
 
-.main-form__resume {
+.main-form__title {
+  padding: 0;
+  margin-top: 25px;
   font-size: 14px;
   line-height: 18px;
+  color: $black-color;
   text-transform: uppercase;
-  color: #111111;
-}
 
-@media (min-width: 768px) {
-  .main-form__program-select {
-    font-size: 60px;
-  }
-
-  .main-form__resume {
+  @media (min-width: $tablet-width) {
+    margin-top: 55px;
+    padding-left: 41px;
     font-size: 20px;
     line-height: 30px;
   }
-}
 
-@media (min-width: 768px) {
-  .main-form {
-    padding-left: 30px;
-    padding-right: 30px;
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
-@media (min-width: 1300px) {
-  .main-form {
-    padding-left: 40px;
-    padding-right: 40px;
+.main-form__search-wrapper {
+  margin-top: 26px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 47px;
+    margin-bottom: 52px;
   }
 
-  .main-form__program-select {
-    font-size: 60px;
-  }
-
-  .main-form__resume {
-    font-size: 20px;
-    line-height: 30px;
+  @media (min-width: $desktop-width) {
+    margin-bottom: 85px;
   }
 }

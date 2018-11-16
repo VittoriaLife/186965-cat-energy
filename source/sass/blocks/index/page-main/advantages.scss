@@ -1,6 +1,96 @@
-.advantages__description {
+.advantages {
+  display: flex;
+  flex-direction: column;
   margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-bottom: 88px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
+.advantages__item {
+  display: flex;
+
+  &--leaf {
+    margin-bottom: 12px;
+  }
+
+  &--powder {
+    margin-bottom: 12px;
+  }
+
+  &--dining {
+    margin-bottom: 12px;
+  }
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column;
+    width: 264px;
+    padding-top: 2px;
+    padding-right: 47px;
+    padding-left: 68px;
+
+    &--leaf,
+    &--dining {
+      padding-left: 0;
+    }
+
+    &--leaf,
+    &--powder {
+      margin-bottom: 131px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    width: 245px;
+
+    &--powder {
+      padding-left: 78px;
+    }
+
+    &--dining {
+      padding-left: 80px;
+    }
+
+    &--clock {
+      padding-left: 81px;
+    }
+  }
+}
+
+.advantages__image {
+  width: 60px;
+  height: 56px;
+  padding-bottom: 6px;
+  background-color: $light-green-color;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+    height: 75px;
+  }
+}
+
+.advantages__description {
+  padding-left: 18px;
+  margin: 0;
+  font-family: "Arial", "Helvetica", sans-serif;
   font-size: 14px;
   line-height: 18px;
   color: #444444;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-top: 28px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }

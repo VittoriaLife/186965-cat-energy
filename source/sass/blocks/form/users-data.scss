@@ -1,109 +1,126 @@
-.users-data__personal,
-.users-data__goals,
-.users-data__contacts,
-.users-data__comments,
-.users-data__more {
+.users-data__wrapper {
+  display: flex;
+  flex-direction: column;
+
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 73px;
+    padding-left: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+    padding-left: 79px;
+    margin-bottom: 46px;
+  }
+}
+
+.users-data__heading {
   border: none;
-}
-
-.users-data__label {
-  margin-right: 15px;
-}
-
-.user-data__name {
-  width: 181px;
-  height: 45px;
-  margin-bottom: 15px;
-  padding-left: 15px;
-}
-
-.user-data__weight {
-  width: 160px;
-  height: 45px;
-  margin-bottom: 15px;
-  padding-left: 15px;
-}
-
-.users-data__age {
-  width: 131px;
-  height: 45px;
-  padding-left: 15px;
-}
-
-
-@media (min-width: 768px) {
-  .users-data__label {
-    margin-right: 15px;
-    margin-left: 40px;
-  }
-
-  .user-data__name {
-    width: 569px;
-    height: 53px;
-    margin-bottom: 15px;
-    padding-left: 15px;
-  }
-
-  .user-data__weight {
-    width: 547px;
-    height: 53px;
-    margin-bottom: 15px;
-    padding-left: 15px;
-  }
-
-  .users-data__age {
-    width: 519px;
-    height: 53px;
-    padding-left: 15px;
-  }
-}
-
-@media (min-width: 1300px) {
-  .users-data__personal {
-    width: 570px;
-  }
-
-  .users-data__wrapper {
-    display: flex;
-  }
-
-  .users-data__label {
-    margin-right: 15px;
-    margin-left: 0;
-  }
-
-  .user-data__name {
-    width: 499px;
-    height: 53px;
-    margin-bottom: 15px;
-    padding-left: 15px;
-  }
-
-  .user-data__weight {
-    width: 478px;
-    height: 53px;
-    margin-bottom: 15px;
-    padding-left: 15px;
-  }
-
-  .users-data__age {
-    width: 448px;
-    height: 53px;
-    padding-left: 15px;
-  }
-}
-
-.users-data__goals {
-  width: 280px;
-}
-
-.users-data__weight-loss,
-.users-data__mass,
-.users-data__idk {
+  padding: 0;
   margin: 0;
-  margin-right: 15px;
 }
 
-.users-data__label--radio {
-  margin-right: 154px;
+.users-data__contacts-wrapper {
+  margin-top: 29px;
+  margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 49px;
+    padding-left: 35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+    margin-bottom: 45px;
+    padding-left: 78px;
+  }
+}
+
+.users-data__comments-wrapper {
+  @media (min-width: $tablet-width) {
+    padding-left: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 42px;
+  }
+}
+
+.users-data__more-wrapper {
+  margin-top: 23px;
+  margin-bottom: 22px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+    margin-top: 61px;
+    padding-left: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 31px;
+    padding-left: 78px;
+  }
+}
+
+.users-data__button-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    padding-left: 41px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 84px;
+  }
+}
+
+.users-data__button-to-sbm {
+  padding-left: 79px;
+  padding-right: 79px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 16px;
+  line-height: 20px;
+  font-family: $font-oswald;
+  color: #ffffff;
+  background-color: $light-green-color;
+  border: none;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 64px;
+    padding-right: 64px;
+    padding-top: 14px;
+    padding-bottom: 16px;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 205px;
+    padding-right: 205px;
+  }
+}
+
+.users-data__holder-wrapper {
+  margin-top: 15px;
+  padding-left: 61px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 6px;
+    padding-left: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 86px;
+  }
+}
+
+.users-data__required {
+  font-family: $font-arial;
+  font-size: 14px;
+  line-height: 16px;
+  color: #444444;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
 }

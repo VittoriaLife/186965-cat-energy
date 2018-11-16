@@ -1,70 +1,124 @@
 .show-card {
   display: flex;
   flex-direction: column;
-  margin: 0;
-  background-image: url("/img/index-background-mobile@1x.jpg");
+
+  @media (min-width: $tablet-width) {
+    padding-left: 88px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+  }
+}
+
+.show-container {
+  @media (max-width: $mobile-width-only) {
+    padding-top: 24px;
+    text-align: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 105px;
+    padding-left: 79px;
+  }
 }
 
 .show-card__name {
   margin: 0;
+  padding-bottom: 26px;
   font-size: 36px;
   line-height: 36px;
+  font-weight: 400;
   color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 42px;
+    font-size: 60px;
+    line-height: 60px;
+    color: #111111;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 40px;
+  }
 }
 
 .show-card__slogan {
   margin: 0;
   font-size: 14px;
   line-height: 14px;
-  text-transform: uppercase;
+  font-weight: 400;
   color: #ffffff;
-}
+  text-transform: uppercase;
 
-.show-card__wrapper {
-  width: 280px;
-  background-color: $color-light-green;
-  padding: 10px 70px;
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    color: #111111;
+  }
 }
 
 .show-card__button-program {
-  text-decoration: none;
-  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 18px;
   color: #ffffff;
-}
+  text-transform: uppercase;
+  text-decoration: none;
 
-@media (min-width: 768px) {
-  .show-card {
-    margin-left: 90px;
-    background-image: none;
-    background-color: #ffffff;
-  }
-
-  .show-card__name {
-    font-size: 60px;
-    line-height: 60px;
-    font-weight: 400;
-    color: #111111;
-  }
-
-  .show-card__slogan {
+  @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
-    font-weight: 400;
-    color: #111111;
-  }
-
-  .show-card__wrapper {
-    width: 245px;
   }
 }
 
-@media (min-width: 1300px) {
-  .show-card {
-    background-image: none;
-    margin-left: 115px;
+
+.show-card__button-wrapper {
+  width: 280px;
+  position: relative;
+  top: 302px;
+  padding-top: 7px;
+  padding-bottom: 8px;
+  background-color: $light-green-color;
+
+  @media (min-width: $tablet-width) {
+    width: 191px;
+    top: 48px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    padding-left: 27px;
+    padding-right: 27px;
   }
 
-  .show-card__picture {
-    align-self: center;
+  @media (min-width: $desktop-width) {
+    top: 54px;
+  }
+}
+
+.show-card__image-wrapper {
+  position: relative;
+  bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    bottom: 0;
+    top: -32px;
+    right: 87px;
+    z-index: -1;
+  }
+}
+
+.show-card__picture {
+  @media (min-width: $tablet-width) {
+    width: 709px;
+  }
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    bottom: 282px;
+    left: 536px;
+    width: 552px;
   }
 }

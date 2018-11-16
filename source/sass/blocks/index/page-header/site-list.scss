@@ -84,7 +84,7 @@
 }
 
 .page-header--index .site-list__item {
-   @media(min-width: $desktop-width) {
+  @media(min-width: $desktop-width) {
     &--current {
       &::after {
         content: "";

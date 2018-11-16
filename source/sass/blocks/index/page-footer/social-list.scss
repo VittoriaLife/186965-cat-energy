@@ -8,7 +8,6 @@
   position: relative;
   justify-content: center;
   list-style: none;
-  
 
   @media(max-width: $mobile-width-only) {
   &::before {
@@ -29,6 +28,7 @@
     background-color: #d9d9d9;
   }
 }
+
   @media(min-width: $tablet-width) {
     margin: 0;
     border: none;
@@ -38,7 +38,6 @@
     display: flex;
     justify-content: space-around;
   }
-  
 }
 
 .social-list__link {

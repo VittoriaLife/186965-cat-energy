@@ -2,11 +2,9 @@
   display: flex;
   margin-top: 25px;
   margin-bottom: 14px;
-  
   justify-content: space-between;
 
   @media(min-width: $tablet-width) {
-   
     justify-content: flex-end;
   }
 }

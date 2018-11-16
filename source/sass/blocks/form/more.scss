@@ -81,12 +81,12 @@
   }
 
   @media(min-width: $desktop-width) {
-     width: 514px;
+    width: 514px;
 
-     &:last-child {
+    &:last-child {
       margin-left: 135px;
       width: 477px;
-     }
+    }
   }
 }
 
@@ -123,23 +123,21 @@
   @include visually-hidden;
 }
 
-
 .more__checkbox:checked + .more__custom-checkbox::after {
-   content: "";
-   position: absolute;
-   top: 7px;
-   left: 5px;
-   width: 20px;
-   height: 20px;
-   background-image: url("/img/icon-tick.svg");
-   background-repeat: no-repeat;
+  content: "";
+    position: absolute;
+    top: 7px;
+    left: 5px;
+    width: 20px;
+    height: 20px;
+    background-image: url("/img/icon-tick.svg");
+    background-repeat: no-repeat;
 
 
   @media(min-width: $tablet-width) {
     top: 10px;
     left: 13px;
-   }
-
+  }
 }
 
 .more__custom-checkbox {

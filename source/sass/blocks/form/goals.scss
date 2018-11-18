@@ -53,6 +53,10 @@
     margin-bottom: 19px;
   }
 
+
+  &:active {
+    opacity: 0.3;
+  }
   @media (min-width: $tablet-width) {
     margin-bottom: 16px;
     font-size: 20px;
@@ -80,8 +84,16 @@
   width: 30px;
   height: 30px;
   order: -1;
-  border: 1px solid #cecece;
-  border-radius: 50%;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%; 
+
+  &:hover {
+    border: 1px solid #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     margin-right: 19px;

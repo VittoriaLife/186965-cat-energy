@@ -81,6 +81,7 @@
   margin-bottom: 15px;
   padding-left: 14px;
   height: 38px;
+  border: 1px solid #cdcdcd;
 
   &--name {
     width: 211px;
@@ -94,6 +95,18 @@
     margin-bottom: 22px;
     width: 155px;
   }
+
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:active {
+    border: 2px solid #444444;
+  }
+
+  // &:invalid {
+  //   border: 2px solid #ff8282;
+  // }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 22px;

@@ -1,12 +1,14 @@
 .social-list {
   display: flex;
+  justify-content: space-around;
+  position: relative;
   margin: 0;
   margin-top: 32px;
   padding: 0;
   padding-top: 20px;
   padding-bottom: 19px;
-  position: relative;
-  justify-content: center;
+  width: 160px;
+  padding-left: 20px;
   list-style: none;
 
   @media (max-width: $mobile-width-only) {
@@ -40,8 +42,31 @@
   }
 }
 
+.social-list__item {
+  align-self: center;
+}
+
 .social-list__link {
   text-decoration: none;
+}
+
+.social-list__link-icon {
+  @media (min-width: $tablet-width) {
+    &--vk {
+      width: 30px;
+      height: 16px;
+    }
+
+    &--instagram {
+      width: 23px;
+      height: 23px;
+    }
+
+    &--fb {
+      width: 14px;
+      height: 28px;
+    }
+  }
 }
 
 .social-list__name-hidden {

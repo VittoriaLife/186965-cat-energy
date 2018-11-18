@@ -106,6 +106,10 @@
     padding-top: 5px;
   }
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
@@ -143,7 +147,15 @@
   width: 30px;
   height: 30px;
   order: -1;
-  border: 1px solid #cfcfcf;
+  border: 1px solid #cdcdcd;
+
+  &:hover {
+    border: 1px solid #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     margin-right: 18px;

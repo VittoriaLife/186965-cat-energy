@@ -223,13 +223,41 @@
       left: 148px;
     }
 
+    &:hover {
+      &::after {
+        background-image: url("/img/icon-right-arrow-verylong.svg");
+      }
+    }
+
+    &:active {
+      opacity: 0.3;
+      
+      &::after {
+        background-image: url("/img/icon-right-arrow-verylong.svg");
+      }
+    }
+
     &--pro {
       &::after {
         left: 143px;
       }
+
+      &:hover {
+        &::after {
+          background-image: url("/img/icon-right-arrow-verylong.svg");
+        }
+      }
+  
+      &:active {
+        opacity: 0.3;
+  
+        &::after {
+          background-image: url("/img/icon-right-arrow-verylong.svg");
+        }
+      }
     }
   }
-
+   
   @media (min-width: $desktop-width) {
     &::after {
       left: 128px;

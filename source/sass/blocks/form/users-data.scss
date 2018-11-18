@@ -86,6 +86,14 @@
   background-color: $light-green-color;
   border: none;
 
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+  }
+
   @media (min-width: $tablet-width) {
     padding-left: 64px;
     padding-right: 64px;

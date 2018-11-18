@@ -5,12 +5,20 @@
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    justify-content: flex-end;
+    margin-top: 14px;
   }
 }
 
 .made-by__link {
+  font-family: $font-arial;
+  font-size: 16px;
+  line-height: 16px;
+  color: #444444;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 11px; 
+  }
 }
 
 .made-by__name {
@@ -18,4 +26,11 @@
   line-height: 16px;
   color: #444444;
   text-decoration: none;
+}
+
+.made-by__icon {
+  @media (min-width: $tablet-width) {
+    width: 47px;
+    height: 43px;
+  }
 }

@@ -132,6 +132,18 @@
 .contacts__input {
   height: 38px;
 
+  &:hover {
+    border: 1px solid #cdcdcd;
+  }
+
+  &:active {
+    border: 2px solid #444444;
+  }
+
+  // &:invalid {
+  //   border: 2px solid #ff8282;
+  // }
+
   &--e-mail {
     margin-bottom: 15px;
     padding-left: 10px;

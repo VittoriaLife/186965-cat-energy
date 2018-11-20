@@ -16,6 +16,7 @@
       content: "";
       position: absolute;
       top: -3px;
+      right: -48px;
       width: 280px;
       height: 1px;
       background-color: #d9d9d9;
@@ -25,6 +26,7 @@
       content: "";
       position: absolute;
       bottom: 2px;
+      right: -48px;
       width: 280px;
       height: 1px;
       background-color: #d9d9d9;
@@ -48,9 +50,21 @@
 
 .social-list__link {
   text-decoration: none;
+
+  &:hover .social-list__link-icon {
+    fill: #68b738;
+  }
+
+  &:active .social-list__link-icon {
+    fill: #68b738;
+    opacity: 0.3;
+  }
 }
 
 .social-list__link-icon {
+  fill: #666666;
+
+
   @media (min-width: $tablet-width) {
     &--vk {
       width: 30px;

@@ -81,6 +81,8 @@
 }
 
 .cat-present__image {
+  fill: #ffffff;
+  
   @media (min-width: $tablet-width) {
     margin-top: 12px;
   }

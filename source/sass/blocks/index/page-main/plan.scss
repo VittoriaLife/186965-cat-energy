@@ -215,14 +215,6 @@
     background-repeat: no-repeat;
   }
 
-  @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 20px;
-
-    &::after {
-      left: 148px;
-    }
-
     &:hover {
       &::after {
         background-image: url("/img/icon-right-arrow-verylong.svg");
@@ -231,33 +223,43 @@
 
     &:active {
       opacity: 0.3;
-      
+
+      &::after {
+        background-image: url("/img/icon-right-arrow-verylong.svg");
+    }
+  }
+
+  &--pro {
+    &:hover {
       &::after {
         background-image: url("/img/icon-right-arrow-verylong.svg");
       }
+    }
+
+    &:active {
+      opacity: 0.3;
+
+      &::after {
+        background-image: url("/img/icon-right-arrow-verylong.svg");
+      }
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+
+    &::after {
+      left: 148px;
     }
 
     &--pro {
       &::after {
         left: 143px;
       }
-
-      &:hover {
-        &::after {
-          background-image: url("/img/icon-right-arrow-verylong.svg");
-        }
-      }
-  
-      &:active {
-        opacity: 0.3;
-  
-        &::after {
-          background-image: url("/img/icon-right-arrow-verylong.svg");
-        }
-      }
     }
   }
-   
+
   @media (min-width: $desktop-width) {
     &::after {
       left: 128px;

@@ -69,13 +69,13 @@
   text-transform: uppercase;
   text-decoration: none;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
-
-    &:active {
-      opacity: 0.3;
-    }
   }
 }
 
@@ -88,6 +88,14 @@
   padding-bottom: 8px;
   background-color: $light-green-color;
 
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+  }
+
   @media (min-width: $tablet-width) {
     width: 191px;
     top: 48px;
@@ -95,15 +103,6 @@
     padding-bottom: 14px;
     padding-left: 27px;
     padding-right: 27px;
-
-    
-    &:hover {
-      background-color: #5eaa2f;
-    }
-
-    &:active {
-      background-color: #5eaa2f;
-    }
   }
 
   @media (min-width: $desktop-width) {

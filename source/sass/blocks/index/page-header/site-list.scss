@@ -67,17 +67,17 @@
   text-transform: uppercase;
   text-decoration: none;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 24px;
-
-    &:hover {
-      opacity: 0.6;
-    }
-
-    &:active {
-      opacity: 0.3;
-    }
   }
 
   @media (min-width: $desktop-width) {
@@ -91,7 +91,7 @@
     color: #ffffff;
   }
 }
- 
+
 .page-header--index .site-list__item {
   @media (min-width: $desktop-width) {
     &--current {

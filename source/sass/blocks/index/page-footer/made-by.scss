@@ -26,9 +26,26 @@
   line-height: 16px;
   color: #444444;
   text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.made-by__icon-link {
+  &:hover .made-by__icon {
+    fill: #68b738;
+  }
+
+  &:active .made-by__icon {
+    fill: #68b738;
+    opacity: 0.3;
+  }
 }
 
 .made-by__icon {
+  fill: #666666;
+
   @media (min-width: $tablet-width) {
     width: 47px;
     height: 43px;

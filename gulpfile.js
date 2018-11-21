@@ -44,7 +44,11 @@ gulp.task("server", function () {
   gulp.watch("source/*.html", gulp.series("html", "refresh"));
 });
 
-gulp.task("start", gulp.series("build", "server"));
+gulp.task("refresh", function () {
+  server.reload();
+});
+
+// gulp.task("start", gulp.series("css", "server"));
 
 
 gulp.task("images", function () {

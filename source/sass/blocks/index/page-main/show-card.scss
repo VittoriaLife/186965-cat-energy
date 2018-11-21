@@ -11,9 +11,9 @@
   }
 }
 
-.show-container {
+.show-card__container {
   @media (max-width: $mobile-width-only) {
-    padding-top: 24px;
+    padding-top: 28px;
     text-align: center;
   }
 

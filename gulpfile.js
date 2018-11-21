@@ -48,9 +48,6 @@ gulp.task("refresh", function () {
   server.reload();
 });
 
-// gulp.task("start", gulp.series("css", "server"));
-
-
 gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([

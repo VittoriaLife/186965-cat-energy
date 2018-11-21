@@ -141,9 +141,9 @@
     border: 2px solid #444444;
   }
 
-  // &:invalid {
-  //   border: 2px solid #ff8282;
-  // }
+  &:invalid {
+    border: 2px solid #ff8282;
+  }
 
   &--e-mail {
     margin-bottom: 15px;
@@ -180,12 +180,20 @@
   }
 }
 
+.contacts__input:active + .contacts__input-icon {
+  fill: #68b738;
+}
+
+.contacts__input:invalid + .contacts__input-icon {
+  fill: #ff8282;
+}
+
 .contacts__input-icon {
   fill: #222222;
-  top: 10px;
+  top: 17px;
   position: absolute;
 
-
+  
   &--email{
     left: 530px;
   }
@@ -193,5 +201,6 @@
   &--phone {
     left: 540px;
   }
- 
 }
+
+

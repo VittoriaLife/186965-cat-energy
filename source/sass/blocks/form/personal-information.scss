@@ -36,7 +36,7 @@
   }
 
   &--age {
-    padding-top: 12px;
+    padding-top: 13px;
     margin-bottom: 8px;
   }
 
@@ -78,10 +78,11 @@
 }
 
 .personal-information__field {
-  margin-bottom: 15px;
+  margin-bottom: 17px;
   padding-left: 14px;
   height: 38px;
   border: 1px solid #cdcdcd;
+
 
   &--name {
     width: 211px;
@@ -92,24 +93,24 @@
   }
 
   &--age {
-    margin-bottom: 22px;
+    margin-bottom: 24px;
     width: 155px;
   }
 
   &:hover {
-    border: 1px solid #cdcdcd;
+    outline: 1px solid #cdcdcd;
   }
 
   &:active {
-    border: 2px solid #444444;
+    outline: 2px solid #444444;
   }
 
-  // &:invalid {
-  //   border: 2px solid #ff8282;
-  // }
+  &:invalid {
+    outline: 2px solid #ff8282;
+  }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 22px;
+    margin-bottom: 25px;
     padding-left: 19px;
     height: 44px;
 
@@ -132,7 +133,7 @@
     }
 
     &--weight {
-      width: 452px;
+      width: 455px;
     }
 
     &--age {

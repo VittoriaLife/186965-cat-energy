@@ -53,7 +53,7 @@ gulp.task("images", function () {
       imagemin.svgo()
     ]))
 
-  .pipe(gulp.dest("source/img"));
+    .pipe(gulp.dest("source/img"));
 });
 
 gulp.task("webp", function () {
@@ -101,4 +101,4 @@ gulp.task("refresh", function (done) {
 });
 
 gulp.task("build", gulp.series("clean", "copy", "css", "sprite", "html"));
-gulp.task("start", gulp.series("build", "server"));
+gulp.task("start", gulp.series("css", "server"));

@@ -18,8 +18,8 @@
 
   @media (min-width: $tablet-width) {
     width: 601px;
-    margin-top: 51px;
-    padding-top: 31px;
+    margin-top: 48px;
+    padding-top: 26px;
     padding-left: 29px;
     padding-bottom: 7px;
     border: 1px solid #e6e6e6;
@@ -27,13 +27,14 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
+    padding-bottom: 0;
     margin-left: 77px;
+    height: 165px;
   }
 }
 
 .goals__wrapper {
   display: flex;
-  margin-bottom: 13px;
 }
 
 .goals__label {
@@ -50,13 +51,13 @@
   }
 
   &:last-child {
-    margin-bottom: 19px;
+    margin-bottom: 12px;
   }
-
 
   &:active {
     opacity: 0.3;
   }
+
   @media (min-width: $tablet-width) {
     margin-bottom: 16px;
     font-size: 20px;
@@ -67,7 +68,13 @@
     }
 
     &:last-child {
-      margin-bottom: 10px;
+      margin-bottom: 15px;
+    }
+  }
+
+  @media(min-width: $desktop-width) {
+    &:last-child {
+      margin-bottom: 11px;
     }
   }
 }
@@ -85,7 +92,7 @@
   height: 30px;
   order: -1;
   border: 1px solid #cdcdcd;
-  border-radius: 50%; 
+  border-radius: 50%;
 
   &:hover {
     border: 1px solid #bababa;
@@ -102,7 +109,7 @@
   }
 }
 
-.goals__input:checked + .goals__radio::after {
+.goals__label .goals__input[type=radio]:checked + .goals__radio::after {
   content: "";
   position: absolute;
   top: 10px;

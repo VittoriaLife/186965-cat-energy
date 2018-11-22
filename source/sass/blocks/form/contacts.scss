@@ -5,7 +5,7 @@
 
 .contacts__legend {
   position: relative;
-  margin-bottom: 35px;
+  margin-bottom: 38px;
   font-size: 24px;
   line-height: 24px;
   color: $black-color;
@@ -13,9 +13,9 @@
   &::after {
     content: "";
     position: absolute;
-    top: 14px;
+    top: 16px;
     right: -20px;
-    width: 98px;
+    width: 99px;
     height: 3px;
     background-color: $light-green-color;
   }
@@ -50,8 +50,8 @@
     margin-bottom: 78px;
 
     &::before {
-      left: -109px;
-      top: 23px;
+      left: -112px;
+      top: 20px;
       width: 72px;
     }
 
@@ -82,8 +82,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0;
+
     &--e-mail {
-      margin-right: 73px;
+      margin-right: 81px;
     }
   }
 }
@@ -126,7 +128,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 21px;
+    margin-right: 19px;
+
+    &--phone {
+      padding-top: 8px;
+    }
   }
 }
 
@@ -134,15 +140,15 @@
   height: 38px;
 
   &:hover {
-    border: 1px solid #cdcdcd;
+    outline: 1px solid #cdcdcd;
   }
 
   &:active {
-    border: 2px solid #444444;
+    outline: 2px solid #444444;
   }
 
   &:invalid {
-    border: 2px solid #ff8282;
+    outline: 2px solid #ff8282;
   }
 
   &--e-mail {
@@ -152,7 +158,8 @@
   }
 
   &--phone {
-    width: 197px;
+    width: 187px;
+    padding-left: 10px;
   }
 
   @media (min-width: $tablet-width) {
@@ -189,18 +196,19 @@
 }
 
 .contacts__input-icon {
-  fill: #222222;
-  top: 17px;
   position: absolute;
+  top: 14px;
+  left: 246px;
+  fill: #222222;
 
-  
-  &--email{
-    left: 530px;
+  @media(min-width: $tablet-width) {
+   top: 19px;
+   left: 600px;
   }
-  
-  &--phone {
-    left: 540px;
+
+  @media(min-width: $desktop-width) {
+    top: 17px;
+    left: 534px;
   }
 }
-
 

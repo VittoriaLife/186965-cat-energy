@@ -21,7 +21,7 @@
           <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
           <img class="page-header__logo" src="img/logo-mobile.svg" width="193" alt="Логотип cat-energy">
         </picture>
-        <nav class="main-navigation main-navigation--opened">
+        <nav class="main-navigation main-navigation--closed">
           <button class="main-navigation__button" type="button">
             <span class="main-navigation__visually-hidden">Открыть меню</span>
           </button>
@@ -55,13 +55,13 @@
                     <div class="personal-information__wrapper">
                       <label class="personal-information__label personal-information__label--name" for="cat-name">Имя:<sup>*</sup>
                       </label>
-                      <input class="personal-information__field personal-information__field--name" type="text" name="Имя животного" id="cat-name" placeholder="БАРСИК" required="">
+                      <input class="personal-information__field personal-information__field--name" type="text" name="Имя животного" id="cat-name" placeholder="БАРСИК" required>
                     </div>
 
                     <div class="personal-information__wrapper">
                       <label class="personal-information__label personal-information__label--weight" for="cat-weight">Вес (кг):<sup>*</sup>
                       </label>
-                      <input class="personal-information__field personal-information__field--weight" type="number" name="Вес животного" id="cat-weight" placeholder="7" min="1" max="30" step="1" required="">
+                      <input class="personal-information__field personal-information__field--weight" type="number" name="Вес животного" id="cat-weight" placeholder="7" min="1" max="30" step="1" required>
                     </div>
 
                     <div class="personal-information__wrapper">
@@ -73,7 +73,7 @@
                   <fieldset class="users-data__heading goals">
                     <div class="goals__wrapper">
                       <label class="goals__label" for="weight-loss">
-                        <input class="goals__input goals__input--weight-loss" type="radio" name="Похудение" id="weight-loss" checked="">
+                        <input class="goals__input goals__input--weight-loss" type="radio" name="Похудение" id="weight-loss">
                         <span class="goals__radio"></span>
                           Похудение
                       </label>
@@ -103,13 +103,13 @@
                   <div class="contacts__container contacts__container--e-mail">
                     <label class="contacts__label contacts__label--e-mail" for="email-address">E-mail:<sup>*</sup>
                     </label>
-                    <input class="contacts__input  contacts__input--e-mail" type="E-mail" name="Электронный адрес" placeholder="KUKLACHEV@GMAIL.COM" id="email-address" required="">
+                    <input class="contacts__input  contacts__input--e-mail" type="E-mail" name="Электронный адрес" placeholder="KUKLACHEV@GMAIL.COM" id="email-address" required>
                     <svg class="contacts__input-icon contacts__input-icon--email" width="17" height="13"><use xlink:href="#icon-mail"></use></svg>
                   </div>
                   <div class="contacts__container">
                     <label class="contacts__label contacts__label--phone" for="phone-number">Телефон:<sup>*</sup>
                     </label>
-                    <input class="contacts__input contacts__input--phone" type="tel" name="Номер телефона" placeholder="8 (960) 800-60-90" id="phone-number" required="">
+                    <input class="contacts__input contacts__input--phone" type="tel" name="Номер телефона" placeholder="8 (960) 800-60-90" id="phone-number" required>
                     <svg class="contacts__input-icon contacts__input-icon--phone" width="20" height="20"><use xlink:href="#icon-phone"></use></svg>
                   </div>
                 </div>
@@ -128,7 +128,7 @@
                     <div class="more__wrapper">
                       <div class="more__box">
                         <label class="more__label" for="sugar">
-                          <input class="more__checkbox" type="checkbox" name="" id="sugar" checked="">
+                          <input class="more__checkbox" type="checkbox" name="" id="sugar" checked>
                           <span class="more__custom-checkbox"></span>
                           Сахарозаминитель
                         </label>
@@ -182,11 +182,7 @@
             <p class="cooperation__welcome-words cooperation__welcome-words--form">Приглашаем  <br> к сотрудничеству  дилеров!</p>
             <p class="cooperation__address cooperation__address--form">ул. Большая Конюшенная, д. 19/8  Санкт-Петербург</p>
             </div>
-            <picture>
-              <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png, img/bg-map-desktop@2x.png">
-              <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png, img/bg-map-tablet@2x.png">
-              <img class="page-footer__map" src="img/bg-map-mobile@1x.png" srcset="/img/bg-map-mobile@2x.png" width="320" height="400" alt="Как нас найти">
-            </picture>
+            <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d816.9760433648092!2d30.322852397596158!3d59.93875942295697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1542812288946" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             <div class="page-footer__social">
               <img class="page-footer__logo" src="img/logo-footer.svg" width="128px" height="" alt="Логотип">
               <ul class="page-footer__contacts social-list">

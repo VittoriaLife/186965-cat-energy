@@ -1,6 +1,5 @@
 .made-by {
   display: flex;
-  margin-top: 25px;
   margin-bottom: 14px;
   justify-content: space-between;
 
@@ -10,6 +9,7 @@
 }
 
 .made-by__link {
+  padding-top: 26px;
   font-family: $font-arial;
   font-size: 16px;
   line-height: 16px;
@@ -17,7 +17,7 @@
   text-decoration: none;
 
   @media (min-width: $tablet-width) {
-    padding-top: 11px; 
+    padding-top: 16px;
   }
 }
 
@@ -44,10 +44,14 @@
 }
 
 .made-by__icon {
+  width: 42px;
+  padding-top: 5px;
+  margin-left: 130px;
   fill: #666666;
 
   @media (min-width: $tablet-width) {
     width: 47px;
     height: 43px;
+    margin-left: 12px;
   }
 }

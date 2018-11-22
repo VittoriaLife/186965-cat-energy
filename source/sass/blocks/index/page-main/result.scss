@@ -45,10 +45,12 @@
 }
 
 .result__image {
+  display: block;
+
   @media (max-width: $mobile-width-only) {
     position: relative;
     top: 30px;
-    right: 20px;
+    right: 16px;
 
     &--after {
       display: none;

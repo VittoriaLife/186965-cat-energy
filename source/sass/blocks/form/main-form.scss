@@ -1,15 +1,98 @@
 .main-form__container {
-  margin: 0 auto;
+  position: relative;
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
+  margin-bottom: 26px;
 
-  @media (min-width: $tablet-width) {
-    padding: 0 30px;
+  &--contacts,
+  &--comments,
+  &--more  {
+   padding-left: 0;
+
+    &:after {
+      content: "";
+      position: absolute;
+      top: 20px;
+      right: 0px;
+      z-index: -1;
+      width: 100vw;
+      height: 3px;
+      background-color: $light-green-color;
+    }
   }
 
-  @media (min-width: 1300px) {
+  &--comments,
+  &--more {
+    &:after {
+      top: 15px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 38px;
+    margin-bottom: 49px;
+
+    &--personal {
+      margin-bottom: 0;
+    }
+
+    &--contacts {
+      margin-top: 0;
+      margin-bottom: 0;
+
+      &:after {
+        top: 25px;
+      }
+    }
+
+    &--comments {
+      margin-top: 0;
+
+      &:after {
+        top: 18px;
+      }
+    }
+
+    &--more {
+      margin-top: 0;
+      margin-bottom: 72px;
+
+      &:after {
+        top: 35px;
+      }
+    }
+}
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0px;
+    margin-top: 43px;
+
+    &--contacts {
+      margin-top: 9px;
+      margin-bottom: 0;
+    }
+
+    &--comments {
+      &:after {
+        top: 24px;
+      }
+    }
+
+    &--more {
+      margin-top: 55px;
+      margin-bottom: 80px;
+    }
+  }
+}
+
+.main-form__wrapper {
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: $desktop-width) {
     max-width: 1220px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
@@ -19,7 +102,7 @@
   padding-top: 15px;
 
   @media (min-width: $tablet-width) {
-    padding-top: 53px;
+
   }
 
   @media (min-width: $desktop-width) {
@@ -56,18 +139,5 @@
 
   @media (min-width: $desktop-width) {
     padding: 0;
-  }
-}
-
-.main-form__search-wrapper {
-  margin-top: 26px;
-
-  @media (min-width: $tablet-width) {
-    margin-top: 47px;
-    margin-bottom: 52px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 85px;
   }
 }

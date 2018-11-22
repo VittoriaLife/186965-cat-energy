@@ -1,6 +1,25 @@
 .main-catalog__wrapper {
   margin: 0 auto;
-  padding: 0 20px;
+  padding-right: 20px;
+  padding-left: 20px;
+  position: relative;
+
+
+  &--extra {
+    padding: 0;
+
+    &::before {
+      content: "";
+      width: 100vw;
+      height: 3px;
+      position: absolute;
+      top: 15px;
+      right: 0;
+      z-index: -1;
+      background-color: #68b738;
+    }
+  }
+
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
@@ -25,12 +44,12 @@
   @media (max-width: $mobile-width-only) {
     &::after {
       content: "";
-      width: 320px;
+      width: 339px;
       position: absolute;
       top: 102px;
       background-color: #ededed;
       height: 1px;
-      right: -20px;
+      right: -39px;
     }
   }
 

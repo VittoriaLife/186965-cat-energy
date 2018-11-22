@@ -6,16 +6,6 @@
 
   @media (max-width: $mobile-width-only) {
     margin-top: 50px;
-
-    &::before {
-      content: "";
-      width: 320px;
-      position: absolute;
-      background-color: #ededed;
-      height: 1px;
-      right: -20px;
-      bottom: 481px;
-    }
   }
 }
 
@@ -23,20 +13,14 @@
   position: relative;
   margin: 0;
   margin-bottom: 34px;
+  padding-left: 20px;
+  width: 246px;
   font-size: 24px;
   line-height: 24px;
   font-weight: 400;
   color: $black-color;
+  background-color: #ffffff;
 
-  &::after {
-    content: "";
-    width: 53px;
-    height: 3px;
-    position: absolute;
-    top: 15px;
-    right: -19px;
-    background-color: #68b738;
-  }
 
   @media (min-width: $tablet-width) {
     padding-left: 36px;
@@ -84,6 +68,8 @@
 .extra-goods__container {
   display: flex;
   flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: $desktop-width) {
     flex-direction: row;

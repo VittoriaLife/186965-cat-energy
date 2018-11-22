@@ -4,7 +4,17 @@
   padding: 0 20px;
   display: flex;
   padding-bottom: 9px;
-  border-bottom: 1px solid #e6e6e6;
+
+  &:before {
+    content: "";
+    width: 339px;
+    position: absolute;
+    background-color: #ededed;
+    height: 1px;
+    right: -19px;
+    top: 66px;
+  }
+
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;

@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
-    <script src="picturefill.js"></script>
+    <script src="js/picturefill.js"></script>
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
@@ -301,7 +301,8 @@
             </section>
             </div>
         </div>
-        <div class="main-catalog__wrapper main-catalog__wrapper--extra">
+        <div class="main-catalog__box">
+          <div class="main-catalog__wrapper main-catalog__wrapper--extra">
             <section class="main-catalog__item extra-goods">
               <h2 class="extra-goods__heading">Дополнительные товары</h2>
               <div class="extra-goods__container">
@@ -372,16 +373,19 @@
                       </article>
                     </div>
                 </div>
-
-                <section class="main-catalog__item cat-present">
-                  <div class="cat-present-wrapper">
-                    <svg class="cat-present__image" width="55" height="60"><use xlink:href="#gift-icon"></use></svg>
-                    <p class="cat-present__text">Закажите все <br> и получите чехол для кота в подарок!</p>
-                  </div>
-                </section>
+                <div class="extra-goods__box">
+                  <section class="main-catalog__item cat-present">
+                    <div class="cat-present-wrapper">
+                      <svg class="cat-present__image" width="55" height="60"><use xlink:href="#gift-icon"></use></svg>
+                      <p class="cat-present__text">Закажите все <br> и получите чехол для кота в подарок!</p>
+                    </div>
+                  </section>
+                </div>
               </div>
             </section>
           </div>
+        </div>
+
         </main>
 
         <footer class="page-footer">

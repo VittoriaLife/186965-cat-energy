@@ -50,7 +50,7 @@
       margin-bottom: 131px;
     }
 
-    &::after{
+    &::after {
       counter-increment: section;
       content: counter(section) "";
       position: absolute;

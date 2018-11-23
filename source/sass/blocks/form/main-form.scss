@@ -8,20 +8,20 @@
 
   &--contacts,
   &--comments,
-  &--more  {
+  &--more {
     padding-left: 0;
 
-    &:after {
-      content: "";
-      position: absolute;
-      top: 20px;
-      right: 0px;
-      z-index: -1;
-      width: 100vw;
-      height: 3px;
-      background-color: $light-green-color;
-    }
+  &:after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: 0;
+    z-index: -1;
+    width: 100vw;
+    height: 3px;
+    background-color: $light-green-color;
   }
+}
 
   &--comments,
   &--more {
@@ -42,31 +42,31 @@
       margin-top: 0;
       margin-bottom: 0;
 
-      &:after {
-        top: 25px;
-      }
+    &:after {
+      top: 25px;
     }
+  }
 
     &--comments {
       margin-top: 0;
 
-      &:after {
-        top: 18px;
-      }
+    &:after {
+      top: 18px;
     }
+  }
 
     &--more {
       margin-top: 0;
       margin-bottom: 72px;
 
-      &:after {
-        top: 35px;
-      }
+    &:after {
+      top: 35px;
     }
+  }
 }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 0px;
+    margin-bottom: 0;
     margin-top: 43px;
 
     &--contacts {
@@ -75,10 +75,10 @@
     }
 
     &--comments {
-      &:after {
-        top: 24px;
-      }
+    &:after {
+      top: 24px;
     }
+  }
 
     &--more {
       margin-top: 55px;

@@ -27,20 +27,20 @@ matchMedium: function(media) {
 var text = '@media ' + media + '{ #matchmediajs-test { width: 1px; } }';
 // 'style.styleSheet' is used by IE <= 8 and 'style.textContent' for all other browsers
 if (style.styleSheet) {
-	style.styleSheet.cssText = text;
+style.styleSheet.cssText = text;
 } else {
 style.textContent = text;
 }
 // Test if media query is true or false
 return info.width === '1px';
-	}
+}
 };
 }
 
 return function(media) {
   return {
-	matches: styleMedia.matchMedium(media || 'all'),
-	media: media || 'all'
+matches: styleMedia.matchMedium(media || 'all'),
+media: media || 'all'
   };
 };
 }());
@@ -58,14 +58,14 @@ function expose(picturefill) {
 if ( typeof module === "object" && typeof module.exports === "object" ) {
 // CommonJS, just export
 module.exports = picturefill;
-	} else if ( typeof define === "function" && define.amd ) {
+} else if ( typeof define === "function" && define.amd ) {
 // AMD support
-	define( "picturefill", function() { return picturefill; } );
+define( "picturefill", function() { return picturefill; } );
 }
 if ( typeof w === "object" ) {
 // If no AMD and we are in the browser, attach to window
-	w.picturefill = picturefill;
-	}
+w.picturefill = picturefill;
+}
 }
 
 // If picture is supported, well, that's awesome. Let's get outta here...
@@ -104,10 +104,10 @@ return str.trim ? str.trim() : str.replace( /^\s+|\s+$/g, "" );
 	*/
 pf.makeUrl = (function() {
   var anchor = doc.createElement( "a" );
-	return function(src) {
-		anchor.href = src;
-		return anchor.href;
-	};
+return function(src) {
+anchor.href = src;
+return anchor.href;
+};
 })();
 
 /**
@@ -161,12 +161,12 @@ pf.lengthEl.className = "helper-from-picturefill-js";
 
 pf.lengthEl.style.width = "0px";
   try {
-	pf.lengthEl.style.width = length;
+pf.lengthEl.style.width = length;
   } catch ( e ) {}
 doc.body.appendChild(pf.lengthEl);
 cssValue = pf.lengthEl.offsetWidth;
 if ( cssValue <= 0 ) {
-	cssValue = false;
+cssValue = false;
 }
 doc.body.removeChild( pf.lengthEl );
 return cssValue;
@@ -204,29 +204,29 @@ pf.verifyTypeSupport = function( source ) {
 var type = source.getAttribute( "type" );
 // if type attribute exists, return test result, otherwise return true
 if ( type === null || type === "" ) {
-	return true;
+return true;
 } else {
-	var pfType = pf.types[ type ];
-	// if the type test is a function, run it and return "pending" status. The function will rerun picturefill on pending elements once finished.
-	if ( typeof pfType === "string" && pfType !== "pending") {
-		pf.types[ type ] = pf.detectTypeSupport( type, pfType );
-		return "pending";
-	} else if ( typeof pfType === "function" ) {
-	pfType();
-		return "pending";
-	} else {
-		return pfType;
-	}
+var pfType = pf.types[ type ];
+// if the type test is a function, run it and return "pending" status. The function will rerun picturefill on pending elements once finished.
+if ( typeof pfType === "string" && pfType !== "pending") {
+	pf.types[ type ] = pf.detectTypeSupport( type, pfType );
+	return "pending";
+} else if ( typeof pfType === "function" ) {
+pfType();
+	return "pending";
+} else {
+	return pfType;
+}
 }
 };
 
 // Parses an individual `size` and returns the length, and optional media query
 pf.parseSize = function( sourceSizeStr ) {
 var match = /(\([^)]+\))?\s*(.+)/g.exec( sourceSizeStr );
-	return {
-		media: match && match[1],
-		length: match && match[2]
-	};
+return {
+	media: match && match[1],
+	length: match && match[2]
+};
 };
 
 // Takes a string of sizes and returns the width in pixels as a number
@@ -234,7 +234,7 @@ pf.findWidthFromSourceSize = function( sourceSizeListStr ) {
 // Split up source size list, ie ( max-width: 30em ) 100%, ( max-width: 50em ) 50%, 33%
 //                            or (min-width:30em) calc(30% - 15px)
 var sourceSizeList = pf.trim( sourceSizeListStr ).split( /\s*,\s*/ ),
-	winningLength;
+winningLength;
 
 for ( var i = 0, len = sourceSizeList.length; i < len; i++ ) {
 // Match <media-condition>? length, ie ( min-width: 50em ) 100%
@@ -245,14 +245,14 @@ length = parsedSize.length,
 media = parsedSize.media;
 
 if ( !length ) {
-	continue;
+continue;
 }
 // if there is no media query or it matches, choose this as our winning length
 if ( (!media || pf.matchesMedia( media )) &&
 // pass the length to a method that can properly determine length
 // in pixels based on these formats: http://dev.w3.org/csswg/css-values-3/#length-value
 (winningLength = pf.getWidthFromLength( length )) ) {
-	break;
+break;
 }
 }
 
@@ -274,11 +274,11 @@ pf.parseSrcset = function( srcset ) {
 var candidates = [];
 
 while ( srcset !== "" ) {
-	srcset = srcset.replace( /^\s+/g, "" );
+srcset = srcset.replace( /^\s+/g, "" );
 
 // 5. Collect a sequence of characters that are not space characters, and let that be url.
 var pos = srcset.search(/\s/g),
-	url, descriptor = null;
+url, descriptor = null;
 
 if ( pos !== -1 ) {
 url = srcset.slice( 0, pos );
@@ -291,7 +291,7 @@ var last = url.slice(-1);
 
 if ( last === "," || url === "" ) {
 url = url.replace( /,+$/, "" );
-	descriptor = "";
+descriptor = "";
 }
 srcset = srcset.slice( pos + 1 );
 
@@ -299,25 +299,25 @@ srcset = srcset.slice( pos + 1 );
 // let that be descriptors.
 if ( descriptor === null ) {
 var descpos = srcset.indexOf( "," );
-	if ( descpos !== -1 ) {
-		descriptor = srcset.slice( 0, descpos );
-		srcset = srcset.slice( descpos + 1 );
-	} else {
-		descriptor = srcset;
-			srcset = "";
-		}
-	}
+if ( descpos !== -1 ) {
+	descriptor = srcset.slice( 0, descpos );
+	srcset = srcset.slice( descpos + 1 );
 } else {
-	url = srcset;
-		srcset = "";
-	}
+	descriptor = srcset;
+	srcset = "";
+}
+}
+} else {
+url = srcset;
+	srcset = "";
+}
 
 // 7. Add url to raw candidates, associated with descriptors.
 if ( url || descriptor ) {
 candidates.push({
-	url: url,
-		descriptor: descriptor
-	});
+url: url,
+	descriptor: descriptor
+});
 }
 }
 return candidates;
@@ -327,26 +327,26 @@ pf.parseDescriptor = function( descriptor, sizesattr ) {
 // 11. Descriptor parser: Let candidates be an initially empty source set. The order of entries in the list
 // is the order in which entries are added to the list.
 var sizes = sizesattr || "100vw",
-	sizeDescriptor = descriptor && descriptor.replace( /(^\s+|\s+$)/g, "" ),
-	widthInCssPixels = pf.findWidthFromSourceSize( sizes ),
-	resCandidate;
+sizeDescriptor = descriptor && descriptor.replace( /(^\s+|\s+$)/g, "" ),
+widthInCssPixels = pf.findWidthFromSourceSize( sizes ),
+resCandidate;
 
 if ( sizeDescriptor ) {
 var splitDescriptor = sizeDescriptor.split(" ");
 
 for (var i = splitDescriptor.length - 1; i >= 0; i--) {
 var curr = splitDescriptor[ i ],
-	lastchar = curr && curr.slice( curr.length - 1 );
+lastchar = curr && curr.slice( curr.length - 1 );
 
 if ( ( lastchar === "h" || lastchar === "w" ) && !pf.sizesSupported ) {
-	resCandidate = parseFloat( ( parseInt( curr, 10 ) / widthInCssPixels ) );
-	} else if ( lastchar === "x" ) {
+resCandidate = parseFloat( ( parseInt( curr, 10 ) / widthInCssPixels ) );
+} else if ( lastchar === "x" ) {
 var res = curr && parseFloat( curr, 10 );
-	resCandidate = res && !isNaN( res ) ? res : 1;
-		}
+resCandidate = res && !isNaN( res ) ? res : 1;
 	}
 }
-	return resCandidate || 1;
+}
+return resCandidate || 1;
 };
 
 /**
@@ -361,14 +361,14 @@ var res = curr && parseFloat( curr, 10 );
 	*/
 pf.getCandidatesFromSourceSet = function( srcset, sizes ) {
 var candidates = pf.parseSrcset( srcset ),
-	formattedCandidates = [];
+formattedCandidates = [];
 
 for ( var i = 0, len = candidates.length; i < len; i++ ) {
 var candidate = candidates[ i ];
 
 formattedCandidates.push({
 url: candidate.url,
-	resolution: pf.parseDescriptor( candidate.descriptor, sizes )
+resolution: pf.parseDescriptor( candidate.descriptor, sizes )
 });
 }
 return formattedCandidates;
@@ -382,21 +382,21 @@ return formattedCandidates;
 	*/
 pf.dodgeSrcset = function( img ) {
 if ( img.srcset ) {
-	img[ pf.ns ].srcset = img.srcset;
-	img.srcset = "";
-	img.setAttribute( "data-pfsrcset", img[ pf.ns ].srcset );
+img[ pf.ns ].srcset = img.srcset;
+img.srcset = "";
+img.setAttribute( "data-pfsrcset", img[ pf.ns ].srcset );
 }
 };
 
 // Accept a source or img element and process its srcset and sizes attrs
 pf.processSourceSet = function( el ) {
 var srcset = el.getAttribute( "srcset" ),
-	sizes = el.getAttribute( "sizes" ),
-	candidates = [];
+sizes = el.getAttribute( "sizes" ),
+candidates = [];
 
 // if it's an img element, use the cached srcset property (defined or not)
 if ( el.nodeName.toUpperCase() === "IMG" && el[ pf.ns ] && el[ pf.ns ].srcset ) {
-	srcset = el[ pf.ns ].srcset;
+srcset = el[ pf.ns ].srcset;
 }
 
 if ( srcset ) {
@@ -424,26 +424,26 @@ pf.setIntrinsicSize = (function() {
 var urlCache = {};
 var setSize = function( picImg, width, res ) {
   if ( width ) {
-	picImg.setAttribute( "width", parseInt(width / res, 10) );
+picImg.setAttribute( "width", parseInt(width / res, 10) );
 }
 };
 return function( picImg, bestCandidate ) {
 var img;
 if ( !picImg[ pf.ns ] || w.pfStopIntrinsicSize ) {
-	return;
+return;
 }
 if ( picImg[ pf.ns ].dims === undefined ) {
-	picImg[ pf.ns].dims = picImg.getAttribute("width") || picImg.getAttribute("height");
+picImg[ pf.ns].dims = picImg.getAttribute("width") || picImg.getAttribute("height");
 }
 if ( picImg[ pf.ns].dims ) { return; }
 
 if ( bestCandidate.url in urlCache ) {
-	setSize( picImg, urlCache[bestCandidate.url], bestCandidate.resolution );
+setSize( picImg, urlCache[bestCandidate.url], bestCandidate.resolution );
 } else {
-	img = doc.createElement( "img" );
-	img.onload = function() {
-	urlCache[bestCandidate.url] = img.width;
- //IE 10/11 don't calculate width for svg outside document
+img = doc.createElement( "img" );
+img.onload = function() {
+urlCache[bestCandidate.url] = img.width;
+//IE 10/11 don't calculate width for svg outside document
 if ( !urlCache[bestCandidate.url] ) {
   try {
     doc.body.appendChild( img );
@@ -452,8 +452,8 @@ if ( !urlCache[bestCandidate.url] ) {
   } catch(e){}
   }
 if ( picImg.src === bestCandidate.url ) {
-	setSize( picImg, urlCache[bestCandidate.url], bestCandidate.resolution );
-	}
+setSize( picImg, urlCache[bestCandidate.url], bestCandidate.resolution );
+}
 picImg = null;
 img.onload = null;
 img = null;
@@ -465,19 +465,19 @@ img.src = bestCandidate.url;
 
 pf.applyBestCandidate = function( candidates, picImg ) {
 var candidate,
-	length,
-	bestCandidate;
-	candidates.sort( pf.ascendingSort );
+length,
+bestCandidate;
+candidates.sort( pf.ascendingSort );
 
-	length = candidates.length;
-	bestCandidate = candidates[ length - 1 ];
+length = candidates.length;
+bestCandidate = candidates[ length - 1 ];
 
 for ( var i = 0; i < length; i++ ) {
   candidate = candidates[ i ];
 if ( candidate.resolution >= pf.getDpr() ) {
-	bestCandidate = candidate;
-		break;
-	}
+bestCandidate = candidate;
+	break;
+}
 }
 
 if ( bestCandidate ) {
@@ -487,26 +487,26 @@ if ( bestCandidate ) {
 if ( picImg.src !== bestCandidate.url ) {
   if ( pf.restrictsMixedContent() && bestCandidate.url.substr(0, "http:".length).toLowerCase() === "http:" ) {
     if ( window.console !== undefined ) {
-			console.warn( "Blocked mixed content image " + bestCandidate.url );
-		}
-	} else {
-		picImg.src = bestCandidate.url;
+		console.warn( "Blocked mixed content image " + bestCandidate.url );
+	}
+} else {
+picImg.src = bestCandidate.url;
 // currentSrc attribute and property to match
 // http://picture.responsiveimages.org/#the-img-element
 if ( !pf.curSrcSupported ) {
-	picImg.currentSrc = picImg.src;
+picImg.currentSrc = picImg.src;
 }
 
 pf.backfaceVisibilityFix( picImg );
-	}
+}
 }
 
 pf.setIntrinsicSize(picImg, bestCandidate);
-	}
+}
 };
 
 pf.ascendingSort = function( a, b ) {
-	return a.resolution - b.resolution;
+return a.resolution - b.resolution;
 };
 
 /**
@@ -520,13 +520,13 @@ pf.removeVideoShim = function( picture ) {
 var videos = picture.getElementsByTagName( "video" );
 if ( videos.length ) {
   var video = videos[ 0 ],
-		vsources = video.getElementsByTagName( "source" );
-		while ( vsources.length ) {
-		picture.insertBefore( vsources[ 0 ], video );
+	vsources = video.getElementsByTagName( "source" );
+	while ( vsources.length ) {
+	picture.insertBefore( vsources[ 0 ], video );
   }
 // Remove the video element once we're finished removing its children
-	video.parentNode.removeChild( video );
-	}
+video.parentNode.removeChild( video );
+}
 };
 
 /**
@@ -542,8 +542,8 @@ for ( var h = 0, len = imgs.length; h < len; h++ ) {
 var currImg = imgs[ h ];
 
 if ( currImg.parentNode.nodeName.toUpperCase() === "PICTURE" ||
-	( currImg.getAttribute( "srcset" ) !== null ) || currImg[ pf.ns ] && currImg[ pf.ns ].srcset !== null ) {
-	elems.push( currImg );
+( currImg.getAttribute( "srcset" ) !== null ) || currImg[ pf.ns ] && currImg[ pf.ns ].srcset !== null ) {
+elems.push( currImg );
 }
 }
 return elems;
@@ -551,7 +551,7 @@ return elems;
 
 pf.getMatch = function( img, picture ) {
 var sources = picture.childNodes,
-	match;
+match;
 
 // Go through each child, and if they have media queries, evaluate them
 for ( var j = 0, slen = sources.length; j < slen; j++ ) {
@@ -559,28 +559,27 @@ var source = sources[ j ];
 
 // ignore non-element nodes
 if ( source.nodeType !== 1 ) {
-	continue;
+continue;
 }
 
 // Hitting the `img` element that started everything stops the search for `sources`.
 // If no previous `source` matches, the `img` itself is evaluated later.
-if ( source === img ) {
-	return match;
+if ( source === img ) {	return match;
 }
 // ignore non-`source` nodes
 if ( source.nodeName.toUpperCase() !== "SOURCE" ) {
-	continue;
+continue;
 }
 // if it's a source element that has the `src` property set, throw a warning in the console
 if ( source.getAttribute( "src" ) !== null && typeof console !== undefined ) {
-	console.warn("The `src` attribute is invalid on `picture` `source` element; instead, use `srcset`.");
+console.warn("The `src` attribute is invalid on `picture` `source` element; instead, use `srcset`.");
 }
 
 var media = source.getAttribute( "media" );
 
 // if source does not have a srcset attribute, skip
 if ( !source.getAttribute( "srcset" ) ) {
-	continue;
+continue;
 }
 
 // if there's no media specified, OR w.matchMedia is supported
@@ -588,10 +587,10 @@ if ( ( !media || pf.matchesMedia( media ) ) ) {
 var typeSupported = pf.verifyTypeSupport( source );
 
 if ( typeSupported === true ) {
-	match = source;
-	break;
+match = source;
+break;
 } else if ( typeSupported === "pending" ) {
-	return false;
+return false;
 }
 }
 }
@@ -600,36 +599,36 @@ if ( typeSupported === true ) {
 
 function picturefill( opt ) {
 var elements,
-	element,
-	parent,
+element,
+parent,
 firstMatch,
-	candidates,
-	options = opt || {};
+candidates,
+options = opt || {};
 
 elements = options.elements || pf.getAllElements();
 
 // Loop through all elements
 for ( var i = 0, plen = elements.length; i < plen; i++ ) {
-	element = elements[ i ];
-	parent = element.parentNode;
-	firstMatch = undefined;
-	candidates = undefined;
+element = elements[ i ];
+parent = element.parentNode;
+firstMatch = undefined;
+candidates = undefined;
 
 // immediately skip non-`img` nodes
 if ( element.nodeName.toUpperCase() !== "IMG" ) {
-	continue;
+continue;
 }
 
 // expando for caching data on the img
 if ( !element[ pf.ns ] ) {
-	element[ pf.ns ] = {};
+element[ pf.ns ] = {};
 }
 
 // if the element has already been evaluated, skip it unless
 // `options.reevaluate` is set to true ( this, for example,
 // is set to true when running `picturefill` on `resize` ).
 if ( !options.reevaluate && element[ pf.ns ].evaluated ) {
-	continue;
+continue;
 }
 
 // if `img` is in a `picture` element
@@ -647,33 +646,33 @@ firstMatch = pf.getMatch( element, parent );
 // remove the evaluated attr and skip for now ( the pending test will
 // rerun picturefill on this element when complete)
 if ( firstMatch === false ) {
-	continue;
+continue;
 }
 } else {
-	firstMatch = undefined;
+firstMatch = undefined;
 }
 // Cache and remove `srcset` if present and we’re going to be doing `picture`/`srcset`/`sizes` polyfilling to it.
 if ( ( parent && parent.nodeName.toUpperCase() === "PICTURE" ) ||
-	( !pf.sizesSupported && ( element.srcset && regWDesc.test( element.srcset ) ) ) ) {
-		pf.dodgeSrcset( element );
-	}
+( !pf.sizesSupported && ( element.srcset && regWDesc.test( element.srcset ) ) ) ) {
+	pf.dodgeSrcset( element );
+}
 
 if ( firstMatch ) {
-	candidates = pf.processSourceSet( firstMatch );
-	pf.applyBestCandidate( candidates, element );
+candidates = pf.processSourceSet( firstMatch );
+pf.applyBestCandidate( candidates, element );
 } else {
 // No sources matched, so we’re down to processing the inner `img` as a source.
 candidates = pf.processSourceSet( element );
 
 if ( element.srcset === undefined || element[ pf.ns ].srcset ) {
 // Either `srcset` is completely unsupported, or we need to polyfill `sizes` functionality.
-	pf.applyBestCandidate( candidates, element );
+pf.applyBestCandidate( candidates, element );
 } // Else, resolution-only `srcset` is supported natively.
 }
 
 // set evaluated to true to avoid unnecessary reparsing
 element[ pf.ns ].evaluated = true;
-	}
+}
 }
 
 /**
@@ -682,32 +681,32 @@ element[ pf.ns ].evaluated = true;
 * Also attaches picturefill on resize
 */
 function runPicturefill() {
-	pf.initTypeDetects();
-	picturefill();
+pf.initTypeDetects();
+picturefill();
 var intervalId = setInterval( function() {
 // When the document has finished loading, stop checking for new images
 // https://github.com/ded/domready/blob/master/ready.js#L15
   picturefill();
 
 if ( /^loaded|^i|^c/.test( doc.readyState ) ) {
-	clearInterval( intervalId );
-		return;
-	}
+clearInterval( intervalId );
+return;
+}
 }, 250 );
 
 var resizeTimer;
 var handleResize = function() {
-	picturefill({ reevaluate: true });
+picturefill({ reevaluate: true });
 };
 function checkResize() {
-	clearTimeout(resizeTimer);
-	resizeTimer = setTimeout( handleResize, 60 );
+clearTimeout(resizeTimer);
+resizeTimer = setTimeout( handleResize, 60 );
 }
 if ( w.addEventListener ) {
-	w.addEventListener( "resize", checkResize, false );
+w.addEventListener( "resize", checkResize, false );
 } else if ( w.attachEvent ) {
-	w.attachEvent( "onresize", checkResize );
-	}
+w.attachEvent( "onresize", checkResize );
+}
 }
 
 runPicturefill();

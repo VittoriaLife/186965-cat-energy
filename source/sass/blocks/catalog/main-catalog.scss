@@ -78,15 +78,15 @@
 
   @media (max-width: $mobile-width-only) {
     &:after {
-      content: "";
-      width: 320px;
-      position: absolute;
-      bottom: -24px;
-      background-color: #ededed;
-      height: 1px;
-      right: 0;
-    }
+    content: "";
+    width: 320px;
+    position: absolute;
+    bottom: -24px;
+    background-color: #ededed;
+    height: 1px;
+    right: 0;
   }
+}
 
   @media (min-width: $tablet-width) {
     flex-direction: row;

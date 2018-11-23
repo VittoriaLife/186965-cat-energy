@@ -18,8 +18,8 @@
         background-color: $light-green-color;
       }
 
-        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-          &:after {
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        &:after {
           background-image: url("/img/index-background-desktop@2x.jpg");
         }
       }
@@ -36,15 +36,15 @@
 
   @media (max-width: $mobile-width-only) {
     &:before {
-    content: "";
-    width: 320px;
-    position: absolute;
-    background-color: #ededed;
-    height: 1px;
-    right: 0;
-    top: 66px;
+      content: "";
+      width: 320px;
+      position: absolute;
+      background-color: #ededed;
+      height: 1px;
+      right: 0;
+      top: 66px;
+    }
   }
-}
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;

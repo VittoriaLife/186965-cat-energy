@@ -209,13 +209,13 @@ return true;
 var pfType = pf.types[ type ];
 // if the type test is a function, run it and return "pending" status. The function will rerun picturefill on pending elements once finished.
 if ( typeof pfType === "string" && pfType !== "pending") {
-	pf.types[ type ] = pf.detectTypeSupport( type, pfType );
-	return "pending";
+pf.types[ type ] = pf.detectTypeSupport( type, pfType );
+return "pending";
 } else if ( typeof pfType === "function" ) {
 pfType();
-	return "pending";
+return "pending";
 } else {
-	return pfType;
+return pfType;
 }
 }
 };
@@ -224,8 +224,8 @@ pfType();
 pf.parseSize = function( sourceSizeStr ) {
 var match = /(\([^)]+\))?\s*(.+)/g.exec( sourceSizeStr );
 return {
-	media: match && match[1],
-	length: match && match[2]
+media: match && match[1],
+length: match && match[2]
 };
 };
 
@@ -300,23 +300,23 @@ srcset = srcset.slice( pos + 1 );
 if ( descriptor === null ) {
 var descpos = srcset.indexOf( "," );
 if ( descpos !== -1 ) {
-	descriptor = srcset.slice( 0, descpos );
-	srcset = srcset.slice( descpos + 1 );
+descriptor = srcset.slice( 0, descpos );
+srcset = srcset.slice( descpos + 1 );
 } else {
-	descriptor = srcset;
-	srcset = "";
+descriptor = srcset;
+srcset = "";
 }
 }
 } else {
 url = srcset;
-	srcset = "";
+srcset = "";
 }
 
 // 7. Add url to raw candidates, associated with descriptors.
 if ( url || descriptor ) {
 candidates.push({
 url: url,
-	descriptor: descriptor
+descriptor: descriptor
 });
 }
 }
@@ -423,7 +423,7 @@ style.zoom = currentZoom;
 pf.setIntrinsicSize = (function() {
 var urlCache = {};
 var setSize = function( picImg, width, res ) {
-  if ( width ) {
+if ( width ) {
 picImg.setAttribute( "width", parseInt(width / res, 10) );
 }
 };
@@ -445,12 +445,12 @@ img.onload = function() {
 urlCache[bestCandidate.url] = img.width;
 //IE 10/11 don't calculate width for svg outside document
 if ( !urlCache[bestCandidate.url] ) {
-  try {
-    doc.body.appendChild( img );
-    urlCache[bestCandidate.url] = img.width || img.offsetWidth;
-    doc.body.removeChild( img );
-  } catch(e){}
-  }
+try {
+doc.body.appendChild( img );
+urlCache[bestCandidate.url] = img.width || img.offsetWidth;
+doc.body.removeChild( img );
+} catch(e){}
+}
 if ( picImg.src === bestCandidate.url ) {
 setSize( picImg, urlCache[bestCandidate.url], bestCandidate.resolution );
 }
@@ -473,22 +473,21 @@ length = candidates.length;
 bestCandidate = candidates[ length - 1 ];
 
 for ( var i = 0; i < length; i++ ) {
-  candidate = candidates[ i ];
+candidate = candidates[ i ];
 if ( candidate.resolution >= pf.getDpr() ) {
 bestCandidate = candidate;
-	break;
+break;
 }
 }
 
 if ( bestCandidate ) {
-
-  bestCandidate.url = pf.makeUrl( bestCandidate.url );
+bestCandidate.url = pf.makeUrl( bestCandidate.url );
 
 if ( picImg.src !== bestCandidate.url ) {
-  if ( pf.restrictsMixedContent() && bestCandidate.url.substr(0, "http:".length).toLowerCase() === "http:" ) {
-    if ( window.console !== undefined ) {
-		console.warn( "Blocked mixed content image " + bestCandidate.url );
-	}
+if ( pf.restrictsMixedContent() && bestCandidate.url.substr(0, "http:".length).toLowerCase() === "http:" ) {
+if ( window.console !== undefined ) {
+console.warn( "Blocked mixed content image " + bestCandidate.url );
+}
 } else {
 picImg.src = bestCandidate.url;
 // currentSrc attribute and property to match
@@ -519,11 +518,11 @@ return a.resolution - b.resolution;
 pf.removeVideoShim = function( picture ) {
 var videos = picture.getElementsByTagName( "video" );
 if ( videos.length ) {
-  var video = videos[ 0 ],
-	vsources = video.getElementsByTagName( "source" );
-	while ( vsources.length ) {
-	picture.insertBefore( vsources[ 0 ], video );
-  }
+var video = videos[ 0 ],
+vsources = video.getElementsByTagName( "source" );
+while ( vsources.length ) {
+picture.insertBefore( vsources[ 0 ], video );
+}
 // Remove the video element once we're finished removing its children
 video.parentNode.removeChild( video );
 }
@@ -536,7 +535,7 @@ video.parentNode.removeChild( video );
 	*/
 pf.getAllElements = function() {
 var elems = [],
-	imgs = doc.getElementsByTagName( "img" );
+imgs = doc.getElementsByTagName( "img" );
 
 for ( var h = 0, len = imgs.length; h < len; h++ ) {
 var currImg = imgs[ h ];
@@ -654,7 +653,7 @@ firstMatch = undefined;
 // Cache and remove `srcset` if present and we’re going to be doing `picture`/`srcset`/`sizes` polyfilling to it.
 if ( ( parent && parent.nodeName.toUpperCase() === "PICTURE" ) ||
 ( !pf.sizesSupported && ( element.srcset && regWDesc.test( element.srcset ) ) ) ) {
-	pf.dodgeSrcset( element );
+pf.dodgeSrcset( element );
 }
 
 if ( firstMatch ) {
@@ -686,7 +685,7 @@ picturefill();
 var intervalId = setInterval( function() {
 // When the document has finished loading, stop checking for new images
 // https://github.com/ded/domready/blob/master/ready.js#L15
-  picturefill();
+picturefill();
 
 if ( /^loaded|^i|^c/.test( doc.readyState ) ) {
 clearInterval( intervalId );

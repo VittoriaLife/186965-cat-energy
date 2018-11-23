@@ -8,13 +8,13 @@ window.matchMedia || (window.matchMedia = function() {
   "use strict";
 
 // For browsers that support matchMedium api such as IE 9 and webkit
-	var styleMedia = (window.styleMedia || window.media);
+var styleMedia = (window.styleMedia || window.media);
 
 // For those that don't support matchMedium
-	if (!styleMedia) {
-		var style       = document.createElement('style'),
-			script      = document.getElementsByTagName('script')[0],
-			info        = null;
+if (!styleMedia) {
+	var style       = document.createElement('style'),
+		script      = document.getElementsByTagName('script')[0],
+		info        = null;
 
 		style.type  = 'text/css';
 		style.id    = 'matchmediajs-test';
@@ -57,92 +57,92 @@ return function(media) {
 	// Enable strict mode
 	"use strict";
 
-function expose(picturefill) {
+  function expose(picturefill) {
 	/* expose picturefill */
-	if ( typeof module === "object" && typeof module.exports === "object" ) {
+	  if ( typeof module === "object" && typeof module.exports === "object" ) {
 		// CommonJS, just export
-		module.exports = picturefill;
-	} else if ( typeof define === "function" && define.amd ) {
+		  module.exports = picturefill;
+	  } else if ( typeof define === "function" && define.amd ) {
 		// AMD support
-		define( "picturefill", function() { return picturefill; } );
-	}
-	if ( typeof w === "object" ) {
+		  define( "picturefill", function() { return picturefill; } );
+	  }
+	  if ( typeof w === "object" ) {
 		// If no AMD and we are in the browser, attach to window
-		w.picturefill = picturefill;
-	}
-}
+		  w.picturefill = picturefill;
+	  }
+  }
 
 // If picture is supported, well, that's awesome. Let's get outta here...
-	if ( w.HTMLPictureElement ) {
-		expose(function() { });
-		return;
-	}
+  if ( w.HTMLPictureElement ) {
+	  expose(function() { });
+	  return;
+  }
 
 // HTML shim|v it for old IE (IE9 will still need the HTML video tag workaround)
-	doc.createElement( "picture" );
+doc.createElement( "picture" );
 
-	// local object for method references and testing exposure
-	var pf = w.picturefill || {};
+// local object for method references and testing exposure
+var pf = w.picturefill || {};
 
-	var regWDesc = /\s+\+?\d+(e\d+)?w/;
+var regWDesc = /\s+\+?\d+(e\d+)?w/;
 
-	// namespace
-	pf.ns = "picturefill";
+// namespace
+pf.ns = "picturefill";
 
-	// srcset support test
-	(function() {
-		pf.srcsetSupported = "srcset" in image;
-		pf.sizesSupported = "sizes" in image;
-		pf.curSrcSupported = "currentSrc" in image;
-	})();
+// srcset support test
+(function() {
+	pf.srcsetSupported = "srcset" in image;
+	pf.sizesSupported = "sizes" in image;
+	pf.curSrcSupported = "currentSrc" in image;
+})();
 
-	// just a string trim workaround
-	pf.trim = function( str ) {
-		return str.trim ? str.trim() : str.replace( /^\s+|\s+$/g, "" );
-	};
+// just a string trim workaround
+pf.trim = function( str ) {
+	return str.trim ? str.trim() : str.replace( /^\s+|\s+$/g, "" );
+};
 
-	/**
-	 * Gets a string and returns the absolute URL
-	 * @param src
-	 * @returns {String} absolute URL
-	 */
-	pf.makeUrl = (function() {
-		var anchor = doc.createElement( "a" );
-		return function(src) {
-			anchor.href = src;
-			return anchor.href;
-		};
-	})();
+/**
+	* Gets a string and returns the absolute URL
+	* @param src
+	* @returns {String} absolute URL
+	*/
+pf.makeUrl = (function() {
+	var anchor = doc.createElement( "a" );
+	  return function(src) {
+		  anchor.href = src;
+		  return anchor.href;
+	  };
+})();
 
-	/**
-	 * Shortcut method for https://w3c.github.io/webappsec/specs/mixedcontent/#restricts-mixed-content ( for easy overriding in tests )
-	 */
-	pf.restrictsMixedContent = function() {
-		return w.location.protocol === "https:";
-	};
+/**
+	* Shortcut method for https://w3c.github.io/webappsec/specs/mixedcontent/#restricts-mixed-content ( for easy overriding in tests )
+	*/
+  pf.restrictsMixedContent = function() {
+	  return w.location.protocol === "https:";
+  };
 	/**
 	 * Shortcut method for matchMedia ( for easy overriding in tests )
 	 */
 
-	pf.matchesMedia = function( media ) {
-		return w.matchMedia && w.matchMedia( media ).matches;
-	};
+  pf.matchesMedia = function( media ) {
+	  return w.matchMedia && w.matchMedia( media ).matches;
+  };
 
 	// Shortcut method for `devicePixelRatio` ( for easy overriding in tests )
-	pf.getDpr = function() {
-		return ( w.devicePixelRatio || 1 );
-	};
+  pf.getDpr = function() {
+	  return ( w.devicePixelRatio || 1 );
+  };
 
 	/**
 	 * Get width in css pixel value from a "length" value
 	 * http://dev.w3.org/csswg/css-values-3/#length-value
 	 */
-	pf.getWidthFromLength = function( length ) {
-		var cssValue;
+  pf.getWidthFromLength = function( length ) {
+	  var cssValue;
 		// If a length is specified and doesn’t contain a percentage, and it is greater than 0 or using `calc`, use it. Else, abort.
-        if ( !(length && length.indexOf( "%" ) > -1 === false && ( parseFloat( length ) > 0 || length.indexOf( "calc(" ) > -1 )) ) {
-            return false;
-        }
+      if ( !(length && length.indexOf( "%" ) > -1 === false && ( parseFloat( length ) > 0 || length.indexOf( "calc(" ) > -1 )) ) {
+        return false;
+      }
 
 		/**
 		 * If length is specified in  `vw` units, use `%` instead since the div we’re measuring
@@ -150,24 +150,24 @@ function expose(picturefill) {
 		 *
 		 * TODO: maybe we should put this behind a feature test for `vw`? The risk of doing this is possible browser inconsistancies with vw vs %
 		 */
-		length = length.replace( "vw", "%" );
+  length = length.replace( "vw", "%" );
 
 		// Create a cached element for getting length value widths
-		if ( !pf.lengthEl ) {
-			pf.lengthEl = doc.createElement( "div" );
+  if ( !pf.lengthEl ) {
+    pf.lengthEl = doc.createElement( "div" );
 
 			// Positioning styles help prevent padding/margin/width on `html` or `body` from throwing calculations off.
-			pf.lengthEl.style.cssText = "border:0;display:block;font-size:1em;left:0;margin:0;padding:0;position:absolute;visibility:hidden";
+    pf.lengthEl.style.cssText = "border:0;display:block;font-size:1em;left:0;margin:0;padding:0;position:absolute;visibility:hidden";
 
 			// Add a class, so that everyone knows where this element comes from
-			pf.lengthEl.className = "helper-from-picturefill-js";
-		}
+		pf.lengthEl.className = "helper-from-picturefill-js";
+	}
 
-		pf.lengthEl.style.width = "0px";
+	pf.lengthEl.style.width = "0px";
 
-        try {
-		    pf.lengthEl.style.width = length;
-        } catch ( e ) {}
+    try {
+		  pf.lengthEl.style.width = length;
+    } catch ( e ) {}
 
 		doc.body.appendChild(pf.lengthEl);
 
@@ -182,33 +182,33 @@ function expose(picturefill) {
 		return cssValue;
 	};
 
-    pf.detectTypeSupport = function( type, typeUri ) {
+  pf.detectTypeSupport = function( type, typeUri ) {
         // based on Modernizr's lossless img-webp test
         // note: asynchronous
-        var image = new w.Image();
-        image.onerror = function() {
-            pf.types[ type ] = false;
-            picturefill();
-        };
-        image.onload = function() {
-            pf.types[ type ] = image.width === 1;
-            picturefill();
-        };
-        image.src = typeUri;
+    var image = new w.Image();
+      image.onerror = function() {
+        pf.types[ type ] = false;
+        picturefill();
+      };
+      image.onload = function() {
+        pf.types[ type ] = image.width === 1;
+        picturefill();
+      };
+      image.src = typeUri;
 
-        return "pending";
+      return "pending";
     };
 	// container of supported mime types that one might need to qualify before using
 	pf.types = pf.types || {};
 
 	pf.initTypeDetects = function() {
         // Add support for standard mime types
-        pf.types[ "image/jpeg" ] = true;
-        pf.types[ "image/gif" ] = true;
-        pf.types[ "image/png" ] = true;
-        pf.types[ "image/svg+xml" ] = doc.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image", "1.1");
-        pf.types[ "image/webp" ] = pf.detectTypeSupport("image/webp", "data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=");
-    };
+    pf.types[ "image/jpeg" ] = true;
+    pf.types[ "image/gif" ] = true;
+    pf.types[ "image/png" ] = true;
+    pf.types[ "image/svg+xml" ] = doc.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image", "1.1");
+    pf.types[ "image/webp" ] = pf.detectTypeSupport("image/webp", "data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=");
+  };
 
 	pf.verifyTypeSupport = function( source ) {
 		var type = source.getAttribute( "type" );
@@ -233,17 +233,17 @@ function expose(picturefill) {
 	// Parses an individual `size` and returns the length, and optional media query
 	pf.parseSize = function( sourceSizeStr ) {
 		var match = /(\([^)]+\))?\s*(.+)/g.exec( sourceSizeStr );
-		return {
-			media: match && match[1],
-			length: match && match[2]
-		};
-	};
+		  return {
+			  media: match && match[1],
+			  length: match && match[2]
+		  };
+	  };
 
 	// Takes a string of sizes and returns the width in pixels as a number
 	pf.findWidthFromSourceSize = function( sourceSizeListStr ) {
 		// Split up source size list, ie ( max-width: 30em ) 100%, ( max-width: 50em ) 50%, 33%
 		//                            or (min-width:30em) calc(30% - 15px)
-		var sourceSizeList = pf.trim( sourceSizeListStr ).split( /\s*,\s*/ ),
+	  var sourceSizeList = pf.trim( sourceSizeListStr ).split( /\s*,\s*/ ),
 			winningLength;
 
 		for ( var i = 0, len = sourceSizeList.length; i < len; i++ ) {
@@ -254,21 +254,21 @@ function expose(picturefill) {
 				length = parsedSize.length,
 				media = parsedSize.media;
 
-			if ( !length ) {
-				continue;
-			}
+		if ( !length ) {
+			continue;
+		}
 			// if there is no media query or it matches, choose this as our winning length
-			if ( (!media || pf.matchesMedia( media )) &&
+		if ( (!media || pf.matchesMedia( media )) &&
 				// pass the length to a method that can properly determine length
 				// in pixels based on these formats: http://dev.w3.org/csswg/css-values-3/#length-value
-				(winningLength = pf.getWidthFromLength( length )) ) {
-				break;
-			}
+			(winningLength = pf.getWidthFromLength( length )) ) {
+			break;
 		}
+	}
 
 		//if we have no winningLength fallback to 100vw
-		return winningLength || Math.max(w.innerWidth || 0, doc.documentElement.clientWidth);
-	};
+	return winningLength || Math.max(w.innerWidth || 0, doc.documentElement.clientWidth);
+};
 
 	pf.parseSrcset = function( srcset ) {
 		/**
@@ -433,9 +433,9 @@ function expose(picturefill) {
 	pf.setIntrinsicSize = (function() {
 		var urlCache = {};
 		var setSize = function( picImg, width, res ) {
-            if ( width ) {
-			    picImg.setAttribute( "width", parseInt(width / res, 10) );
-            }
+      if ( width ) {
+			  picImg.setAttribute( "width", parseInt(width / res, 10) );
+      }
 		};
 		return function( picImg, bestCandidate ) {
 			var img;
@@ -452,16 +452,16 @@ function expose(picturefill) {
 			} else {
 				img = doc.createElement( "img" );
 				img.onload = function() {
-					urlCache[bestCandidate.url] = img.width;
+				urlCache[bestCandidate.url] = img.width;
 
                     //IE 10/11 don't calculate width for svg outside document
-                    if ( !urlCache[bestCandidate.url] ) {
-                        try {
-                            doc.body.appendChild( img );
-                            urlCache[bestCandidate.url] = img.width || img.offsetWidth;
-                            doc.body.removeChild( img );
-                        } catch(e){}
-                    }
+          if ( !urlCache[bestCandidate.url] ) {
+            try {
+              doc.body.appendChild( img );
+              urlCache[bestCandidate.url] = img.width || img.offsetWidth;
+              doc.body.removeChild( img );
+            } catch(e){}
+          }
 
 					if ( picImg.src === bestCandidate.url ) {
 						setSize( picImg, urlCache[bestCandidate.url], bestCandidate.resolution );

@@ -24,11 +24,11 @@
   }
 
   &--comments,
-    &--more {
-      &:after {
-        top: 15px;
-      }
+  &--more {
+    &:after {
+      top: 15px;
     }
+  }
 
   @media (min-width: $tablet-width) {
     margin-top: 38px;
@@ -42,7 +42,7 @@
       margin-top: 0;
       margin-bottom: 0;
 
-        &:after {
+      &:after {
         top: 25px;
       }
     }
@@ -50,7 +50,7 @@
     &--comments {
       margin-top: 0;
 
-        &:after {
+      &:after {
         top: 18px;
       }
     }
@@ -59,8 +59,8 @@
       margin-top: 0;
       margin-bottom: 72px;
 
-        &:after {
-          top: 35px;
+      &:after {
+        top: 35px;
       }
     }
   }

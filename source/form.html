@@ -15,11 +15,13 @@
 
     <header class="page-header">
       <div class="page-header__container">
-        <picture>
-          <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-          <img class="page-header__logo" src="img/logo-mobile.svg" width="193" alt="Логотип cat-energy">
-        </picture>
+        <a href="index.html">
+          <picture>
+              <source media="(min-width: 1300px)" srcset="/img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="/img/logo-tablet.svg">
+              <img class="page-header__logo" src="/img/logo-mobile.svg" width="193" alt="Логотип cat-energy">
+            </picture>
+          </a>
         <nav class="main-navigation main-navigation--closed">
           <button class="main-navigation__button" type="button">
             <span class="main-navigation__visually-hidden">Открыть меню</span>
@@ -53,48 +55,53 @@
                 <form class="main-form__search users-data" action="https://echo.htmlacademy.ru" method="get">
                   <div class="users-data__wrapper">
                     <fieldset class="users-data__heading personal-information">
-                      <div class="personal-information__wrapper">
-                        <label class="personal-information__label personal-information__label--name" for="cat-name">Имя:<sup>*</sup>
-                        </label>
-                        <input class="personal-information__field personal-information__field--name" type="text" name="Имя животного" id="cat-name" placeholder="БАРСИК" required>
-                      </div>
-                      <div class="personal-information__wrapper">
-                              <label class="personal-information__label personal-information__label--weight" for="cat-weight">Вес (кг):<sup>*</sup>
+                      <ul class="personal-information__list">
+                        <li class="personal-information__item">
+                          <label class="personal-information__label personal-information__label--name" for="cat-name">Имя:<sup>*</sup>
+                          </label>
+                          <input class="personal-information__field personal-information__field--name" type="text" name="Имя животного" id="cat-name" placeholder="БАРСИК" required>
+                        </li>
+                        <li class="personal-information__item">
+                          <label class="personal-information__label personal-information__label--weight" for="cat-weight">Вес (кг):<sup>*</sup>
+                          </label>
+                          <input class="personal-information__field personal-information__field--weight" type="number" name="Вес животного" id="cat-weight" placeholder="7" min="1" max="30" step="1" required>
+                        </li>
+                        <li class="personal-information__item">
+                          <label class="personal-information__label personal-information__label--age" for="cat-age">Возраст (лет):
+                          </label>
+                          <input class="personal-information__field personal-information__field--age" type="number" name="Возраст животного" id="cat-age" placeholder="7" min="1" max="30" step="1">
+                        </li>
+                      </ul>
+
+                      </fieldset>
+                      <fieldset class="users-data__heading goals">
+                        <ul class="goals__list">
+                          <li class="goals__item">
+                            <label class="goals__label" for="weight-loss">
+                              <input class="goals__input goals__input--weight-loss" type="radio" name="Похудение" id="weight-loss" checked>
+                              <span class="goals__radio"></span>
+                              Похудение
+                            </label>
+                          </li>
+                          <li class="goals__item">
+                            <label class="goals__label" for="mass">
+                              <input class="goals__input goals__input--mass" type="radio" name="Набор массы" id="mass">
+                              <span class="goals__radio"></span>
+                                Набор массы
                               </label>
-                              <input class="personal-information__field personal-information__field--weight" type="number" name="Вес животного" id="cat-weight" placeholder="7" min="1" max="30" step="1" required>
-                            </div>
-                            <div class="personal-information__wrapper">
-                              <label class="personal-information__label personal-information__label--age" for="cat-age">Возраст (лет):
+                          </li>
+                          <li class="goals__item">
+                            <label class="goals__label" for="idk">
+                              <input class="goals__input goals__input--idk" type="radio" name="Я не знаю" id="idk">
+                              <span class="goals__radio"></span>
+                                Не знаю (нужен ваш совет)
                               </label>
-                              <input class="personal-information__field personal-information__field--age" type="number" name="Возраст животного" id="cat-age" placeholder="7" min="1" max="30" step="1">
-                            </div>
-                          </fieldset>
-                          <fieldset class="users-data__heading goals">
-                            <div class="goals__wrapper">
-                              <label class="goals__label" for="weight-loss">
-                                <input class="goals__input goals__input--weight-loss" type="radio" name="Похудение" id="weight-loss">
-                                <span class="goals__radio"></span>
-                                    Похудение
-                              </label>
-                            </div>
-                            <div class="goals__wrapper">
-                              <label class="goals__label" for="mass">
-                                <input class="goals__input goals__input--mass" type="radio" name="Набор массы" id="mass">
-                                <span class="goals__radio"></span>
-                                    Набор массы
-                              </label>
-                            </div>
-                            <div class="goals__wrapper">
-                              <label class="goals__label" for="idk">
-                                <input class="goals__input goals__input--idk" type="radio" name="Я не знаю" id="idk">
-                                <span class="goals__radio"></span>
-                                  Не знаю (нужен ваш совет)
-                              </label>
-                            </div>
-                          </fieldset>
-                        </div>
-                      </form>
-                      </div>
+                          </li>
+                        </ul>
+                      </fieldset>
+                    </div>
+                  </form>
+                </div>
             </div>
                   <div class="main-form__container main-form__container--contacts">
                     <div class="main-form__wrapper">

@@ -5,7 +5,8 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 73px;
-    padding-left: 39px;
+    padding-left: 40px;
+    padding-top: 12px;
   }
 
   @media (min-width: $desktop-width) {
@@ -59,7 +60,6 @@
 }
 
 .users-data__button-wrapper {
-  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     display: flex;

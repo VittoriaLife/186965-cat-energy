@@ -31,7 +31,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 68px;
+    margin-left: -39px;
+    padding-left: 37px;
   }
 }
 
@@ -46,7 +47,7 @@
 
 .extra-goods__box {
   @media (max-width: $mobile-width-only) {
-    padding: 0 20px;
+    padding-left: 20px;
   }
 }
 
@@ -55,12 +56,20 @@
   padding-bottom: 16px;
   border-top: 1px solid #cdcdcd;
 
+  &:last-child {
+    border-bottom: 1px solid #cdcdcd;
+  }
+
   @media (min-width: $tablet-width) {
     padding-top: 26px;
     padding-bottom: 28px;
     padding-left: 36px;
     border: 1px solid #d9d9d9;
     border-bottom: none;
+
+    &:last-child {
+      border-bottom: 1px solid #d9d9d9;
+    }
   }
 
   @media (min-width: $desktop-width) {

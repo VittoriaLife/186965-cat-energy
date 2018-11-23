@@ -101,3 +101,7 @@
 .social-list__name-hidden {
   @include visually-hidden;
 }
+
+.social-list__link__visually-hidden {
+  @include visually-hidden;
+}

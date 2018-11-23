@@ -343,7 +343,7 @@ resCandidate = parseFloat( ( parseInt( curr, 10 ) / widthInCssPixels ) );
 } else if ( lastchar === "x" ) {
 var res = curr && parseFloat( curr, 10 );
 resCandidate = res && !isNaN( res ) ? res : 1;
-	}
+}
 }
 }
 return resCandidate || 1;

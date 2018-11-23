@@ -18,8 +18,8 @@
         background-color: $light-green-color;
       }
 
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        &:after {
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+          &:after {
           background-image: url("/img/index-background-desktop@2x.jpg");
         }
       }

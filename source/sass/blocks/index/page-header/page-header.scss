@@ -19,7 +19,7 @@
       }
 
       @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        &:after {
+        &::after {
           background-image: url("/img/index-background-desktop@2x.jpg");
         }
       }
@@ -35,7 +35,7 @@
   padding-bottom: 9px;
 
   @media (max-width: $mobile-width-only) {
-    &:before {
+    &::before {
       content: "";
       width: 320px;
       position: absolute;

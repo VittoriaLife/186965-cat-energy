@@ -11,7 +11,7 @@
   &--more {
     padding-left: 0;
 
-    &:after {
+    &::after {
       content: "";
       position: absolute;
       top: 20px;
@@ -25,7 +25,7 @@
 
   &--comments,
   &--more {
-    &:after {
+    &::after {
       top: 15px;
     }
   }
@@ -42,7 +42,7 @@
       margin-top: 0;
       margin-bottom: 0;
 
-      &:after {
+      &::after {
         top: 25px;
       }
     }
@@ -50,7 +50,7 @@
     &--comments {
       margin-top: 0;
 
-      &:after {
+      &::after {
         top: 18px;
       }
     }
@@ -59,7 +59,7 @@
       margin-top: 0;
       margin-bottom: 72px;
 
-      &:after {
+      &::after {
         top: 35px;
       }
     }
@@ -75,7 +75,7 @@
     }
 
     &--comments {
-      &:after {
+      &::after {
         top: 24px;
       }
     }

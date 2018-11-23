@@ -12,40 +12,40 @@ var styleMedia = (window.styleMedia || window.media);
 
 // For those that don't support matchMedium
 if (!styleMedia) {
-	var style       = document.createElement('style'),
-		script      = document.getElementsByTagName('script')[0],
-		info        = null;
+var style       = document.createElement('style'),
+	script      = document.getElementsByTagName('script')[0],
+	info        = null;
 
-		style.type  = 'text/css';
-		style.id    = 'matchmediajs-test';
+	style.type  = 'text/css';
+	style.id    = 'matchmediajs-test';
 
-		script.parentNode.insertBefore(style, script);
+	script.parentNode.insertBefore(style, script);
 
 // 'style.currentStyle' is used by IE <= 8 and 'window.getComputedStyle' for all other browsers
-	info = ('getComputedStyle' in window) && window.getComputedStyle(style, null) || style.currentStyle;
+info = ('getComputedStyle' in window) && window.getComputedStyle(style, null) || style.currentStyle;
 
-	styleMedia = {
-		matchMedium: function(media) {
-			var text = '@media ' + media + '{ #matchmediajs-test { width: 1px; } }';
+styleMedia = {
+	matchMedium: function(media) {
+		var text = '@media ' + media + '{ #matchmediajs-test { width: 1px; } }';
 
-			// 'style.styleSheet' is used by IE <= 8 and 'style.textContent' for all other browsers
-			if (style.styleSheet) {
-				style.styleSheet.cssText = text;
-			} else {
-				style.textContent = text;
-			}
-
-			// Test if media query is true or false
-			return info.width === '1px';
+		// 'style.styleSheet' is used by IE <= 8 and 'style.textContent' for all other browsers
+		if (style.styleSheet) {
+			style.styleSheet.cssText = text;
+		} else {
+			style.textContent = text;
 		}
-	};
+
+		// Test if media query is true or false
+		return info.width === '1px';
+	}
+};
 }
 
 return function(media) {
-	return {
-		matches: styleMedia.matchMedium(media || 'all'),
-		media: media || 'all'
-	};
+return {
+	matches: styleMedia.matchMedium(media || 'all'),
+	media: media || 'all'
+};
 };
 }());
 /*! Picturefill - Responsive Images that work today.
@@ -54,28 +54,28 @@ return function(media) {
 *  Spec: http://picture.responsiveimages.org/
 */
 (function( w, doc, image ) {
-	// Enable strict mode
-	"use strict";
+// Enable strict mode
+"use strict";
 
   function expose(picturefill) {
-	/* expose picturefill */
-	  if ( typeof module === "object" && typeof module.exports === "object" ) {
-		// CommonJS, just export
-		  module.exports = picturefill;
-	  } else if ( typeof define === "function" && define.amd ) {
-		// AMD support
-		  define( "picturefill", function() { return picturefill; } );
-	  }
-	  if ( typeof w === "object" ) {
-		// If no AMD and we are in the browser, attach to window
-		  w.picturefill = picturefill;
-	  }
-  }
+/* expose picturefill */
+	if ( typeof module === "object" && typeof module.exports === "object" ) {
+	// CommonJS, just export
+		module.exports = picturefill;
+	} else if ( typeof define === "function" && define.amd ) {
+	// AMD support
+		define( "picturefill", function() { return picturefill; } );
+	}
+	if ( typeof w === "object" ) {
+	// If no AMD and we are in the browser, attach to window
+		w.picturefill = picturefill;
+	}
+}
 
 // If picture is supported, well, that's awesome. Let's get outta here...
   if ( w.HTMLPictureElement ) {
-	  expose(function() { });
-	  return;
+	expose(function() { });
+	return;
   }
 
 // HTML shim|v it for old IE (IE9 will still need the HTML video tag workaround)
@@ -91,14 +91,14 @@ pf.ns = "picturefill";
 
 // srcset support test
 (function() {
-	pf.srcsetSupported = "srcset" in image;
-	pf.sizesSupported = "sizes" in image;
-	pf.curSrcSupported = "currentSrc" in image;
+pf.srcsetSupported = "srcset" in image;
+pf.sizesSupported = "sizes" in image;
+pf.curSrcSupported = "currentSrc" in image;
 })();
 
 // just a string trim workaround
 pf.trim = function( str ) {
-	return str.trim ? str.trim() : str.replace( /^\s+|\s+$/g, "" );
+return str.trim ? str.trim() : str.replace( /^\s+|\s+$/g, "" );
 };
 
 /**
@@ -107,80 +107,80 @@ pf.trim = function( str ) {
 	* @returns {String} absolute URL
 	*/
 pf.makeUrl = (function() {
-	var anchor = doc.createElement( "a" );
-	  return function(src) {
-		  anchor.href = src;
-		  return anchor.href;
-	  };
+var anchor = doc.createElement( "a" );
+	return function(src) {
+		 anchor.href = src;
+		return anchor.href;
+	};
 })();
 
 /**
 	* Shortcut method for https://w3c.github.io/webappsec/specs/mixedcontent/#restricts-mixed-content ( for easy overriding in tests )
 	*/
   pf.restrictsMixedContent = function() {
-	  return w.location.protocol === "https:";
+	return w.location.protocol === "https:";
   };
-	/**
+/**
 	 * Shortcut method for matchMedia ( for easy overriding in tests )
 	 */
 
   pf.matchesMedia = function( media ) {
-	  return w.matchMedia && w.matchMedia( media ).matches;
+	return w.matchMedia && w.matchMedia( media ).matches;
   };
 
-	// Shortcut method for `devicePixelRatio` ( for easy overriding in tests )
+// Shortcut method for `devicePixelRatio` ( for easy overriding in tests )
   pf.getDpr = function() {
-	  return ( w.devicePixelRatio || 1 );
+	return ( w.devicePixelRatio || 1 );
   };
 
-	/**
+/**
 	 * Get width in css pixel value from a "length" value
 	 * http://dev.w3.org/csswg/css-values-3/#length-value
 	 */
   pf.getWidthFromLength = function( length ) {
-	  var cssValue;
-		// If a length is specified and doesn’t contain a percentage, and it is greater than 0 or using `calc`, use it. Else, abort.
+	var cssValue;
+// If a length is specified and doesn’t contain a percentage, and it is greater than 0 or using `calc`, use it. Else, abort.
       if ( !(length && length.indexOf( "%" ) > -1 === false && ( parseFloat( length ) > 0 || length.indexOf( "calc(" ) > -1 )) ) {
         return false;
       }
 
-		/**
-		 * If length is specified in  `vw` units, use `%` instead since the div we’re measuring
-		 * is injected at the top of the document.
-		 *
-		 * TODO: maybe we should put this behind a feature test for `vw`? The risk of doing this is possible browser inconsistancies with vw vs %
-		 */
+/**
+	* If length is specified in  `vw` units, use `%` instead since the div we’re measuring
+	* is injected at the top of the document.
+	*
+	* TODO: maybe we should put this behind a feature test for `vw`? The risk of doing this is possible browser inconsistancies with vw vs %
+	*/
   length = length.replace( "vw", "%" );
 
-		// Create a cached element for getting length value widths
+// Create a cached element for getting length value widths
   if ( !pf.lengthEl ) {
     pf.lengthEl = doc.createElement( "div" );
 
-			// Positioning styles help prevent padding/margin/width on `html` or `body` from throwing calculations off.
+// Positioning styles help prevent padding/margin/width on `html` or `body` from throwing calculations off.
     pf.lengthEl.style.cssText = "border:0;display:block;font-size:1em;left:0;margin:0;padding:0;position:absolute;visibility:hidden";
 
-			// Add a class, so that everyone knows where this element comes from
-		pf.lengthEl.className = "helper-from-picturefill-js";
+// Add a class, so that everyone knows where this element comes from
+	pf.lengthEl.className = "helper-from-picturefill-js";
+}
+
+pf.lengthEl.style.width = "0px";
+
+  try {
+		pf.lengthEl.style.width = length;
+  } catch ( e ) {}
+
+	doc.body.appendChild(pf.lengthEl);
+
+	cssValue = pf.lengthEl.offsetWidth;
+
+	if ( cssValue <= 0 ) {
+		cssValue = false;
 	}
 
-	pf.lengthEl.style.width = "0px";
+	doc.body.removeChild( pf.lengthEl );
 
-    try {
-		  pf.lengthEl.style.width = length;
-    } catch ( e ) {}
-
-		doc.body.appendChild(pf.lengthEl);
-
-		cssValue = pf.lengthEl.offsetWidth;
-
-		if ( cssValue <= 0 ) {
-			cssValue = false;
-		}
-
-		doc.body.removeChild( pf.lengthEl );
-
-		return cssValue;
-	};
+	return cssValue;
+};
 
   pf.detectTypeSupport = function( type, typeUri ) {
         // based on Modernizr's lossless img-webp test
@@ -198,122 +198,122 @@ pf.makeUrl = (function() {
 
       return "pending";
     };
-	// container of supported mime types that one might need to qualify before using
-	pf.types = pf.types || {};
+// container of supported mime types that one might need to qualify before using
+pf.types = pf.types || {};
 
-	pf.initTypeDetects = function() {
-        // Add support for standard mime types
-    pf.types[ "image/jpeg" ] = true;
-    pf.types[ "image/gif" ] = true;
-    pf.types[ "image/png" ] = true;
-    pf.types[ "image/svg+xml" ] = doc.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image", "1.1");
-    pf.types[ "image/webp" ] = pf.detectTypeSupport("image/webp", "data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=");
-  };
+pf.initTypeDetects = function() {
+  // Add support for standard mime types
+  pf.types[ "image/jpeg" ] = true;
+  pf.types[ "image/gif" ] = true;
+  pf.types[ "image/png" ] = true;
+  pf.types[ "image/svg+xml" ] = doc.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image", "1.1");
+  pf.types[ "image/webp" ] = pf.detectTypeSupport("image/webp", "data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=");
+};
 
-	pf.verifyTypeSupport = function( source ) {
-		var type = source.getAttribute( "type" );
-		// if type attribute exists, return test result, otherwise return true
-		if ( type === null || type === "" ) {
-			return true;
+pf.verifyTypeSupport = function( source ) {
+	var type = source.getAttribute( "type" );
+	// if type attribute exists, return test result, otherwise return true
+	if ( type === null || type === "" ) {
+		return true;
+	} else {
+		var pfType = pf.types[ type ];
+		// if the type test is a function, run it and return "pending" status. The function will rerun picturefill on pending elements once finished.
+	  if ( typeof pfType === "string" && pfType !== "pending") {
+			pf.types[ type ] = pf.detectTypeSupport( type, pfType );
+			return "pending";
+		} else if ( typeof pfType === "function" ) {
+			pfType();
+			return "pending";
 		} else {
-				var pfType = pf.types[ type ];
-			// if the type test is a function, run it and return "pending" status. The function will rerun picturefill on pending elements once finished.
-			if ( typeof pfType === "string" && pfType !== "pending") {
-				pf.types[ type ] = pf.detectTypeSupport( type, pfType );
-				return "pending";
-			} else if ( typeof pfType === "function" ) {
-				pfType();
-				return "pending";
-			} else {
-				return pfType;
-			}
-		}
-	};
-
-	// Parses an individual `size` and returns the length, and optional media query
-	pf.parseSize = function( sourceSizeStr ) {
-		var match = /(\([^)]+\))?\s*(.+)/g.exec( sourceSizeStr );
-		  return {
-			  media: match && match[1],
-			  length: match && match[2]
-		  };
-	  };
-
-	// Takes a string of sizes and returns the width in pixels as a number
-	pf.findWidthFromSourceSize = function( sourceSizeListStr ) {
-		// Split up source size list, ie ( max-width: 30em ) 100%, ( max-width: 50em ) 50%, 33%
-		//                            or (min-width:30em) calc(30% - 15px)
-	  var sourceSizeList = pf.trim( sourceSizeListStr ).split( /\s*,\s*/ ),
-			winningLength;
-
-		for ( var i = 0, len = sourceSizeList.length; i < len; i++ ) {
-			// Match <media-condition>? length, ie ( min-width: 50em ) 100%
-			var sourceSize = sourceSizeList[ i ],
-				// Split "( min-width: 50em ) 100%" into separate strings
-				parsedSize = pf.parseSize( sourceSize ),
-				length = parsedSize.length,
-				media = parsedSize.media;
-
-		if ( !length ) {
-			continue;
-		}
-			// if there is no media query or it matches, choose this as our winning length
-		if ( (!media || pf.matchesMedia( media )) &&
-				// pass the length to a method that can properly determine length
-				// in pixels based on these formats: http://dev.w3.org/csswg/css-values-3/#length-value
-			(winningLength = pf.getWidthFromLength( length )) ) {
-			break;
+			return pfType;
 		}
 	}
+};
 
-		//if we have no winningLength fallback to 100vw
+// Parses an individual `size` and returns the length, and optional media query
+pf.parseSize = function( sourceSizeStr ) {
+	var match = /(\([^)]+\))?\s*(.+)/g.exec( sourceSizeStr );
+		return {
+			media: match && match[1],
+			length: match && match[2]
+		};
+};
+
+// Takes a string of sizes and returns the width in pixels as a number
+pf.findWidthFromSourceSize = function( sourceSizeListStr ) {
+	// Split up source size list, ie ( max-width: 30em ) 100%, ( max-width: 50em ) 50%, 33%
+	//                            or (min-width:30em) calc(30% - 15px)
+	var sourceSizeList = pf.trim( sourceSizeListStr ).split( /\s*,\s*/ ),
+		winningLength;
+
+	for ( var i = 0, len = sourceSizeList.length; i < len; i++ ) {
+		// Match <media-condition>? length, ie ( min-width: 50em ) 100%
+		var sourceSize = sourceSizeList[ i ],
+			// Split "( min-width: 50em ) 100%" into separate strings
+			parsedSize = pf.parseSize( sourceSize ),
+			length = parsedSize.length,
+			media = parsedSize.media;
+
+if ( !length ) {
+	continue;
+}
+// if there is no media query or it matches, choose this as our winning length
+if ( (!media || pf.matchesMedia( media )) &&
+	// pass the length to a method that can properly determine length
+	// in pixels based on these formats: http://dev.w3.org/csswg/css-values-3/#length-value
+	(winningLength = pf.getWidthFromLength( length )) ) {
+		break;
+	}
+}
+
+//if we have no winningLength fallback to 100vw
 	return winningLength || Math.max(w.innerWidth || 0, doc.documentElement.clientWidth);
 };
 
-	pf.parseSrcset = function( srcset ) {
-		/**
-		 * A lot of this was pulled from Boris Smus’ parser for the now-defunct WHATWG `srcset`
-		 * https://github.com/borismus/srcset-polyfill/blob/master/js/srcset-info.js
-		 *
-		 * 1. Let input (`srcset`) be the value passed to this algorithm.
-		 * 2. Let position be a pointer into input, initially pointing at the start of the string.
-		 * 3. Let raw candidates be an initially empty ordered list of URLs with associated
-		 *    unparsed descriptors. The order of entries in the list is the order in which entries
-		 *    are added to the list.
-		 */
-		var candidates = [];
+pf.parseSrcset = function( srcset ) {
+	/**
+	 * A lot of this was pulled from Boris Smus’ parser for the now-defunct WHATWG `srcset`
+	 * https://github.com/borismus/srcset-polyfill/blob/master/js/srcset-info.js
+	 *
+	 * 1. Let input (`srcset`) be the value passed to this algorithm.
+	 * 2. Let position be a pointer into input, initially pointing at the start of the string.
+	* 3. Let raw candidates be an initially empty ordered list of URLs with associated
+	*    unparsed descriptors. The order of entries in the list is the order in which entries
+	*    are added to the list.
+	*/
+	var candidates = [];
 
-		while ( srcset !== "" ) {
-			srcset = srcset.replace( /^\s+/g, "" );
+	while ( srcset !== "" ) {
+		srcset = srcset.replace( /^\s+/g, "" );
 
-			// 5. Collect a sequence of characters that are not space characters, and let that be url.
-			var pos = srcset.search(/\s/g),
-				url, descriptor = null;
+// 5. Collect a sequence of characters that are not space characters, and let that be url.
+	var pos = srcset.search(/\s/g),
+		url, descriptor = null;
 
-			if ( pos !== -1 ) {
-				url = srcset.slice( 0, pos );
+	if ( pos !== -1 ) {
+		url = srcset.slice( 0, pos );
 
-				var last = url.slice(-1);
+		var last = url.slice(-1);
 
-				// 6. If url ends with a U+002C COMMA character (,), remove that character from url
-				// and let descriptors be the empty string. Otherwise, follow these substeps
-				// 6.1. If url is empty, then jump to the step labeled descriptor parser.
+		// 6. If url ends with a U+002C COMMA character (,), remove that character from url
+		// and let descriptors be the empty string. Otherwise, follow these substeps
+		// 6.1. If url is empty, then jump to the step labeled descriptor parser.
 
-				if ( last === "," || url === "" ) {
-					url = url.replace( /,+$/, "" );
-					descriptor = "";
-				}
-				srcset = srcset.slice( pos + 1 );
+		if ( last === "," || url === "" ) {
+			url = url.replace( /,+$/, "" );
+			descriptor = "";
+		}
+		srcset = srcset.slice( pos + 1 );
 
-				// 6.2. Collect a sequence of characters that are not U+002C COMMA characters (,), and
-				// let that be descriptors.
-				if ( descriptor === null ) {
-					var descpos = srcset.indexOf( "," );
-					if ( descpos !== -1 ) {
-						descriptor = srcset.slice( 0, descpos );
-						srcset = srcset.slice( descpos + 1 );
-					} else {
-						descriptor = srcset;
+		// 6.2. Collect a sequence of characters that are not U+002C COMMA characters (,), and
+		// let that be descriptors.
+		if ( descriptor === null ) {
+			var descpos = srcset.indexOf( "," );
+				if ( descpos !== -1 ) {
+					descriptor = srcset.slice( 0, descpos );
+					srcset = srcset.slice( descpos + 1 );
+				} else {
+					descriptor = srcset;
 						srcset = "";
 					}
 				}
@@ -322,42 +322,42 @@ pf.makeUrl = (function() {
 				srcset = "";
 			}
 
-			// 7. Add url to raw candidates, associated with descriptors.
-			if ( url || descriptor ) {
-				candidates.push({
-					url: url,
-					descriptor: descriptor
-				});
-			}
+// 7. Add url to raw candidates, associated with descriptors.
+	if ( url || descriptor ) {
+		candidates.push({
+			url: url,
+				descriptor: descriptor
+			});
 		}
-		return candidates;
-	};
+	}
+	return candidates;
+};
 
-	pf.parseDescriptor = function( descriptor, sizesattr ) {
-		// 11. Descriptor parser: Let candidates be an initially empty source set. The order of entries in the list
-		// is the order in which entries are added to the list.
-		var sizes = sizesattr || "100vw",
-			sizeDescriptor = descriptor && descriptor.replace( /(^\s+|\s+$)/g, "" ),
-			widthInCssPixels = pf.findWidthFromSourceSize( sizes ),
-			resCandidate;
+pf.parseDescriptor = function( descriptor, sizesattr ) {
+	// 11. Descriptor parser: Let candidates be an initially empty source set. The order of entries in the list
+	// is the order in which entries are added to the list.
+	var sizes = sizesattr || "100vw",
+		sizeDescriptor = descriptor && descriptor.replace( /(^\s+|\s+$)/g, "" ),
+		widthInCssPixels = pf.findWidthFromSourceSize( sizes ),
+		resCandidate;
 
-			if ( sizeDescriptor ) {
-				var splitDescriptor = sizeDescriptor.split(" ");
+	if ( sizeDescriptor ) {
+		var splitDescriptor = sizeDescriptor.split(" ");
 
-				for (var i = splitDescriptor.length - 1; i >= 0; i--) {
-					var curr = splitDescriptor[ i ],
-						lastchar = curr && curr.slice( curr.length - 1 );
+		for (var i = splitDescriptor.length - 1; i >= 0; i--) {
+			var curr = splitDescriptor[ i ],
+				lastchar = curr && curr.slice( curr.length - 1 );
 
-					if ( ( lastchar === "h" || lastchar === "w" ) && !pf.sizesSupported ) {
-						resCandidate = parseFloat( ( parseInt( curr, 10 ) / widthInCssPixels ) );
-					} else if ( lastchar === "x" ) {
-						var res = curr && parseFloat( curr, 10 );
-						resCandidate = res && !isNaN( res ) ? res : 1;
-					}
+				if ( ( lastchar === "h" || lastchar === "w" ) && !pf.sizesSupported ) {
+					resCandidate = parseFloat( ( parseInt( curr, 10 ) / widthInCssPixels ) );
+				} else if ( lastchar === "x" ) {
+					var res = curr && parseFloat( curr, 10 );
+					resCandidate = res && !isNaN( res ) ? res : 1;
 				}
 			}
-		return resCandidate || 1;
-	};
+		}
+	return resCandidate || 1;
+};
 
 	/**
 	 * Takes a srcset in the form of url/

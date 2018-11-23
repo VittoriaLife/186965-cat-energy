@@ -11,9 +11,9 @@
   }
 }
 
-.show-container {
+.show-card__container {
   @media (max-width: $mobile-width-only) {
-    padding-top: 24px;
+    padding-top: 28px;
     text-align: center;
   }
 
@@ -69,6 +69,10 @@
   text-transform: uppercase;
   text-decoration: none;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
@@ -84,6 +88,14 @@
   padding-bottom: 8px;
   background-color: $light-green-color;
 
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    background-color: #5eaa2f;
+  }
+
   @media (min-width: $tablet-width) {
     width: 191px;
     top: 48px;
@@ -94,7 +106,9 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 205px;
     top: 54px;
+    padding-right: 15px;
   }
 }
 

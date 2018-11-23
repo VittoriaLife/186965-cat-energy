@@ -4,73 +4,48 @@
 }
 
 .contacts__legend {
-  position: relative;
-  margin-bottom: 35px;
+  margin-bottom: 38px;
+  padding-left: 20px;
+  width: 200px;
   font-size: 24px;
   line-height: 24px;
   color: $black-color;
+  background-color: #ffffff;
 
-  &::after {
-    content: "";
-    position: absolute;
-    top: 14px;
-    right: -20px;
-    width: 98px;
-    height: 3px;
-    background-color: $light-green-color;
-  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 77px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 512px;
     font-size: 36px;
     line-height: 36px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      left: -65px;
-      top: 22px;
-      width: 30px;
-      height: 3px;
-      background-color: $light-green-color;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 21px;
-      right: -184px;
-      width: 145px;
-      height: 3px;
-      background-color: $light-green-color;
-    }
   }
 
   @media (min-width: $desktop-width) {
+    width: 555px;
     margin-bottom: 78px;
-
-    &::before {
-      left: -109px;
-      top: 23px;
-      width: 72px;
-    }
-
-    &::after {
-      top: 23px;
-      right: -816px;
-      width: 777px;
-    }
+    margin-left: -39px;
+    padding-left: 38px;
   }
 }
 
 .contacts__box {
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 35px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
+    padding-left: 0;
   }
 }
 
 .contacts__container {
   display: flex;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     padding-left: 5px;
@@ -81,8 +56,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding: 0;
+
     &--e-mail {
-      margin-right: 73px;
+      margin-right: 81px;
     }
   }
 }
@@ -125,12 +102,28 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 21px;
+    margin-right: 19px;
+
+    &--phone {
+      padding-top: 8px;
+    }
   }
 }
 
 .contacts__input {
   height: 38px;
+
+  &:hover {
+    outline: 1px solid #cdcdcd;
+  }
+
+  &:active {
+    outline: 2px solid #444444;
+  }
+
+  &:invalid {
+    outline: 2px solid #ff8282;
+  }
 
   &--e-mail {
     margin-bottom: 15px;
@@ -139,7 +132,8 @@
   }
 
   &--phone {
-    width: 197px;
+    width: 187px;
+    padding-left: 10px;
   }
 
   @media (min-width: $tablet-width) {
@@ -164,5 +158,30 @@
     &--phone {
       width: 446px;
     }
+  }
+}
+
+.contacts__input:active + .contacts__input-icon {
+  fill: #68b738;
+}
+
+.contacts__input:invalid + .contacts__input-icon {
+  fill: #ff8282;
+}
+
+.contacts__input-icon {
+  position: absolute;
+  top: 14px;
+  left: 246px;
+  fill: #222222;
+
+  @media (min-width: $tablet-width) {
+    top: 19px;
+    left: 600px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 17px;
+    left: 534px;
   }
 }

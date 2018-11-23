@@ -6,14 +6,14 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 78px;
+    margin-top: 74px;
   }
 }
 
 .work-process__box {
   display: flex;
   flex-direction: column;
-  padding-top: 34px;
+  padding-top: 33px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;

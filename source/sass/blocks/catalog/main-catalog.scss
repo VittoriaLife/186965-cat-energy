@@ -1,14 +1,44 @@
+.main-catalog__box {
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 100vw;
+    height: 3px;
+    position: absolute;
+    top: 15px;
+    right: 0;
+    z-index: -1;
+    background-color: #68b738;
+  }
+
+  @media (min-width: $desktop-width) {
+    &::before {
+      top: 20px;
+    }
+  }
+}
+
 .main-catalog__wrapper {
-  padding: 0 20px;
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  position: relative;
+
+  &--extra {
+    padding-left: 0;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 0 30px;
-    margin-bottom: 74px;
+    margin-bottom: 78px;
   }
+
 
   @media (min-width: $desktop-width) {
     padding: 0 40px;
     margin-bottom: 62px;
+    width: 1220px;
   }
 }
 
@@ -33,13 +63,11 @@
   }
 
   @media (min-width: $tablet-width) {
-
     padding-top: 51px;
     font-size: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 69px;
     padding-top: 70px;
   }
 }
@@ -47,6 +75,18 @@
 .main-catalog__food-box {
   display: flex;
   flex-direction: column;
+
+  @media (max-width: $mobile-width-only) {
+    &::after {
+      content: "";
+      width: 320px;
+      position: absolute;
+      bottom: -24px;
+      background-color: #ededed;
+      height: 1px;
+      right: 0;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -58,7 +98,5 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 77px;
-    padding-left: 71px;
-    width: 1220px;
   }
 }

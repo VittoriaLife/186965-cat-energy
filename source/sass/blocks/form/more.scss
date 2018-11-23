@@ -4,65 +4,41 @@
 }
 
 .more__legend {
-  position: relative;
   margin-bottom: 35px;
+  padding-left: 20px;
+  padding-right: 22px;
   font-size: 24px;
   line-height: 24px;
   color: $black-color;
-
-  &::after {
-    content: "";
-    position: absolute;
-    top: 14px;
-    right: -155px;
-    width: 136px;
-    height: 3px;
-    background-color: $light-green-color;
-  }
+  background-color: #ffffff;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 57px;
+    padding-left: 38px;
+    padding-right: 40px;
     font-size: 36px;
     line-height: 36px;
-
-    &::before {
-      content: "";
-      position: absolute;
-      left: -66px;
-      top: 24px;
-      width: 30px;
-      height: 3px;
-      background-color: $light-green-color;
-    }
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 23px;
-      right: -487px;
-      width: 446px;
-      height: 3px;
-      background-color: $light-green-color;
-    }
   }
 
   @media (min-width: $desktop-width) {
-    &::before {
-      left: -110px;
-      top: 24px;
-      width: 72px;
-    }
-
-    &::after {
-      right: -1117px;
-      width: 1077px;
-    }
+    width: 245px;
+    margin-bottom: 60px;
+    margin-left: -40px;
+    padding-right: 10px;
   }
 }
 
 .more__container {
+  padding-left: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 38px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
+    padding-left: 0;
+    width: 1220px;
   }
 }
 
@@ -90,29 +66,25 @@
 
 .more__box {
   display: flex;
-  margin-bottom: 10px;
+  margin-bottom: 3px;
 }
 
 .more__label {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
   font-size: 16px;
   line-height: 18px;
   color: $black-color;
   text-transform: uppercase;
 
-  &:first-child {
-    padding-top: 5px;
+  &:active {
+    opacity: 0.3;
   }
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
-
-    &:first-child {
-      padding-top: 9px;
-    }
   }
 }
 
@@ -123,16 +95,19 @@
 .more__checkbox:checked + .more__custom-checkbox::after {
   content: "";
   position: absolute;
-  top: 7px;
-  left: 5px;
-  width: 20px;
-  height: 20px;
-  background-image: url("/img/icon-tick.svg");
-  background-repeat: no-repeat;
+  left: 9px;
+  top: 10px;
+  margin-top: -3px;
+  width: 12px;
+  height: 21px;
+  border-right: 1px solid #68b738;
+  border-bottom: 1px solid #68b738;
+  transform: translateY(-50%) rotate(45deg);
+
 
   @media (min-width: $tablet-width) {
-    top: 10px;
-    left: 13px;
+    top: 16px;
+    left: 17px;
   }
 }
 
@@ -143,7 +118,16 @@
   width: 30px;
   height: 30px;
   order: -1;
-  border: 1px solid #cfcfcf;
+  border: 1px solid #cdcdcd;
+  color: #68b738;
+
+  &:hover {
+    border: 1px solid #bababa;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     margin-right: 18px;

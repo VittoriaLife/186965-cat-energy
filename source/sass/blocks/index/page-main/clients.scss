@@ -9,12 +9,11 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: row;
-    background: linear-gradient(to right, #f2f2f2 72.5%, #eaeaea 50%);
+    background: linear-gradient(to right, #f2f2f2 72%, #eaeaea 28%);
   }
 }
 
@@ -28,6 +27,8 @@
 }
 
 .clients__wrapper {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
@@ -58,8 +59,7 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: -138px;
-    left: 107px;
+    top: -137px;
   }
 }
 

@@ -73,10 +73,12 @@
 
   @media (min-width: $desktop-width) {
     &--small {
+      width: 245px;
       height: 172px;
     }
 
     &--big {
+      width: 245px;
       height: 208px;
     }
   }
@@ -173,10 +175,26 @@
     padding-left: 94px;
     padding-right: 94px;
     border: none;
+
+    &:hover {
+      background-color: #5eaa2f;
+    }
+
+    &:active {
+      background-color: #5eaa2f;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 53px;
     padding-right: 54px;
+  }
+}
+
+.product__button-title {
+  @media (min-width: $tablet-width) {
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

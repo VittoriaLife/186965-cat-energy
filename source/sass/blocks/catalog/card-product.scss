@@ -2,7 +2,6 @@
   display: flex;
   flex-direction: column;
 
-
   @media (min-width: $desktop-width) {
     flex-direction: row;
   }
@@ -11,7 +10,6 @@
     width: 896px;
   }
 }
-
 
 .card-product__wrapper {
   @media (min-width: $tablet-width) {
@@ -105,11 +103,27 @@
 
   @media (min-width: $tablet-width) {
     width: 635px;
+
+    &:hover {
+      background-color: #5eaa2f;
+    }
+
+    &:active {
+      background-color: #5eaa2f;
+    }
   }
 
   @media (min-width: $desktop-width) {
     width: 247px;
     height: 40px;
     margin-left: 17px;
+  }
+}
+
+.card-product__button-to-order-title {
+  @media (min-width: $tablet-width) {
+    &:active {
+      opacity: 0.3;
+    }
   }
 }

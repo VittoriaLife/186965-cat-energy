@@ -1,16 +1,28 @@
 .made-by {
   display: flex;
-  margin-top: 25px;
   margin-bottom: 14px;
   justify-content: space-between;
 
   @media (min-width: $tablet-width) {
-    justify-content: flex-end;
+    margin-top: 14px;
   }
 }
 
 .made-by__link {
+  padding-top: 26px;
+  font-family: $font-arial;
+  font-size: 16px;
+  line-height: 16px;
+  color: #444444;
   text-decoration: none;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 21px;
+  }
 }
 
 .made-by__name {
@@ -18,4 +30,38 @@
   line-height: 16px;
   color: #444444;
   text-decoration: none;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.made-by__icon-link {
+  &:hover .made-by__icon {
+    fill: #68b738;
+  }
+
+  &:active .made-by__icon {
+    fill: #68b738;
+    opacity: 0.3;
+  }
+}
+
+.made-by__icon {
+  width: 42px;
+  padding-top: 5px;
+  margin-left: 130px;
+  fill: #666666;
+
+  @media (min-width: $tablet-width) {
+    width: 47px;
+    height: 43px;
+    margin-left: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 40px;
+    height: 40px;
+    margin-left: 10px;
+  }
 }

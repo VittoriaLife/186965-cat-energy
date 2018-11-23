@@ -7,8 +7,14 @@
     position: relative;
     height: 465px;
     padding: 0;
+    background: linear-gradient(to right, #f2f2f2 50%, #eaeaea 50%);
+  }
+
+  @media (min-width: $desktop-width) {
+    background: linear-gradient(to right, #f2f2f2 60.5%, #eaeaea 40%);
   }
 }
+
 
 .result__image-wrapper {
   @media (min-width: $tablet-width) {
@@ -45,10 +51,12 @@
 }
 
 .result__image {
+  display: block;
+
   @media (max-width: $mobile-width-only) {
     position: relative;
     top: 30px;
-    right: 20px;
+    right: 16px;
 
     &--after {
       display: none;
@@ -60,6 +68,8 @@
     position: absolute;
     top: 0;
     bottom: 0;
+    width: 690px;
+    height: 517px;
 
     &--before {
       left: 0;

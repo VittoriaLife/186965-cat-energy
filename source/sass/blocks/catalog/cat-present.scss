@@ -19,6 +19,7 @@
   @media (min-width: $tablet-width) {
     margin-top: 71px;
     padding-top: 30px;
+    padding-bottom: 55px;
     background-image: url("/img/gift-photo-tablet@1x.jpg");
     background-size: 708px auto;
 
@@ -30,6 +31,7 @@
   @media (min-width: $desktop-width) {
     margin: 0;
     margin-left: 77px;
+    padding-bottom: 33px;
     background-image: url("/img/gift-photo-desktop@1x.jpg");
     background-size: 245px auto;
 
@@ -49,15 +51,16 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-left: 20px;
-    padding-right: 55px;
-    width: 500px;
+    padding-left: 27px;
+    padding-right: 62px;
+    width: 495px;
   }
 
   @media (min-width: $desktop-width) {
     flex-direction: column;
     padding-left: 0;
-    padding-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
     padding-top: 21px;
     width: 195px;
   }
@@ -65,7 +68,8 @@
 
 .cat-present__text {
   width: 162px;
-  margin-top: 54px;
+  margin-top: 62px;
+  margin-bottom: 10px;
   font-family: $font-arial;
   font-size: 16px;
   line-height: 20px;
@@ -73,12 +77,12 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-top: 42px;
+    margin-top: 40px;
     text-align: left;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 59px;
+    margin-top: 64px;
     text-align: center;
   }
 }

@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
-    <script src="js/picturefill.js"></script>
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
@@ -20,7 +19,7 @@
             <img class="page-header__logo" src="img/logo-mobile.svg" width="193" alt="Логотип cat-energy">
           </picture>
         </a>
-        <nav class="main-navigation main-navigation--closed">
+        <nav class="main-navigation main-navigation--closed main-navigation--no-js">
           <button class="main-navigation__button" type="button">
             <span class="main-navigation__visually-hidden">Открыть меню</span>
           </button>
@@ -71,7 +70,7 @@
                     </tr>
                     <tr class="product__row">
                       <td class="product__column">Цена</td>
-                      <td class="product__column">700 р.</td>
+                      <td class="product__column">700 P.</td>
                     </tr>
                   </table>
               </div>
@@ -106,7 +105,7 @@
                   </tr>
                     <tr class="product__row">
                       <td class="product__column">Цена</td>
-                      <td class="product__column">1000 р.</td>
+                      <td class="product__column">1000 P.</td>
                     </tr>
                   </table>
                 </div>
@@ -141,7 +140,7 @@
                   </tr>
                   <tr class="product__row">
                     <td class="product__column">Цена</td>
-                    <td class="product__column">700 р.</td>
+                    <td class="product__column">700 P.</td>
                   </tr>
                 </table>
               </div>
@@ -173,7 +172,7 @@
                   </tr>
                   <tr class="product__row">
                     <td class="product__column">Цена</td>
-                    <td class="product__column">1000 р.</td>
+                    <td class="product__column">1000 P.</td>
                   </tr>
                 </table>
               </div>
@@ -209,7 +208,7 @@
                   </tr>
                   <tr class="product__row">
                     <td class="product__column">Цена</td>
-                    <td class="product__column">400 р.</td>
+                    <td class="product__column">400 P.</td>
                   </tr>
                 </table>
               </div>
@@ -228,7 +227,7 @@
                 img/buckwheat-big-mobile@2x.webp 2x">
                 <source media="(min-width: 1300px)" srcset="img/buckwheat-big-desktop@1x.png 1x,
                   img/buckwheat-big-desktop@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="/img/buckwheat-big-tablet@1x.png 1x,
+                <source media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.png 1x,
                 img/buckwheat-big-tablet@2x.png 2x">
                 <img class="product__image product__image--big" src="img/buckwheat-big-mobile@1x.jpg" srcset="img/buckwheat-big-mobile@2x.jpg" width="140" height="144" alt="Упаковка продукта">
               </picture>
@@ -245,7 +244,7 @@
                   </tr>
                   <tr class="product__row">
                     <td class="product__column">Цена</td>
-                    <td class="product__column">700 р.</td>
+                    <td class="product__column">700 P.</td>
                   </tr>
                 </table>
               </div>
@@ -269,7 +268,7 @@
                 <img class="product__image product__image--small" src="img/rice-small-mobile@1x.jpg" srcset="img/rice-small-mobile@2x.jpg" width="140" height="144" alt="Упаковка продукта">
               </picture>
               <div class="product__body">
-                <p class="product__name">Cat energy slim 500 г</p>
+                <p class="product__name product__name--rice">Cat energy slim 500 г</p>
                 <table class="product__table">
                   <tr class="product__row">
                     <td class="product__column">Объем</td>
@@ -281,7 +280,7 @@
                   </tr>
                   <tr class="product__row">
                     <td class="product__column">Цена</td>
-                    <td class="product__column">500 р.</td>
+                    <td class="product__column">500 P.</td>
                   </tr>
                 </table>
               </div>
@@ -390,41 +389,45 @@
         <footer class="page-footer">
           <div class="page-footer__wrapper cooperation">
             <p class="cooperation__welcome-words">Приглашаем  <br> к сотрудничеству  дилеров!</p>
-            <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8  Санкт-Петербург</p>
+            <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 <span class="cooperation__city">Санкт-Петербург</span></p>
           </div>
           <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d816.9760433648092!2d30.322852397596158!3d59.93875942295697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1542812288946" width="600" height="450"  style="border:0" allowfullscreen></iframe>
-          <div class="page-footer__social">
-            <img class="page-footer__logo" src="img/logo-footer.svg" width="128" height="24" alt="Логотип">
-              <ul class="page-footer__contacts social-list">
-                <li class="social-list__item social-list__item--vk">
-                  <a class="social-list__link" href="#" target="_blank" rel="noopener noreferrer">
-                    <span class="social-list__link__visually-hidden">Переход в группу ВКонтакте</span>
-                    <svg class="social-list__link-icon social-list__link-icon--vk" width="30" height="16"><use xlink:href="#icon-vk"></use></svg>
+          <div class="page-footer__container">
+            <div class="page-footer__social">
+              <img class="page-footer__logo" src="img/logo-footer.svg" width="128" height="24" alt="Логотип">
+                <ul class="page-footer__contacts social-list">
+                  <li class="social-list__item social-list__item--vk">
+                    <a class="social-list__link" href="#" target="_blank" rel="noopener noreferrer">
+                      <span class="social-list__link social-list__link--visually-hidden">Переход в группу ВКонтакте</span>
+                      <svg class="social-list__link-icon social-list__link-icon--vk" width="30" height="16"><use xlink:href="#icon-vk"></use></svg>
+                    </a>
+                  </li>
+                  <li class="social-list__item social-list__item--instagram">
+                    <a class="social-list__link" href="#" target="_blank" rel="noopener noreferrer">
+                      <span class="social-list__link social-list__link--visually-hidden">Переход на страницу Инстаграм</span>
+                      <svg class="social-list__link-icon social-list__link-icon--instagram" width="23" height="23"><use xlink:href="#icon-insta"></use></svg>
+                    </a>
+                  </li>
+                  <li class="social-list__item social-list__item--fb">
+                    <a class="social-list__link" href="#" target="_blank" rel="noopener noreferrer">
+                      <span class="social-list__link social-list__link--visually-hidden">Переход в группу Фейсбук</span>
+                      <svg class="social-list__link-icon social-list__link-icon--fb" width="10" height="19"><use xlink:href="#icon-fb"></use></svg>
+                    </a>
+                  </li>
+                </ul>
+                <div class="page-footer__developer made-by">
+                  <a class="made-by__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener noreferrer">
+                    <span class="made-by__name">HTML Academy</span>
                   </a>
-                </li>
-                <li class="social-list__item social-list__item--instagram">
-                  <a class="social-list__link" href="#" target="_blank" rel="noopener noreferrer">
-                    <span class="social-list__link__visually-hidden">Переход на страницу Инстаграм</span>
-                    <svg class="social-list__link-icon social-list__link-icon--instagram" width="23" height="23"><use xlink:href="#icon-insta"></use></svg>
+                  <a class="made-by__icon-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener noreferrer">
+                    <span class="social-list__link social-list__link--visually-hidden">Переход на страницу HTML Academy</span>
+                    <svg class="made-by__icon" width="60" height="60"><use xlink:href="#htmlacademy"></use></svg>
                   </a>
-                </li>
-                <li class="social-list__item social-list__item--fb">
-                  <a class="social-list__link" href="#" target="_blank" rel="noopener noreferrer">
-                    <span class="social-list__link__visually-hidden">Переход в группу Фейсбук</span>
-                    <svg class="social-list__link-icon social-list__link-icon--fb" width="10" height="19"><use xlink:href="#icon-fb"></use></svg>
-                  </a>
-                </li>
-              </ul>
-              <div class="page-footer__developer made-by">
-                <a class="made-by__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener noreferrer">
-                  <span class="made-by__name">HTML Academy</span>
-                </a>
-                <a class="made-by__icon-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener noreferrer">
-                  <span class="social-list__link__visually-hidden">Переход на страницу HTML Academy</span>
-                  <svg class="made-by__icon" width="60" height="60"><use xlink:href="#htmlacademy"></use></svg>
-              </a>
+                </div>
               </div>
-          </div>
-        </footer>
+            </div>
+          </footer>
+          <script src="js/picturefill.js"></script>
+          <script src="js/mobile-menu.js"></script>
       </body>
     </html>

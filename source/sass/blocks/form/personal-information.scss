@@ -9,7 +9,7 @@
       width: 320px;
       height: 1px;
       position: absolute;
-      left: -20px;
+      left: -40px;
       background-color: #ededed;
     }
   }
@@ -23,10 +23,6 @@
 
 .personal-information__item {
   display: flex;
-
-  @media (min-width: $desktop-width) {
-    padding-left: 5px;
-  }
 }
 
 .personal-information__label {
@@ -71,14 +67,20 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 15px;
+    padding-top: 9px;
 
     &--name {
-      margin-right: 15px;
+      margin-right: 18px;
     }
 
     &--weight {
+      margin-right: 23px;
       padding-top: 11px;
+    }
+
+    &--age {
+      padding-top: 14px;
+      margin-right: 16px;
     }
   }
 }
@@ -116,7 +118,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 23px;
+    margin-bottom: 25px;
     padding-left: 19px;
     height: 44px;
 
@@ -139,11 +141,11 @@
     }
 
     &--weight {
-      width: 455px;
+      width: 450px;
     }
 
     &--age {
-      width: 412px;
+      width: 414px;
     }
   }
 }

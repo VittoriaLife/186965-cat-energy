@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
-    <script src="js/picturefill.js"></script>
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
@@ -22,7 +21,7 @@
               <img class="page-header__logo" src="img/logo-mobile.svg" width="193" alt="Логотип cat-energy">
             </picture>
           </a>
-        <nav class="main-navigation main-navigation--closed">
+        <nav class="main-navigation main-navigation--closed main-navigation--no-js">
           <button class="main-navigation__button" type="button">
             <span class="main-navigation__visually-hidden">Открыть меню</span>
           </button>
@@ -59,17 +58,17 @@
                         <li class="personal-information__item">
                           <label class="personal-information__label personal-information__label--name" for="cat-name">Имя:<sup>*</sup>
                           </label>
-                          <input class="personal-information__field personal-information__field--name" type="text" name="Имя животного" id="cat-name" placeholder="БАРСИК" required>
+                          <input class="personal-information__field personal-information__field--name" type="text" name="name" id="cat-name" placeholder="БАРСИК" required>
                         </li>
                         <li class="personal-information__item">
                           <label class="personal-information__label personal-information__label--weight" for="cat-weight">Вес (кг):<sup>*</sup>
                           </label>
-                          <input class="personal-information__field personal-information__field--weight" type="number" name="Вес животного" id="cat-weight" placeholder="7" min="1" max="30" step="1" required>
+                          <input class="personal-information__field personal-information__field--weight" type="number" name="weight" id="cat-weight" placeholder="7" min="1" max="30" step="1" required>
                         </li>
                         <li class="personal-information__item">
                           <label class="personal-information__label personal-information__label--age" for="cat-age">Возраст (лет):
                           </label>
-                          <input class="personal-information__field personal-information__field--age" type="number" name="Возраст животного" id="cat-age" placeholder="7" min="1" max="30" step="1">
+                          <input class="personal-information__field personal-information__field--age" type="number" name="age" id="cat-age" placeholder="7" min="1" max="30" step="1">
                         </li>
                       </ul>
 
@@ -78,21 +77,21 @@
                         <ul class="goals__list">
                           <li class="goals__item">
                             <label class="goals__label" for="weight-loss">
-                              <input class="goals__input goals__input--weight-loss" type="radio" name="Похудение" id="weight-loss" checked>
+                              <input class="goals__input goals__input--weight-loss" type="radio" name="choice" id="weight-loss" checked>
                               <span class="goals__radio"></span>
                               Похудение
                             </label>
                           </li>
                           <li class="goals__item">
                             <label class="goals__label" for="mass">
-                              <input class="goals__input goals__input--mass" type="radio" name="Набор массы" id="mass">
+                              <input class="goals__input goals__input--mass" type="radio" name="choice" id="mass">
                               <span class="goals__radio"></span>
                                 Набор массы
                               </label>
                           </li>
                           <li class="goals__item">
                             <label class="goals__label" for="idk">
-                              <input class="goals__input goals__input--idk" type="radio" name="Я не знаю" id="idk">
+                              <input class="goals__input goals__input--idk" type="radio" name="choice" id="idk">
                               <span class="goals__radio"></span>
                                 Не знаю (нужен ваш совет)
                               </label>
@@ -102,22 +101,22 @@
                     </div>
                 </div>
             </div>
-                  <div class="main-form__container main-form__container--contacts">
-                    <div class="main-form__wrapper">
-                        <div class="users-data__contacts-wrapper">
-                          <fieldset class="users-data__heading contacts">
+              <div class="main-form__container main-form__container--contacts">
+                <div class="main-form__wrapper main-form__wrapper--contacts">
+                  <div class="users-data__contacts-wrapper">
+                    <fieldset class="users-data__heading contacts">
                             <legend class="contacts__legend">Контактные данные (владельца кота)</legend>
                               <div class="contacts__box">
                                 <div class="contacts__container contacts__container--e-mail">
                                   <label class="contacts__label contacts__label--e-mail" for="email-address">E-mail:<sup>*</sup>
                                   </label>
-                                  <input class="contacts__input  contacts__input--e-mail" type="email" name="Электронный адрес" placeholder="KUKLACHEV@GMAIL.COM" id="email-address" required>
+                                  <input class="contacts__input  contacts__input--e-mail" type="email" name="email" placeholder="KUKLACHEV@GMAIL.COM" id="email-address" required>
                                   <svg class="contacts__input-icon contacts__input-icon--email" width="17" height="13"><use xlink:href="#icon-mail"></use></svg>
                                 </div>
                                 <div class="contacts__container">
                                   <label class="contacts__label contacts__label--phone" for="phone-number">Телефон:<sup>*</sup>
                                   </label>
-                                  <input class="contacts__input contacts__input--phone" type="tel" name="Номер телефона" placeholder="8 (960) 800-60-90" id="phone-number" required>
+                                  <input class="contacts__input contacts__input--phone" type="tel" name="phone-number" placeholder="8 (960) 800-60-90" id="phone-number" required>
                                   <svg class="contacts__input-icon contacts__input-icon--phone" width="20" height="20"><use xlink:href="#icon-phone"></use></svg>
                                 </div>
                               </div>
@@ -126,7 +125,7 @@
                     </div>
                   </div>
                   <div class="main-form__container main-form__container--comments">
-                    <div class="main-form__wrapper">
+                    <div class="main-form__wrapper main-form__wrapper--comments">
                       <div class="users-data__comments-wrapper">
                         <fieldset class="users-data__heading comments">
                           <legend class="comments__legend">Комментарий</legend>
@@ -136,7 +135,7 @@
                     </div>
                   </div>
                   <div class="main-form__container main-form__container--more">
-                    <div class="main-form__wrapper">
+                    <div class="main-form__wrapper main-form__wrapper--more">
                         <div class="users-data__more-wrapper">
                           <fieldset class="users-data__heading more">
                             <legend class="more__legend">Дополнительно</legend>
@@ -192,46 +191,48 @@
                   </form>
               </main>
 
-              <footer class="page-footer page-footer--form">
+              <footer class="page-footer">
+                <div class="page-footer__wrapper cooperation">
+                  <p class="cooperation__welcome-words">Приглашаем  <br> к сотрудничеству  дилеров!</p>
+                  <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 <span class="cooperation__city">Санкт-Петербург</span></p>
+                </div>
+                <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d816.9760433648092!2d30.322852397596158!3d59.93875942295697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1542812288946" width="600" height="450"  style="border:0" allowfullscreen></iframe>
                 <div class="page-footer__container">
-                  <div class="page-footer__wrapper cooperation">
-                    <p class="cooperation__welcome-words cooperation__welcome-words--form">Приглашаем  <br> к сотрудничеству  дилеров!</p>
-                    <p class="cooperation__address cooperation__address--form">ул. Большая Конюшенная, д. 19/8  Санкт-Петербург</p>
-                  </div>
-                  <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d816.9760433648092!2d30.322852397596158!3d59.93875942295697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1542812288946" width="600" height="450" style="border:0" allowfullscreen></iframe>
                   <div class="page-footer__social">
                     <img class="page-footer__logo" src="img/logo-footer.svg" width="128" height="24" alt="Логотип">
-                    <ul class="page-footer__contacts social-list">
-                      <li class="social-list__item social-list__item--vk">
-                        <a class="social-list__link" href="#" target="_blank" rel="noopener noreferrer">
-                          <span class="social-list__link__visually-hidden">Переход в группу ВКонтакте</span>
-                          <svg class="social-list__link-icon social-list__link-icon--vk" width="30" height="16"><use xlink:href="#icon-vk"></use></svg>
+                      <ul class="page-footer__contacts social-list">
+                        <li class="social-list__item social-list__item--vk">
+                          <a class="social-list__link" href="#" target="_blank" rel="noopener noreferrer">
+                            <span class="social-list__link social-list__link--visually-hidden">Переход в группу ВКонтакте</span>
+                            <svg class="social-list__link-icon social-list__link-icon--vk" width="30" height="16"><use xlink:href="#icon-vk"></use></svg>
+                          </a>
+                        </li>
+                        <li class="social-list__item social-list__item--instagram">
+                          <a class="social-list__link" href="#" target="_blank" rel="noopener noreferrer">
+                            <span class="social-list__link social-list__link--visually-hidden">Переход на страницу Инстаграм</span>
+                            <svg class="social-list__link-icon social-list__link-icon--instagram" width="23" height="23"><use xlink:href="#icon-insta"></use></svg>
+                          </a>
+                        </li>
+                        <li class="social-list__item social-list__item--fb">
+                          <a class="social-list__link" href="#" target="_blank" rel="noopener noreferrer">
+                            <span class="social-list__link social-list__link--visually-hidden">Переход в группу Фейсбук</span>
+                            <svg class="social-list__link-icon social-list__link-icon--fb" width="10" height="19"><use xlink:href="#icon-fb"></use></svg>
+                          </a>
+                        </li>
+                      </ul>
+                      <div class="page-footer__developer made-by">
+                        <a class="made-by__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener noreferrer">
+                          <span class="made-by__name">HTML Academy</span>
                         </a>
-                      </li>
-                      <li class="social-list__item social-list__item--instagram">
-                        <a class="social-list__link" href="#" target="_blank" rel="noopener noreferrer">
-                          <span class="social-list__link__visually-hidden">Переход на страницу Инстаграм</span>
-                          <svg class="social-list__link-icon social-list__link-icon--instagram" width="23" height="23"><use xlink:href="#icon-insta"></use></svg>
+                        <a class="made-by__icon-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener noreferrer">
+                          <span class="social-list__link social-list__link--visually-hidden">Переход на страницу HTML Academy</span>
+                          <svg class="made-by__icon" width="60" height="60"><use xlink:href="#htmlacademy"></use></svg>
                         </a>
-                      </li>
-                  <li class="social-list__item social-list__item--fb">
-                    <a class="social-list__link" href="#" target="_blank" rel="noopener noreferrer">
-                      <span class="social-list__link__visually-hidden">Переход в группу Фейсбук</span>
-                      <svg class="social-list__link-icon social-list__link-icon--fb" width="10" height="19"><use xlink:href="#icon-fb"></use></svg>
-                    </a>
-                  </li>
-                </ul>
-                <div class="page-footer__developer made-by">
-                  <a class="made-by__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener noreferrer">
-                    <span class="made-by__name">HTML Academy</span>
-                  </a>
-                  <a class="made-by__icon-link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank" rel="noopener noreferrer">
-                    <span class="social-list__link__visually-hidden">Переход на страницу HTML Academy</span>
-                    <svg class="made-by__icon" width="60" height="60"><use xlink:href="#htmlacademy"></use></svg>
-                </a>
-                </div>
-            </div>
-        </div>
-      </footer>
-  </body>
-  </html>
+                      </div>
+                    </div>
+                  </div>
+                </footer>
+              <script src="js/picturefill.js"></script>
+            <script src="js/mobile-menu.js"></script>
+          </body>
+        </html>

@@ -22,7 +22,7 @@
 
   @media (min-width: $desktop-width) {
     width: 245px;
-    margin-bottom: 60px;
+    margin-bottom: 57px;
     margin-left: -40px;
     padding-right: 10px;
   }
@@ -46,7 +46,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 23px;
+    margin-bottom: 20px;
     width: 534px;
 
     &:last-child {
@@ -55,6 +55,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 20px;
     width: 514px;
 
     &:last-child {
@@ -72,7 +73,7 @@
 .more__label {
   display: flex;
   align-items: center;
-  margin-bottom: 7px;
+  margin-bottom: 9px;
   font-size: 16px;
   line-height: 18px;
   color: $black-color;
@@ -96,27 +97,29 @@
   content: "";
   position: absolute;
   left: 9px;
-  top: 10px;
+  top: 13px;
   margin-top: -3px;
   width: 12px;
   height: 21px;
   border-right: 1px solid #68b738;
   border-bottom: 1px solid #68b738;
-  transform: translateY(-50%) rotate(45deg);
+  transform: translateY(-55%) rotate(45deg);
 
 
   @media (min-width: $tablet-width) {
-    top: 16px;
-    left: 17px;
+    top: 20px;
+    left: 15px;
   }
+
+
 }
 
 .more__custom-checkbox {
   display: inline-block;
   position: relative;
   margin-right: 14px;
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   order: -1;
   border: 1px solid #cdcdcd;
   color: #68b738;
@@ -130,8 +133,12 @@
   }
 
   @media (min-width: $tablet-width) {
+    margin-right: 20px;
+    width: 39px;
+    height: 39px;
+  }
+
+  @media (min-width: $desktop-width) {
     margin-right: 18px;
-    width: 41px;
-    height: 36px;
   }
 }

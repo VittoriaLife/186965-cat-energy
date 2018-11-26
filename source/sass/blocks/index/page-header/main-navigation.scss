@@ -83,13 +83,10 @@
   }
 }
 
-// .main-navigation--no-js .main-navigation__button {
-//   display: none;
-// }
+.main-navigation--no-js .main-navigation__button {
+  display: none;
+}
 
-// .main-navigation--no-js .main-navigation__wrapper {
-//   position: static;
-// }
 
 .main-navigation__wrapper {
   @media (min-width: $tablet-width) {

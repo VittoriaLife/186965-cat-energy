@@ -23,7 +23,7 @@
 }
 
 .users-data__contacts-wrapper {
-  margin-top: 5px;
+  margin-top: 3px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 49px;
@@ -46,16 +46,18 @@
 
   @media (min-width: $tablet-width) {
     margin-bottom: 24px;
-    padding-top: 13px;
+    padding-top: 16px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 31px;
+    margin-bottom: 29px;
     padding-left: 0;
   }
 }
 
 .users-data__button-wrapper {
+  padding-left: 20px;
+
   @media (min-width: $tablet-width) {
     display: flex;
     padding-left: 41px;
@@ -95,8 +97,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 205px;
-    padding-right: 205px;
+    padding-left: 208px;
+    padding-right: 208px;
   }
 }
 
@@ -110,7 +112,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 86px;
+    padding-left: 83px;
   }
 }
 

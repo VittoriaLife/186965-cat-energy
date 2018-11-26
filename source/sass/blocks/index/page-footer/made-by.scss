@@ -21,7 +21,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 21px;
+    padding-top: 19px;
   }
 }
 
@@ -37,6 +37,10 @@
 }
 
 .made-by__icon-link {
+  &--visually-hidden {
+    @include visually-hidden;
+  }
+
   &:hover .made-by__icon {
     fill: #68b738;
   }
@@ -56,12 +60,13 @@
   @media (min-width: $tablet-width) {
     width: 47px;
     height: 43px;
-    margin-left: 8px;
+    margin-left: 11px;
   }
 
   @media (min-width: $desktop-width) {
     width: 40px;
     height: 40px;
     margin-left: 10px;
+    padding-top: 8px;
   }
 }

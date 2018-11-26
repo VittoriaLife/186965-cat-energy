@@ -12,6 +12,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 570px;
+    justify-content: flex-end;
     background-color: transparent;
   }
 }
@@ -27,6 +29,14 @@
     padding: 20px 70px;
     text-align: center;
     border-top: 1px solid #e6e6e6;
+
+    &:first-child {
+      border-top: none;
+    }
+
+    &:last-child {
+      border-bottom: 1px solid #e6e6e6;
+    }
   }
 }
 

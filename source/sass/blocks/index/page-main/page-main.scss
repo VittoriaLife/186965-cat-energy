@@ -1,11 +1,10 @@
 
 
 .page-main__cover {
-
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
-  padding-bottom: 28px;
+  padding-bottom: 34px;
 
   @media (max-width: $mobile-width-only) {
     background-image: url("/img/index-background-mobile@1x.jpg");

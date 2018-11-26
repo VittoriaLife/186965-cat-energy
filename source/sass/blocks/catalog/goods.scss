@@ -43,13 +43,13 @@
     &::before {
       left: 92px;
       width: 62px;
-      top: 85px;
+      top: 82px;
     }
 
     &::after {
       left: 92px;
       width: 62px;
-      top: 85px;
+      top: 82px;
     }
   }
 }
@@ -83,7 +83,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 36px;
+    padding-top: 34px;
   }
 }
 

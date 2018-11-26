@@ -1,11 +1,15 @@
 .page-footer {
   display: flex;
   flex-direction: column;
-  margin-top: 30px;
+  margin-top: 8px;
   background-color: #f2f2f2;
 
   &--form {
     margin-top: 29px;
+  }
+
+  &--catalog {
+    margin-top: 37px;
   }
 
   @media (min-width: $tablet-width) {
@@ -44,10 +48,14 @@
     flex-direction: row;
     justify-content: space-between;
     width: 1220px;
-    padding-top: 35px;
+    padding-top: 32px;
     padding-left: 34px;
     padding-right: 30px;
     padding-bottom: 57px;
+
+    &--form {
+      padding-top: 38px;
+    }
   }
 }
 

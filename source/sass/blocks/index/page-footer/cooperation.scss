@@ -2,9 +2,17 @@
   display: flex;
   justify-content: space-around;
 
+  &--form {
+    padding-top: 31px;
+  }
+
   @media (min-width: $tablet-width) {
     justify-content: space-between;
     padding-bottom: 58px;
+
+    &--form {
+      padding-top: 66px;
+    }
   }
 
   @media (min-width: $desktop-width) {
@@ -16,6 +24,10 @@
     width: 535px;
     height: 154px;
     background-color: #ffffff;
+
+    &--form {
+      padding-top: 6px;
+    }
   }
 }
 
@@ -37,7 +49,7 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 60px;
-    margin-top: 68px;
+    margin-top: 65px;
     font-size: 20px;
     line-height: 25px;
   }
@@ -59,7 +71,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 65px;
+    margin-top: 62px;
     padding-right: 70px;
     width: 157px;
     font-size: 16px;

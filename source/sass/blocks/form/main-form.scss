@@ -50,7 +50,7 @@
       margin-top: 0;
 
       &::after {
-        top: 20px;
+        top: 22px;
       }
     }
 
@@ -65,20 +65,25 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 46px;
 
     &--contacts {
       margin-top: 8px;
       margin-bottom: 44px;
+
+      &::after {
+        top: 20px;
+      }
     }
 
     &--comments {
       &::after {
-        top: 24px;
+        top: 22px;
       }
     }
 
     &--more {
-      margin-top: 55px;
+      margin-top: 51px;
       margin-bottom: 80px;
     }
   }

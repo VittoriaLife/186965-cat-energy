@@ -12,7 +12,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 570px;
+    justify-content: flex-end;
     background-color: transparent;
+
   }
 }
 

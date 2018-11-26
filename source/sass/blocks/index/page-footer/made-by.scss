@@ -37,6 +37,10 @@
 }
 
 .made-by__icon-link {
+  &--visually-hidden {
+    @include visually-hidden;
+  }
+
   &:hover .made-by__icon {
     fill: #68b738;
   }

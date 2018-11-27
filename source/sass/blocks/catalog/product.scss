@@ -34,7 +34,7 @@
     &:nth-child(4),
     &:nth-child(5),
     &:nth-child(6) {
-      margin-top: 140px;
+      margin-top: 137px;
     }
 
     &:nth-child(7) {
@@ -45,17 +45,20 @@
 
   @media (min-width: $desktop-width) {
     width: 247px;
-    padding-bottom: 40px;
+    padding-bottom: 38px;
 
     &:nth-child(3),
-    &:nth-child(4),
+    &:nth-child(4) {
+      margin-top: 145px;
+    }
+
     &:nth-child(5),
     &:nth-child(6) {
-      margin-top: 142px;
+      margin-top: 144px;
     }
 
     &:nth-child(7) {
-      margin-top: 140px;
+      margin-top: 143px;
       padding-bottom: 36px;
     }
   }
@@ -75,12 +78,12 @@
 
     &--small {
       margin-bottom: -12px;
-      bottom: 44px;
+      bottom: 46px;
       height: 172px;
     }
 
     &--big {
-      bottom: 79px;
+      bottom: 81px;
       margin-bottom: -48px;
       height: 208px;
     }
@@ -88,7 +91,7 @@
 
   @media (min-width: $desktop-width) {
     &--small {
-      bottom: 47px;
+      bottom: 45px;
       width: 245px;
       height: 172px;
     }
@@ -103,7 +106,7 @@
 
 .product__body {
   @media (max-width: $mobile-width-only) {
-    padding-top: 22px;
+    padding-top: 21px;
     flex-grow: 1;
     flex-shrink: 1;
     flex-basis: auto;
@@ -134,19 +137,15 @@
     width: 140px;
     font-size: 20px;
     text-align: center;
-
-    &--rice {
-      padding-top: 3px;
-    }
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: -2px;
+    margin-top: 0;
   }
 }
 
 .product__table {
-  margin-top: 10px;
+  margin-top: 11px;
   margin-left: -4px;
 
   @media (min-width: $tablet-width) {
@@ -155,7 +154,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 18px;
+    margin-top: 17px;
   }
 }
 
@@ -176,12 +175,12 @@
   @media (min-width: $desktop-width) {
     width: 166px;
     padding-top: 8px;
-    padding-bottom: 6px;
+    padding-bottom: 7px;
   }
 }
 
 .product__column {
-  margin-right: -3px;
+  margin-right: -4px;
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: 12px;
   line-height: 16px;
@@ -216,7 +215,7 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-top: -2px;
+    margin-top: 0;
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 94px;
@@ -233,7 +232,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 1px;
+    margin-top: -1px;
     padding-left: 53px;
     padding-right: 54px;
   }

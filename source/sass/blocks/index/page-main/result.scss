@@ -36,7 +36,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: -190px;
+    top: -188px;
 
     &--before {
       left: 95px;
@@ -44,7 +44,7 @@
     }
 
     &--after {
-      right: -28px;
+      right: -31px;
       width: 328px;
     }
   }
@@ -55,7 +55,7 @@
 
   @media (max-width: $mobile-width-only) {
     position: relative;
-    top: 30px;
+    top: 29px;
     right: 16px;
 
     &--after {

@@ -14,7 +14,7 @@
 
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 73px;
+    margin-bottom: 74px;
     padding-left: 40px;
     padding-right: 40px;
     width: 512px;
@@ -103,10 +103,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 19px;
+    margin-right: 21px;
 
     &--phone {
-      padding-top: 8px;
+      padding-top: 10px;
     }
   }
 }
@@ -143,7 +143,7 @@
     height: 46px;
 
     &--e-mail {
-      width: 528px;
+      width: 529px;
     }
 
     &--phone {
@@ -153,7 +153,7 @@
 
   @media (min-width: $desktop-width) {
     &--e-mail {
-      width: 464px;
+      width: 462px;
     }
 
     &--phone {
@@ -182,7 +182,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 17px;
+    top: 20px;
     left: 534px;
   }
 }

@@ -8,7 +8,7 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
-    padding-bottom: 88px;
+    padding-bottom: 81px;
     counter-reset: section;
   }
 
@@ -19,18 +19,7 @@
 
 .advantages__item {
   display: flex;
-
-  &--leaf {
-    margin-bottom: 12px;
-  }
-
-  &--powder {
-    margin-bottom: 12px;
-  }
-
-  &--dining {
-    margin-bottom: 12px;
-  }
+  margin-bottom: 20px;
 
   @media (min-width: $tablet-width) {
     position: relative;
@@ -47,7 +36,7 @@
 
     &--leaf,
     &--powder {
-      margin-bottom: 131px;
+      margin-bottom: 129px;
     }
 
     &::after {
@@ -56,15 +45,29 @@
       position: absolute;
       z-index: -1;
       top: -106px;
-      left: 120px;
+      left: 119px;
       font-size: 280px;
       color: #f2f2f2;
     }
 
-    &--powder,
+    &--powder {
+      &::after {
+        top: -104px;
+        left: 183px;
+      }
+    }
+
+    &--dining {
+      &::after {
+        top: -104px;
+        left: 114px;
+      }
+    }
+
     &--clock {
       &::after {
-        left: 181px;
+        top: -104px;
+        left: 185px;
       }
     }
   }
@@ -74,7 +77,7 @@
     width: 245px;
 
     &--powder {
-      padding-left: 78px;
+      padding-left: 79px;
 
       &::after {
         left: 192px;
@@ -93,26 +96,42 @@
       padding-left: 81px;
 
       &::after {
-        left: 192px;
+        left: 194px;
       }
     }
   }
 }
 
-.advantages__image {
-  width: 60px;
-  height: 56px;
-  padding-bottom: 6px;
+.advantages__image-wrapper {
+  padding-left: 6px;
+  padding-top: 2px;
+  padding-right: 5px;
+  width: 63px;
+  height: 58px;
   background-color: $light-green-color;
 
   @media (min-width: $tablet-width) {
-    width: 80px;
-    height: 75px;
+    padding-left: 13px;
+    padding-top: 15px;
+    width: 63px;
+    height: 67px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 63px;
+    height: 66px;
+  }
+}
+
+.advantages__image {
+  @media (min-width: $tablet-width) {
+    width: 55px;
   }
 }
 
 .advantages__description {
-  padding-left: 18px;
+  padding-top: 1px;
+  padding-left: 20px;
   margin: 0;
   font-family: "Arial", "Helvetica", sans-serif;
   font-size: 14px;
@@ -125,7 +144,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    padding-top: 28px;
+    padding-top: 32px;
     font-size: 16px;
     line-height: 24px;
 
@@ -134,7 +153,6 @@
     }
   }
 }
-
 
 .advantages__shift {
   @media (max-width: $mobile-width-only) {

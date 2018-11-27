@@ -11,7 +11,7 @@
     padding-bottom: 58px;
 
     &--form {
-      padding-top: 66px;
+      padding-top: 64px;
     }
   }
 
@@ -26,7 +26,7 @@
     background-color: #ffffff;
 
     &--form {
-      padding-top: 6px;
+      padding-top: 0;
     }
   }
 }
@@ -49,7 +49,7 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 60px;
-    margin-top: 65px;
+    margin-top: 67px;
     font-size: 20px;
     line-height: 25px;
   }
@@ -71,7 +71,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 62px;
+    margin-top: 65px;
     padding-right: 70px;
     width: 157px;
     font-size: 16px;

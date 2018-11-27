@@ -18,11 +18,11 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding-top: 52px;
+    padding-top: 37px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 105px;
+    padding-top: 87px;
     padding-left: 79px;
   }
 }
@@ -30,12 +30,14 @@
 .show-card__name {
   margin: 0;
   padding-bottom: 26px;
+  padding-left: 4px;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
   color: #ffffff;
 
   @media (min-width: $tablet-width) {
+    padding-left: 0;
     padding-bottom: 42px;
     font-size: 60px;
     line-height: 60px;

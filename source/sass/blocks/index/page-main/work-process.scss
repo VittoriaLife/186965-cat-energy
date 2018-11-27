@@ -1,5 +1,5 @@
 .work-process {
-  margin-top: 14px;
+  margin-top: 15px;
 
   @media (min-width: $tablet-width) {
     margin-top: 46px;
@@ -13,7 +13,7 @@
 .work-process__box {
   display: flex;
   flex-direction: column;
-  padding-top: 33px;
+  padding-top: 30px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -22,7 +22,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 70px;
+    padding-top: 73px;
   }
 }
 

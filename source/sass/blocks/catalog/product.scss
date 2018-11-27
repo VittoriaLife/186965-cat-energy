@@ -48,10 +48,13 @@
     padding-bottom: 38px;
 
     &:nth-child(3),
-    &:nth-child(4),
+    &:nth-child(4) {
+      margin-top: 145px;
+    }
+
     &:nth-child(5),
     &:nth-child(6) {
-      margin-top: 145px;
+      margin-top: 144px;
     }
 
     &:nth-child(7) {

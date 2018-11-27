@@ -14,8 +14,8 @@
 .main-navigation__button {
   @media (max-width: $mobile-width-only) {
     position: absolute;
-    top: 15px;
-    left: 55px;
+    top: 16px;
+    left: 56px;
     z-index: 2;
     display: block;
     padding: 0;
@@ -90,10 +90,10 @@
 
 .main-navigation__wrapper {
   @media (min-width: $tablet-width) {
-    padding-top: 25px;
+    padding-top: 27px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 58px;
+    padding-top: 56px;
   }
 }

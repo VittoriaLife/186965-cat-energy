@@ -15,7 +15,7 @@
   padding-left: 43px;
   padding-top: 13px;
   padding-right: 39px;
-  padding-bottom: 18px;
+  padding-bottom: 17px;
   width: 40px;
   border: 1px solid #cfcfcf;
   font-size: 24px;
@@ -23,8 +23,8 @@
   color: $black-color;
 
   @media (min-width: $tablet-width) {
-    padding-left: 59px;
-    padding-right: 53px;
+    padding-left: 56px;
+    padding-right: 52px;
     padding-bottom: 20px;
     width: 53px;
     font-size: 30px;
@@ -41,6 +41,7 @@
   top: 48px;
   left: 19px;
   margin: 0;
+  margin-top: -2px;
   padding-left: 15px;
   padding-right: 18px;
   text-align: center;

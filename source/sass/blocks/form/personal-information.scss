@@ -80,29 +80,28 @@
 
     &--age {
       padding-top: 14px;
-      margin-right: 16px;
+      margin-right: 17px;
     }
   }
 }
 
 .personal-information__field {
-  margin-bottom: 17px;
+  margin-bottom: 15px;
   padding-left: 14px;
-  height: 38px;
+  height: 40px;
   border: 1px solid #cdcdcd;
 
-
   &--name {
-    width: 211px;
+    width: 213px;
   }
 
   &--weight {
-    width: 184px;
+    width: 186px;
   }
 
   &--age {
     margin-bottom: 24px;
-    width: 155px;
+    width: 156px;
   }
 
   &:hover {
@@ -118,9 +117,9 @@
   }
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 23px;
+    margin-bottom: 22px;
     padding-left: 19px;
-    height: 44px;
+    height: 46px;
 
     &--name {
       width: 546px;
@@ -131,17 +130,17 @@
     }
 
     &--age {
-      width: 478px;
+      width: 477px;
     }
   }
 
   @media (min-width: $desktop-width) {
     &--name {
-      width: 483px;
+      width: 484px;
     }
 
     &--weight {
-      width: 450px;
+      width: 451px;
     }
 
     &--age {

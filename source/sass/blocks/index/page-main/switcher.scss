@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   padding-left: 32px;
-  margin-top: 68px;
+  margin-top: 62px;
   width: 220px;
 
   @media (min-width: $tablet-width) {
@@ -16,6 +16,8 @@
   @media (min-width: $desktop-width) {
     padding-left: 163px;
     top: 309px;
+    width: 592px;
+    margin-top: 61px;
   }
 }
 
@@ -46,11 +48,13 @@
 
 .switcher__bar {
   position: relative;
+  top: 4px;
+  left: 1px;
   width: 82px;
   height: 12px;
   background-color: #ffffff;
   border: 1px solid #cdcdcd;
-  border-radius: 5px;
+  border-radius: 6px;
 
   @media (min-width: $tablet-width) {
     top: 8px;
@@ -101,6 +105,13 @@
       height: 10px;
       background-color: $light-green-color;
       border-radius: 10px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      left: 11px;
+      top: 11px;
     }
   }
 }

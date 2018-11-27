@@ -19,7 +19,7 @@
   @media (min-width: $tablet-width) {
     margin-top: 71px;
     padding-top: 30px;
-    padding-bottom: 55px;
+    padding-bottom: 58px;
     background-image: url("/img/gift-photo-tablet@1x.jpg");
     background-size: 708px auto;
 
@@ -51,7 +51,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding-left: 27px;
+    padding-left: 28px;
     padding-right: 62px;
     width: 495px;
   }
@@ -81,7 +81,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 64px;
+    margin-top: 60px;
     text-align: center;
   }
 }
@@ -90,6 +90,6 @@
   fill: #ffffff;
 
   @media (min-width: $tablet-width) {
-    margin-top: 12px;
+    margin-top: 16px;
   }
 }

@@ -5,17 +5,17 @@
   margin: 0;
   margin-top: 33px;
   padding: 0;
-  padding-top: 20px;
+  padding-top: 17px;
   padding-bottom: 15px;
-  padding-right: 15px;
-  width: 160px;
+  padding-right: 13px;
+  width: 158px;
   list-style: none;
 
   @media (max-width: $mobile-width-only) {
     &::before {
       content: "";
       position: absolute;
-      top: -3px;
+      top: -2px;
       right: -50px;
       width: 280px;
       height: 1px;
@@ -38,18 +38,34 @@
     padding: 0;
     padding-top: 14px;
     padding-bottom: 15px;
-    padding-left: 20px;
-    width: 155px;
+    padding-left: 42px;
+    padding-right: 20px;
+    width: 153px;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
     display: flex;
+    width: 148px;
+    padding-top: 16px;
   }
 }
 
 .social-list__item {
   align-self: center;
+
+  &--fb {
+    margin-left: 6px;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-top: 1px;
+    padding-left: 2px;
+
+    &--fb {
+      margin-left: 5px;
+    }
+  }
 }
 
 .social-list__link {
@@ -80,7 +96,7 @@
 
   &--fb {
     width: 10px;
-    height: 22px;
+    height: 26px;
   }
 
   @media (min-width: $tablet-width) {

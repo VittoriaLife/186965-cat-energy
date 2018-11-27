@@ -33,7 +33,7 @@
     display: flex;
     flex-direction: column;
     padding-top: 42px;
-    padding-left: 28px;
+    padding-left: 30px;
     padding-bottom: 242px;
     background-color: #ffffff;
   }
@@ -59,7 +59,7 @@
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: -137px;
+    top: -134px;
   }
 }
 
@@ -76,14 +76,14 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 24px;
-    padding-top: 64px;
+    padding-top: 65px;
     padding-right: 40px;
     padding-bottom: 48px;
   }
 
   @media (min-width: $desktop-width) {
     width: 436px;
-    padding-top: 27px;
+    padding-top: 31px;
     padding-bottom: 63px;
   }
 }
@@ -105,6 +105,7 @@
   justify-content: space-between;
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 61px;
+    width: 367px;
+    margin-bottom: 59px;
   }
 }

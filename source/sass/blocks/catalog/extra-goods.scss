@@ -4,7 +4,7 @@
   position: relative;
 
   @media (max-width: $mobile-width-only) {
-    margin-top: 50px;
+    margin-top: 52px;
   }
 }
 
@@ -12,7 +12,8 @@
   position: relative;
   margin: 0;
   margin-bottom: 34px;
-  padding-left: 20px;
+  padding-left: 18px;
+  padding-right: 2px;
   width: 246px;
   font-size: 24px;
   line-height: 24px;
@@ -23,15 +24,18 @@
 
   @media (min-width: $tablet-width) {
     padding-left: 36px;
-    margin-bottom: 79px;
+    padding-right: 0;
+    margin-bottom: 81px;
     width: 375px;
     font-size: 36px;
     line-height: 36px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 79px;
     margin-left: -39px;
     padding-left: 37px;
+
   }
 }
 
@@ -51,8 +55,8 @@
 }
 
 .extra-goods__wrapper {
-  padding-top: 15px;
-  padding-bottom: 16px;
+  padding-top: 14px;
+  padding-bottom: 17px;
   border-top: 1px solid #cdcdcd;
 
   &:last-child {

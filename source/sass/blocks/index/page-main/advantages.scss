@@ -8,7 +8,7 @@
   @media (min-width: $tablet-width) {
     flex-direction: row;
     flex-wrap: wrap;
-    padding-bottom: 86px;
+    padding-bottom: 81px;
     counter-reset: section;
   }
 
@@ -36,7 +36,7 @@
 
     &--leaf,
     &--powder {
-      margin-bottom: 131px;
+      margin-bottom: 129px;
     }
 
     &::after {
@@ -111,12 +111,21 @@
   background-color: $light-green-color;
 
   @media (min-width: $tablet-width) {
-    width: 80px;
-    height: 81px;
+    padding-left: 13px;
+    padding-top: 15px;
+    width: 63px;
+    height: 67px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 81px;
+    width: 63px;
+    height: 66px;
+  }
+}
+
+.advantages__image {
+  @media (min-width: $tablet-width) {
+    width: 55px;
   }
 }
 

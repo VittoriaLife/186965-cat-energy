@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   padding-left: 32px;
-  margin-top: 62px;
+  margin-top: 61px;
   width: 220px;
 
   @media (min-width: $tablet-width) {
@@ -32,7 +32,7 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    padding-bottom: 6px;
+    padding-bottom: 5px;
     font-size: 20px;
     border-bottom: 1px dotted #bebebe;
 
